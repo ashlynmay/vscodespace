@@ -1,1 +1,1 @@
-SELECT name FROM songs WHERE dancability ;
+SELECT name FROM songs WHERE dancability >;
