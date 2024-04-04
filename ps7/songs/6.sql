@@ -1,2 +1,2 @@
 SELECT title FROM songs WHERE id IN
-(SELECT id FROM )
+(SELECT id FROM artist )
