@@ -6,8 +6,7 @@
       {
         "splitTerminals": [
           {
-            "name": "Terminal",
-            "commands": ["npm i", "npm run dev"]
+            "name": "Terminal"
           }
         ]
       }
