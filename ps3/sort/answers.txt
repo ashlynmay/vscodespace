@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: the pre-sorted file sorted a lot faster than the random and reversed files. this would imply a running time where the big O is larger than the big omega, which bubble sort falls into, while the other two sorts don't.
+
+sort2 uses: merge sort
+
+How do you know?: the running times were consistently better than the other two sort programs, while also being very similar to eachother.
+
+sort3 uses: selection sort
+
+How do you know?: all of the running times were very similar to eachother no matter if it was sorted or not, usually within a tenth of a second of one another. this would imply that the sort has a theta of n^2.
