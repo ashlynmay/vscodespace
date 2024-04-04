@@ -1,1 +1,1 @@
-SELECT AVG energy FROM songs WHERE dancabi;
+SELECT AVG energy FROM songs;
