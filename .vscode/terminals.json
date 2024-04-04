@@ -2,12 +2,6 @@
   "autorun": true,
   "terminals": [
     {
-      "name": "Single",
-      "description": "This is a description",
-      "focus": true,
-      "command": "echo \"Hello World\""
-    },
-    {
       "name": "Persistent",
       "focus": true,
       "onlySingle": true,
