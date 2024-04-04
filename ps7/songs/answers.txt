@@ -4,4 +4,4 @@
 
 2. Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
 
-2 Answer: 
+2 Answer: I think it would be very useful to actually have the 
