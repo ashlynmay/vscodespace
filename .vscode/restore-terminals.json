@@ -18,23 +18,6 @@
             "commands": ["jest --watch"]
           }
         ]
-      },
-      {
-        "splitTerminals": [
-          {
-            "name": "build & e2e",
-            "commands": [
-              "eslint --ext .tsx --ext .ts lib/",
-              "npm run build",
-              "npm run e2e"
-            ],
-            "shouldRunCommands": false
-          },
-          {
-            "name": "worker",
-            "commands": ["npm-run-all --parallel redis tsc-watch-start worker"]
-          }
-        ]
       }
     ]
   }
