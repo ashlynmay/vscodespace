@@ -1,6 +1,6 @@
 1. If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
 
-1 Answer: I would personally categorize the aura as Orange, due to it having a relatively high energy rating
+1 Answer: I would personally categorize the aura as Orange, due to it having a relatively high energy rating, but 
 
 2. Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
 
