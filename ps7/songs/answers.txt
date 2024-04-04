@@ -5,4 +5,4 @@
 2. Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
 
 2 Answer: I think it would be very useful to actually have the algorithm and weighting that Spotify uses for characterizing audio auras. Without that information, it is much more of a guessing game, especially with the vague descriptions of each aura that Spotify provides. 
-        Another
+        Another factor I would add other than the default energy, valence, and tempo would be genre as it could offer additional insight into the music that the listener listens to, which could be easier aligned to an aura without an algorithm.  
