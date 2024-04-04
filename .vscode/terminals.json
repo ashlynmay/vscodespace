@@ -7,7 +7,6 @@
       "focus": true,
       "command": "echo \"Hello World\""
     },
-    
     {
       "name": "Persistent",
       "focus": true,
