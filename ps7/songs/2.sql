@@ -1,1 +1,1 @@
-SELECT title FROM songs ORDER BY tempo
+SELECT title FROM songs ORDER BY tempo;
