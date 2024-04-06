@@ -29,4 +29,4 @@ SELECT caller, receiver FROM phone_calls WHERE duration < 60 AND day = 28 AND mo
 -- Investigate Raymond's calim that the thief is taking the earliest flight out of Fiftyville the following morning.
 SELECT id FROM airports WHERE city IS "Fiftyville";
 -- Fiftville's id: 8
-SELECT id FROM flights WHERE origin_airport_id = 8 AND month = 7 AND day = 29 AND 
+SELECT id FROM flights WHERE origin_airport_id = 8 AND month = 7 AND day = 29 ORDER BY 
