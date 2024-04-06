@@ -6,4 +6,4 @@ SELECT id, transcript FROM interviews WHERE month = 7 AND day = 28;
 
 SELECT name, transcript FROM interviews WHERE id = 161 OR id = 162 OR id = 163;
 
-SELECT activity, license_plate FROM bakery_security_logs WHERE month = 7 AND day = 28 AND hour > 10 AND minute > 15
+SELECT activity, license_plate FROM bakery_security_logs WHERE month = 7 AND day = 28 AND hour > 10 AND minute > 15;
