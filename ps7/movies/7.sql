@@ -1,1 +1,1 @@
-SELECT title, rating FROM s
+SELECT title, rating FROM movies 
