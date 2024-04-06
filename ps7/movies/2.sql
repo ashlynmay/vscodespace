@@ -1,1 +1,1 @@
-SELECT title FROM movies WHERE year = 2008;
+SELECT  FROM movies WHERE year = 2008;
