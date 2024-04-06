@@ -2,7 +2,7 @@
 -- Find id and description for the CS50 duck report.
 SELECT id, description FROM crime_scene_reports WHERE month = 7 AND day = 28;
 
--- Get interview transcripts
+-- Get interview transcripts and id's
 SELECT id, transcript FROM interviews 
 WHERE month = 7 AND day = 28;
 
