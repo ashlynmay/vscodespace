@@ -1,1 +1,1 @@
-SELECT title FROM movies WHERE title 
+SELECT title FROM movies WHERE ""
