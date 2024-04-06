@@ -21,7 +21,7 @@ WHERE month = 7 AND day = 28 AND atm_location IS "Leggett Street";
 -- Suspects: Bruce, Luca, Iman, and Diana
 
 -- Investigate Raymond's claim that he saw the theif call someone for less than 1 minute after the crime and compare to prior data.
-SELECT name FROM people JOIN phone_calls ON people.phone_number = phone_calls.caller WHERE duration < 60 AND day = 28 AND month = 7;
+SELECT * FROM people JOIN phone_calls ON people.phone_number = phone_calls.caller WHERE duration < 60 AND day = 28 AND month = 7;
 -- Callers at Bakery: Sofia, Kelsey, Bruce, Kelsey, Diana
 SELECT name FROM people WHERE [receiver number] IS phone_number; -- repeat this for each receiver
 -- Callers Possible accomplices:
