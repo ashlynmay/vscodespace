@@ -1,2 +1,2 @@
 SELECT name FROM people WHERE id IN
-(SELECT )
+(SELECT person_id FROM directors )
