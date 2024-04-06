@@ -1,1 +1,1 @@
-SELECT COUNT(title) WHERE 
+SELECT COUNT(title) WHERE () 
