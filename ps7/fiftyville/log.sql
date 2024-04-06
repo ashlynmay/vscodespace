@@ -26,7 +26,7 @@ WHERE duration < 60 AND day = 28 AND month = 7;
 -- Callers at Bakery: Sofia, Kelsey, Bruce, Kelsey, Diana
 SELECT * FROM people JOIN phone_calls ON people.phone_number = phone_calls.caller 
 WHERE duration < 60 AND day = 28 AND month = 7
-AND name IS ;
+AND name IS "Sofia" ;
 SELECT name FROM people WHERE [receiver number] IS phone_number; -- repeat this for each receiver
 -- Callers Possible accomplices:
 SELECT name FROM people JOIN phone_calls ON people.phone_number = phone_calls.receiver WHERE duration < 60 AND day = 28 AND month = 7;
