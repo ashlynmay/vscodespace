@@ -1,2 +1,2 @@
-SELECT title FROM movies
+SELECT * FROM movies
 JOIN movies on movies.id = ratings.movie_id;
