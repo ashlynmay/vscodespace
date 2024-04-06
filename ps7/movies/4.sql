@@ -1,1 +1,1 @@
-SELECT COUNT()
+SELECT COUNT(title)
