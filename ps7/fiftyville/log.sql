@@ -29,7 +29,7 @@ SELECT name FROM people WHERE phone_number IS "(996) 555-8899";
 -- Callers Possible accomplices: Sofia: Jack, Kelsey 1: Larry, Bruce: Robin, Kelsey 2: Melissa, Diana: Phillip   
 SELECT name FROM people JOIN phone_calls ON people.phone_number = phone_calls.receiver WHERE duration < 60 AND day = 28 AND month = 7;
 -- Receivers at Bakery: NULL
--- Suspects: Bruce , Luca, and Diana
+-- Suspects: Bruce & Robin, and Diana
 
 
 
