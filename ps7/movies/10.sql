@@ -1,3 +1,3 @@
 SELECT name FROM people WHERE id IN
 (SELECT person_id FROM directors WHERE movie_id IN
-(SELECT ))
+(SELECT id FROM movies WHERE ))
