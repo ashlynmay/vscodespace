@@ -6,7 +6,7 @@ SELECT id, description FROM crime_scene_reports WHERE month = 7 AND day = 28;
 SELECT id, transcript FROM interviews 
 WHERE month = 7 AND day = 28;
 
--- Whittle down transcripts that mention the bakery and get name
+-- Whittle down transcripts that mention the bakery and get names of people.
 SELECT name, transcript FROM interviews 
 WHERE id = 161 OR id = 162 OR id = 163;
 
