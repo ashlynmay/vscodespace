@@ -20,6 +20,8 @@ SELECT person_id FROM bank_accounts JOIN atm_transactions ON bank_accounts.accou
 WHERE month = 7 AND day = 28 AND atm_location IS "Leggett Street";
 -- Suspects: Bruce, Luca, Iman, and Diana
 
+
+
 -- Investigate Raymond's claim that he saw the theif call someone for less than 1 minute after the crime and compare to prior data.
 SELECT * FROM people JOIN phone_calls ON people.phone_number = phone_calls.caller 
 WHERE duration < 60 AND day = 28 AND month = 7;
@@ -27,9 +29,12 @@ WHERE duration < 60 AND day = 28 AND month = 7;
 SELECT name FROM people WHERE phone_number IS [receiver number]; -- repeat this for each receiver
 SELECT name FROM people WHERE phone_number IS "(996) 555-8899";
 -- Callers Possible accomplices: Sofia: Jack, Kelsey 1: Larry, Bruce: Robin, Kelsey 2: Melissa, Diana: Phillip   
-SELECT name FROM people JOIN phone_calls ON people.phone_number = phone_calls.receiver WHERE duration < 60 AND day = 28 AND month = 7;
+SELECT name FROM people JOIN phone_calls ON people.phone_number = phone_calls.receiver 
+WHERE duration < 60 AND day = 28 AND month = 7;
 -- Receivers at Bakery: NULL
 -- Suspects: Bruce & Robin, and Diana & Phillip
+
+
 
 -- Investigate Raymond's calim that the thief is taking the earliest flight out of Fiftyville the following morning.
 SELECT id FROM airports WHERE city IS "Fiftyville";
