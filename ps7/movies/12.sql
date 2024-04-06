@@ -1,3 +1,2 @@
-SELECT tile FROM movies WHERE movie_id IN(
-
-)
+SELECT tile FROM movies WHERE movie_id IN
+(SELECT )
