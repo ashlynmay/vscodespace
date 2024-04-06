@@ -24,8 +24,8 @@ WHERE month = 7 AND day = 28 AND atm_location IS "Leggett Street";
 SELECT * FROM people JOIN phone_calls ON people.phone_number = phone_calls.caller 
 WHERE duration < 60 AND day = 28 AND month = 7;
 -- Callers at Bakery: Sofia, Kelsey, Bruce, Kelsey, Diana
-SELECT name FROM people WHERE phone_number; -- repeat this for each receiver
-SELECT name FROM people WHERE (996) 555-8899 IS phone_number;
+SELECT name FROM people WHERE phone_number IS [receiver number]; -- repeat this for each receiver
+SELECT name FROM people WHERE phone_number;
 -- Callers Possible accomplices:
 SELECT name FROM people JOIN phone_calls ON people.phone_number = phone_calls.receiver WHERE duration < 60 AND day = 28 AND month = 7;
 -- Receivers at Bakery: NULL
