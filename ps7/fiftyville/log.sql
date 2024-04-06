@@ -47,4 +47,4 @@ SELECT id FROM flights WHERE origin_airport_id = 8 AND month = 7 AND day = 29 OR
 -- Earliest flight id: 36
 SELECT * FROM passengers JOIN people ON passengers.passport_number = people.passport_number WHERE flight_id = 36;
 -- Diana nor Phillip are registered as being on the flight, so the thief must be Bruce, with the accomplice Robin.
-SELECT city FROM airports JOIN flights ON flights.destination_airport_id = airports.id WHERE ;
+SELECT city FROM airports JOIN flights ON flights.destination_airport_id = airports.id WHERE flight_id = 36;
