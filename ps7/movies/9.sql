@@ -1,1 +1,1 @@
-SELECT name FROM peo
+SELECT name FROM people WHERE 
