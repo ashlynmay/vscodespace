@@ -1,2 +1,2 @@
 SELECT title, rating FROM movies
-    JOIN ratings on movie
+    JOIN ratings on id
