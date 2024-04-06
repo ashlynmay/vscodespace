@@ -24,4 +24,5 @@ WHERE month = 7 AND day = 28 AND hour = 10 AND minute > 15 AND minute < 25 AND a
 
 
 
-SELECT person_id FROM bank_accounts JOIN atm_transactions ON bank_accounts.account_number = atm_transactions.account_number WHERE month = 7 AND day = 28 AND atm_location IS "Leggett Street";
+SELECT person_id FROM bank_accounts JOIN atm_transactions ON bank_accounts.account_number = atm_transactions.account_number 
+WHERE month = 7 AND day = 28 AND atm_location IS "Leggett Street";
