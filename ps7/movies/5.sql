@@ -1,1 +1,1 @@
-SELECT title FROM movies WHERE title IS "Harry Potter%";
+SELECT title FROM movies WHERE title LIKE "Harry Potter%";
