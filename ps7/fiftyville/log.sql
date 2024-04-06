@@ -31,4 +31,4 @@ SELECT id FROM airports WHERE city IS "Fiftyville";
 -- Fiftville's id: 8
 SELECT id FROM flights WHERE origin_airport_id = 8 AND month = 7 AND day = 29 ORDER BY hour, minute ASC;
 -- Earliest flight id: 36
-SELECT * FROM passengers JOIN people ON passengers.passport_number = WHERE flight_id = 36;
+SELECT * FROM passengers JOIN people ON passengers.passport_number = people.passport_number WHERE flight_id = 36;
