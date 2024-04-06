@@ -1,1 +1,1 @@
-SELECT COUNT(title) WHERE (SELECT rating FROM ratings )  
+SELECT COUNT(title) WHERE (SELECT rating FROM ratings ) = 10; 
