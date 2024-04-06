@@ -8,4 +8,4 @@ SELECT name, transcript FROM interviews WHERE id = 161 OR id = 162 OR id = 163;
 
 SELECT license_plate FROM bakery_security_logs WHERE month = 7 AND day = 28 AND hour = 10 AND minute > 15 AND minute < 25 AND activity IS "exit";
 
-SELECT * FROM bakery_security_logs JOIN people ON people.license_plate = bakery_security_logs.license_plate;
+SELECT * FROM bakery_security_logs JOIN people ON people.license_plate = bakery_security_logs.license_plate WHERE month = 7 AND day = 28 AND hour = 10 AND minute > 15 AND minute < 25 AND activity IS "exit";
