@@ -22,7 +22,7 @@ WHERE month = 7 AND day = 28 AND atm_location IS "Leggett Street";
 
 -- Investigate Raymond's claim that he saw the theif call someone for less than 1 minute after the crime and compare to prior data.
 SELECT caller, receiver FROM phone_calls WHERE duration < 60 AND day = 28 AND month = 7;
--- Callers at : Sofia, Kelsey, Bruce, Kelsey, Diana
+-- Callers: Sofia, Kelsey, Bruce, Kelsey, Diana
 -- Receivers: Luca
 -- Suspects: Bruce, Luca, and Diana
 
