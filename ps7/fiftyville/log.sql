@@ -31,9 +31,6 @@ SELECT name FROM people JOIN phone_calls ON people.phone_number = phone_calls.re
 -- Receivers at Bakery: NULL
 -- Suspects: Bruce & Robin, and Diana & Phillip
 
-
-
-
 -- Investigate Raymond's calim that the thief is taking the earliest flight out of Fiftyville the following morning.
 SELECT id FROM airports WHERE city IS "Fiftyville";
 -- Fiftville's id: 8
