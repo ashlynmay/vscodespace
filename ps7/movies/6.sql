@@ -1,1 +1,1 @@
-SELECT AVG(rating) FROM ratings WHERE movie_id IN ()
+SELECT AVG(rating) FROM ratings WHERE movie_id IN (SELECT )
