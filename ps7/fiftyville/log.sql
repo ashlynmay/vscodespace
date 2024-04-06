@@ -30,4 +30,5 @@ SELECT caller, receiver FROM phone_calls WHERE duration < 60 AND day = 28 AND mo
 SELECT id FROM airports WHERE city IS "Fiftyville";
 -- Fiftville's id: 8
 SELECT id FROM flights WHERE origin_airport_id = 8 AND month = 7 AND day = 29 ORDER BY hour, minute ASC;
--- 
+-- Earliest flight id: 36
+SELECT 
