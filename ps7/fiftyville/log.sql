@@ -27,8 +27,7 @@ SELECT name FROM people WHERE [receiver number] IS phone_number; -- repeat this 
 -- Possible accomplices:
 SELECT name FROM people JOIN phone_calls ON people.phone_number = phone_calls.receiver WHERE duration < 60 AND day = 28 AND month = 7;
 -- Receivers at Bakery: NULL
- SELECT name FROM people WHERE [caller number] IS phone_number;
--- Possible accomplices:
+
 -- Suspects: Bruce, Luca, and Diana
 
 
