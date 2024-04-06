@@ -1,2 +1,2 @@
-SELECT title FROM movies WHERE id IN
-(SELECT movie_id FROM ratings WHERE rating = 10.0);
+SELECT name FROM songs WHERE artist_id IN
+(SELECT id FROM artists WHERE name IS "Post Malone");
