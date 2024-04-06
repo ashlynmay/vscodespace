@@ -1,2 +1,2 @@
 SELECT tile FROM movies WHERE movie_id IN
-(SELECT )
+(SELECT person_id )
