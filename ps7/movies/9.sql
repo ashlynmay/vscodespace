@@ -1,1 +1,1 @@
-SELECT name FROM people WHERE ID 
+SELECT name FROM people WHERE id IN 
