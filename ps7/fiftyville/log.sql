@@ -25,7 +25,7 @@ SELECT name FROM people JOIN phone_calls ON people.phone_number = phone_calls.ca
 -- Callers at Bakery: Sofia, Kelsey, Bruce, Kelsey, Diana
 SELECT name FROM people JOIN phone_calls ON people.phone_number = phone_calls.receiver WHERE duration < 60 AND day = 28 AND month = 7;
 -- Receivers at Bakery: Luca
-SELECT name FROM people WHERE [receiver number] IS phone_number;
+SELECT name FROM people WHERE [receiver number] IS phone_number; --
 -- Possible accomplices: 
 -- Suspects: Bruce, Luca, and Diana
 
