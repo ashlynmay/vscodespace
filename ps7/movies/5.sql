@@ -1,1 +1,1 @@
-SELECT title FROM movies WHERE "Harry Potter%"
+SELECT title FROM movies WHERE "Harry Potter%" IN title;
