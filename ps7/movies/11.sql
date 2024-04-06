@@ -1,2 +1,2 @@
 SELECT title FROM movies
-JOIN movies
+JOIN movies on id
