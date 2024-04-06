@@ -2,3 +2,4 @@
 -- Find id and description for the CS50 duck report.
 SELECT id, description FROM crime_scene_reports WHERE month = 7 AND day = 28;
 
+
