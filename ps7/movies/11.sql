@@ -1,2 +1,2 @@
-SELECT * FROM movies
+SELECT title FROM movies WHERE 
 JOIN ratings on movies.id = ratings.movie_id LIMIT 5;
