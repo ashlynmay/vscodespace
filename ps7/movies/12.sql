@@ -1,1 +1,1 @@
-SELECT tile FROM movies WHERE movie_id 
+SELECT tile FROM movies WHERE movie_id IN 
