@@ -1,0 +1,20 @@
+/*
+border: style color width;
+background-color: keyword | #<6 digit hex>;
+color: ";
+font-size: [absolute size | relative size];
+    keywords: (xx-small, medium) fixed points: (10pt, 12pt) percentage: (20%) base off of most recent font size: (smaller, larger);
+font-family: [font name | generic name (certain fonts are pre-definied in css)];
+text-align: [left / right / center / justify];
+body (tag selector) {}
+#unique (id selector) {}
+.students (class selector (can be applied to multiple tags)) {}
+
+input css:
+    <style> for including css directly in html</style>
+    <link rel="stylesheet" href="styles.css"> /* for linking html to seperate css file*/
+    */
+
+body {
+    background-color: red;
+}
