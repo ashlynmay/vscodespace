@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function incorrect(event)
+            {
+                event.preventDefault()
+                var element = document.getElementById("incorrect");
+                event.target.style.backgroundColor = 'red';
+                element.style.display = 'block';
+            }
+            function correct(event)
+            {
+                event.preventDefault()
+                var element = document.getElementById("correct");
+                event.target.style.backgroundColor = 'green';
+                element.style.display = 'block';
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the correct answer to 3 + 2?</h3>
+                <form>
+                    <button id="A" onclick="incorrect(event)">1</button>
+                    <button id="B" onclick="incorrect(event)">4</button>
+                    <button id="C" onclick="correct(event)">5</button>
+                    <button id="D" onclick="incorrect(event)">6</button>
+                </form>
+                <h4 id="correct" style="color:green;display:none;">Correct Answer.</h4>
+                <h4 id="incorrect" style="color:red;display:none;">Incorrect Answer.</h4>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+</html>
