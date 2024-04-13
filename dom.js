@@ -35,6 +35,6 @@ major dom methods:
     removeChild(node): removes the specified child node from the DOM
 
 jquery:
-    a common l
+    a common library that is sup
 */
 
