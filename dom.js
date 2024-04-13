@@ -6,5 +6,6 @@ this allows you to manipulate the pages elements programmatically
 
 example html:
     <html>
-    </
+        <head>
+    </html>
 */
