@@ -21,5 +21,6 @@ see DOM:
 
 major dom properties:
     innerHTML: html inside of tags. ex: <title> would be Hello, world
-    nodeName: name of an HTML element
+    nodeName: name of an HTML element, <title> would be title
+    
 */
