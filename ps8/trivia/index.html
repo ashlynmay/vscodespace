@@ -11,6 +11,11 @@
             {
                 event.preventDefault()
                 event.target.style.backgroundColor = 'red';
+                if(document.getElementById('incorrect').style.display == 'block')
+                {
+                    document.getElementById('incorrect').style.display = 'none';
+                }
+
                 document.getElementById('incorrect').style.display = 'block';
             }
             function correct(event)
