@@ -41,6 +41,6 @@ jquery:
 
 
 change color of element:
-    in s
+    in js:
 */
 
