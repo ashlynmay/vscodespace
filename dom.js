@@ -30,5 +30,5 @@ major dom properties:
 
 major dom methods:
     getElementById(id): self explanitory
-    
+    getElementsByTagName(tag)
 */
