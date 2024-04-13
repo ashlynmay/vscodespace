@@ -43,7 +43,7 @@ jquery:
 change color of element to purple:
     in js with 1 function per color:
         html: <button onclick="turnPurple();">Purple</button>
-        script: function turnPurpledocument.getElementById('colorDiv').style.backgroundColor = 'purple';
+        script: function turnPurple() {document.getElementById('colorDiv').style.backgroundColor = 'purple';
 
     in js with 1 function for all colors with a parameter:
         html: <button onclick="changeColor('purple');">Purple</button>
