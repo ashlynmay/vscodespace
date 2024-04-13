@@ -48,7 +48,7 @@ printing:
 
 arrays:
         array.length; used on its own it returns the length of an array, but you can also use it 
-        to set the length of an array by setting it = to something, it will remove 
+        to set the length of an array by setting it = to something, it will remove elements at the end if array is shortened
         array.pop(); removes last element and returns it
         array.push("x", "y"); adds element(s) (x, y) to the end of the array and returns the new length
         array.shift(); removes first element and returns it
