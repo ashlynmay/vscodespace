@@ -7,11 +7,10 @@
         "splitTerminals": [
           {
             "name": "Terminal",
-            "commands": ["alias cd='HOME=~/vscodespace cd'"]
+            "commands": ["alias cd='HOME=~/vscodespace cd'", clear"]
           }
         ]
       }
     ]
   }
 
-  
