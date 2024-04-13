@@ -23,5 +23,6 @@ major dom properties:
     innerHTML: html inside of tags. ex: <title> would be Hello, world
     nodeName: name of an HTML element, <title> would be title
     id: id attribute of an HTML element. <p id="greeting"> would be greeting
-    parentNode: reference to node one level up: <
+    parentNode: reference to node one level up: <title> would return <head>
+    childNodes: arra
 */
