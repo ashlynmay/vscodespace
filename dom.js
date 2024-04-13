@@ -35,6 +35,7 @@ major dom methods:
     removeChild(node): removes the specified child node from the DOM
 
 jquery:
-    a popular open source library that is supposed to simplify client-side scripting (such as dom manipulations)
+    a popular open source library that is supposed to simplify client-side scripting (such as dom manipulations and ajax querys)
+    
 */
 
