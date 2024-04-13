@@ -15,7 +15,10 @@ loops:
     {
         // use object[key] in here
     }
-    for (v)
+    for (var key of object)
+    {
+        // user 
+    }
 
 
 <script>include js in html</script>
