@@ -47,6 +47,7 @@ anonymous function:
     });
 
 events:
+    an event in HTML and JavaScript is a response to user interaction with the web page.w
     
 
 <script>include js in html</script>
