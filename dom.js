@@ -48,6 +48,8 @@ change color of element to purple:
         html: <button onclick="changeColor('purple');">Purple</button>
         script:
     event handler:
-        html: <button onclick="changeColorEvent(event);"
+        html: <button onclick="changeColorEvent(event);">Purple</button>
+        script:
+    
 */
 
