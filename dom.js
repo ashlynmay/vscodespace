@@ -17,6 +17,6 @@ example html:
     </html>
 
 see DOM:
-    open developer console
+    open developer console and run console.d
 
 */
