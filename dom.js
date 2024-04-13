@@ -45,6 +45,8 @@ change color of element to purple:
         html: <button onclick="turnPurple();">Purple</button>
         script: 
     in js with 1 function for all colors with a parameter:
-        ht 
+        html: <button onclick="changeColor('purple');">Purple</button>
+        script:
+     
 */
 
