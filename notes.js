@@ -12,7 +12,8 @@ loops:
     while, do-while, for
 functions: 
     function name() {}, some functions can be anonymous (no name)
-arrays: var nums = [1, 2, 3, 4, 5];
+arrays: 
+        var nums = [1, 2, 3, 4, 5];
         var mixed = [1, true, 3.333, 'five'];
 
 objects/structs: instead of function(object); do object.function();
