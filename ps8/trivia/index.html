@@ -12,12 +12,12 @@
                 event.preventDefault()
                 var element = document.getElementById("incorrect");
                 event.target.style.backgroundColor = 'red';
-                element.style.display = 'block';
+                document.getElementById('incorrect').style.display = 'block';;
             }
             function correct(event)
             {
                 if(event.target.style.background == 'green') {
-                    
+
                 }
                 event.preventDefault()
                 var element = document.getElementById("correct");
