@@ -51,7 +51,7 @@ change color of element to purple:
         html: <button onclick="changeColorEvent(event);">Purple</button>
         script:
     jQuery:
-        html: <button class="jQButton">Purple<
+        html: <button class="jQButton">Purple</button>
         script:
 */
 
