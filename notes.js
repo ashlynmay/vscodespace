@@ -14,7 +14,7 @@ loops:
     var wkArray = ['Monday', 'Tuesday', ... 'Sundary'];
 
 
-    for (var key in object)
+    for (var day in object)
     {
         // use object[key] in here
     }
