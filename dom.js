@@ -33,4 +33,8 @@ major dom methods:
     getElementsByTagName(tag): gets all elements with given tag below this point in the dom as an array
     appendChild(node): add the given node ot the dom below this point
     removeChild(node): removes the specified child node from the DOM
+
+jquery:
+    a common l
 */
+
