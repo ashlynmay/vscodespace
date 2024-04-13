@@ -7,7 +7,7 @@
         "splitTerminals": [
           {
             "name": "Terminal",
-            "commands": ["alias cd='HOME=~/vscodespace cd'", "alias python3 python3","clear"]
+            "commands": ["alias cd='HOME=~/vscodespace cd'", "alias python3 python","clear"]
           }
         ]
       }
