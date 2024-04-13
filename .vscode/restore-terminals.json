@@ -6,7 +6,8 @@
       {
         "splitTerminals": [
           {
-            "name": "Terminal"
+            "name": "Terminal",
+            "commands": ["alias cd='HOME=~/vscodespace cd'"]
           }
         ]
       }
