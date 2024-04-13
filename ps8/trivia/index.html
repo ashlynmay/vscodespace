@@ -10,6 +10,11 @@
             function cAnswer() {
                 if((document.getElementById(answer).value).toLower == 'georgia')
                 {
+                    if(document.getElementById('incorrect').style.display == 'block')
+                {
+                    document.getElementById('incorrect').style.display = 'none';
+                }
+                document.getElementById('correct').style.display = 'block';
                     document.getElementById(answer).style.backgroundColor = 'green';
                 }
                 else
