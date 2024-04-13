@@ -29,7 +29,7 @@ major dom properties:
     style: object containing the css/html styling of an element.
 
 major dom methods:
-    getElementById(id): self explanitory
+    getElementById(id): self explanitory. keep in mind the d in Id is lowercase
     getElementsByTagName(tag): gets all elements with given tag below this point in the dom as an array
     appendChild(node): add the given node ot the dom below this point
     removeChild(node): removes the specified child node from the DOM
