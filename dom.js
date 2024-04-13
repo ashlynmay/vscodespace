@@ -26,5 +26,5 @@ major dom properties:
     parentNode: reference to node one level up: <title> would return <head>
     childNodes: array of references to the nodes on level down: <body> would return [h2, p, a]
     attributes: array of attributes of an html elements
-    style: object containing th
+    style: object containing the css/html styling of an element. can be used to 
 */
