@@ -14,10 +14,12 @@ loops:
     var wkArray = ['Monday', 'Tuesday', ... 'Sundary'];
 
 
-    for (var day in object)
+    for (var day in wkArray)
     {
         // use object[key] in here
     }
+
+    
     for (var key of object)
     {
         // use key in here
