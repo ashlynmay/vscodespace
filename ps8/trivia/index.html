@@ -8,7 +8,10 @@
         <script>
             // TODO: Add code to check answers to questions
             function cAnswer() {
-                
+                if((document.getElementById(answer).value).toLower == 'georgia')
+                {
+                    
+                }
             }
             function incorrect(event)
             {
@@ -63,7 +66,7 @@
                 <!-- TODO: Add free response question here -->
                 <h3>Which US state prohibits carrying an ice cream cone in your back pocket specifically on Sundays?</h3>
                 <form>
-                    <input name="text" type="text"/>
+                    <input id="answer" type="text"/>
                     <input onclick="cAnswer()"type="submit"/>
                 </form>
             </div>
