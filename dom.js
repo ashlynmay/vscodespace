@@ -19,5 +19,6 @@ example html:
 see DOM:
     open developer console and run console.dir(document), and check children 
 
-major do
+major dom properties:
+    innerHTML:
 */
