@@ -53,6 +53,10 @@ events:
     event in html: <button onclick="javascript code: alertName(event)">Button</button>
 
     function alertName(event)
+    {
+        var trigger = event.srcElement;
+        
+    }
 
 
 <script>include js in html</script>
