@@ -60,7 +60,7 @@ change color of element to purple:
         html: <button class="jQButton">Purple</button>
         script: $(document).ready(function() {
                     $('.jQButton').click(function() {
-                        $('#colorDiv')
+                        $('#colorDiv').css('background-color',)
                     })
         }
                 )
