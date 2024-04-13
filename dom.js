@@ -20,5 +20,5 @@ see DOM:
     open developer console and run console.dir(document), and check children 
 
 major dom properties:
-    innerHTML: html inside of tags for th
+    innerHTML: html inside of tags. ex: 
 */
