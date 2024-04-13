@@ -57,6 +57,7 @@ events:
         var trigger = event.srcElement;
         alert('You clicked on ' + trigger.innerHTML);
     }
+    output: 
 
 
 <script>include js in html</script>
