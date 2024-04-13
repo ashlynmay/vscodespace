@@ -46,6 +46,8 @@ anonymous function:
         return num * 2;
     });
 
+events:
+    
 
 <script>include js in html</script>
 <link> rel="script" href="script.js"</link>
