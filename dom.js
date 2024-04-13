@@ -58,7 +58,9 @@ change color of element to purple:
 
     jQuery:
         html: <button class="jQButton">Purple</button>
-        script: $(document).ready(function()
+        script: $(document).ready(function() {
+                    $('.jQButton')
+        }
                 )
 
 */
