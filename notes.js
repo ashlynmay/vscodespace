@@ -48,7 +48,7 @@ printing:
 
 arrays:
         array.size();
-        array.pop();
+        array.pop(); -
         array.push(x);
         array.shift();
         map(); can be used to apply a function to all elements in an array, good time to use anonymous functions
