@@ -1,18 +1,22 @@
 /* similar to c Syntax 
 runs client side, variables are similar to python with no type selector, can behave like an object-oriented language
 
-<script>include js in html</script>
-<link> rel="script" href="script.js"</link>
+insert javascript:
+    <script>include js in html</script>
+    <link> rel="script" href="script.js"</link>
+
 variables:
     var variable = data; 
 
 conditionals: 
     if, elseif, else, switch, ?: are included
-loops: 
-    while, do-while, for
-functions: 
+
+
+
+    functions: 
     function name() {}, some functions can be anonymous (no name)
-arrays: 
+
+    arrays: 
         var nums = [1, 2, 3, 4, 5];
         var mixed = [1, true, 3.333, 'five'];
 
@@ -20,26 +24,29 @@ objects/structs: instead of function(object); do object.function();
         var herbie = {year : 1963, model: 'Beetle'};
 
 loops: 
-    var wkArray = ['Monday', 'Tuesday', ... 'Sunday'];
+    types: while, do-while, for
 
-        for (var day in wkArray)
-        {
-            console.log(day);  (printf)
-        }
-    output: 
-        0,1,2,3,4,5,6
+    ex of for loops:
+        var wkArray = ['Monday', 'Tuesday', ... 'Sunday'];
 
-        for (var day of object)
-        {
-            console.log(day);
-        }
-    output: Monday, Tuesday, ... Sunday
+            for (var day in wkArray)
+            {
+                console.log(day);  (printf)
+            }
+        output: 
+            0,1,2,3,4,5,6
+
+            for (var day of object)
+            {
+                console.log(day);
+            }
+        output: Monday, Tuesday, ... Sunday
 
 printing:
         console.lot(wkArrary[day] + ' is day number ' + (parseInt(day) + 1) + ' of the week! ');
     output: Monday is day number 1 of the week!
 
-if adding a variable and a number, use parseInt(var)
+    if adding a variable and a number, use parseInt(var)
 
 arrays:
         array.size();
