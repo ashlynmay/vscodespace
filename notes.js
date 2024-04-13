@@ -52,6 +52,8 @@ events:
 
     event in html: <button onclick="javascript code: alertName(event)">Button</button>
 
+    function alertName(event)
+
 
 <script>include js in html</script>
 <link> rel="script" href="script.js"</link>
