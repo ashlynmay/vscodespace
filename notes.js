@@ -12,6 +12,9 @@ objects/structs: instead of function(object); do object.function();
 
 loops: 
     for (var key in object)
+    {
+        
+    }
 
 
 
