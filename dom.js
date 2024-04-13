@@ -11,7 +11,7 @@ example html:
         </head>
         <body>
             <h2>Here's my page</h2>
-            <p id=>World, hello</p>
+            <p id="greeting">World, hello</p>
             <a href="test.html">Link</a>
         </body>
     </html>
@@ -22,5 +22,5 @@ see DOM:
 major dom properties:
     innerHTML: html inside of tags. ex: <title> would be Hello, world
     nodeName: name of an HTML element, <title> would be title
-    id: id attribute of an HTML element
+    id: id attribute of an HTML element. 
 */
