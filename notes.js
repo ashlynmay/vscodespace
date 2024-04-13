@@ -47,7 +47,7 @@ printing:
     if adding a variable and a number, use parseInt(var)
 
 arrays:
-        array.length; is 
+        array.length; is
         array.pop(); removes last element and returns it
         array.push("x", "y"); adds element(s) (x, y) to the end of the array and returns the new length
         array.shift(); removes first element and returns it
