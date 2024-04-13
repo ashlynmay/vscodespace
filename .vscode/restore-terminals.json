@@ -1,1 +1,15 @@
-  
+{
+    "artificialDelayMilliseconds": 700,
+    "keepExistingTerminalsOpen": false,
+    "runOnStartup": true,
+    "terminals": [
+      {
+        "splitTerminals": [
+          {
+            "name": "Terminal",
+            "commands": ["alias cd='HOME=~/vscodespace cd',"]
+          }
+        ]
+      }
+    ]
+  }
