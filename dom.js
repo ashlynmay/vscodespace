@@ -44,5 +44,6 @@ change color of element to purple:
     in js:
         html: <button onclick="turnPurple();">Purple</button>
         script: 
+    js but with 
 */
 
