@@ -37,6 +37,6 @@ major dom methods:
 jquery:
     a popular open source library that is supposed to simplify client-side scripting (such as dom manipulations and ajax querys)
     document.getElementById('colorDiv).style.backgroundColor = 'green' in pure JS
-    in jquery: $('#colorDiv')
+    in jquery: $('#colorDiv').css('')
 */
 
