@@ -17,7 +17,7 @@ loops:
     }
     for (var key of object)
     {
-        // user key in here
+        // use key in here
     }
 
 
