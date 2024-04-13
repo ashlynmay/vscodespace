@@ -53,6 +53,7 @@ change color of element to purple:
         html: <button onclick="changeColorEvent(event);">Purple</button>
         script: function changeColorEvent(event) {
             var triggerObject = event.srcElement;
+            document.getElementById('colorDiv')
         }
 
     jQuery:
