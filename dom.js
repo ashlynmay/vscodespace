@@ -29,5 +29,6 @@ major dom properties:
     style: object containing the css/html styling of an element.
 
 major dom methods:
-    getElementById(id): 
+    getElementById(id): self explanitory
+    
 */
