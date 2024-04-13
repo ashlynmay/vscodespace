@@ -13,7 +13,7 @@ objects/structs: instead of function(object); do object.function();
 loops: 
     for (var key in object)
     {
-        // use object [key] in here
+        // use object[key] in here
     }
 
 
