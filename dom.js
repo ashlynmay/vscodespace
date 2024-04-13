@@ -50,6 +50,7 @@ change color of element to purple:
     event handler:
         html: <button onclick="changeColorEvent(event);">Purple</button>
         script:
-    
+    jQuery:
+        html: 
 */
 
