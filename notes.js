@@ -10,7 +10,8 @@ arrays: var nums = [1, 2, 3, 4, 5];
 objects/structs: instead of function(object); do object.function();
         var herbie = {year : 1963, model: 'Beetle'};
 
-loops:
+loops: 
+
 
 
 
