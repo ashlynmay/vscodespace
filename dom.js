@@ -40,8 +40,8 @@ jquery:
     $('#colorDiv').css('background-color', 'green'); in jquery
 
 
-change color of element:
+change color of element :
     in js:
-        html: <button onclick="tur"
+        html: <button onclick="turnPurple"
 */
 
