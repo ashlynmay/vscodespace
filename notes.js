@@ -49,7 +49,7 @@ printing:
 arrays:
         array.size(); 
         array.pop(); removes last element and returns it
-        array.push(x);
+        array.push(x); adds "x" to the end of 
         array.shift();
         map(); can be used to apply a function to all elements in an array, good time to use anonymous functions
 
