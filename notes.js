@@ -60,6 +60,5 @@ events:
     output: You clicked on Button 1
 
 
-<script>include js in html</script>
-<link> rel="script" href="script.js"</link>
+
 */
