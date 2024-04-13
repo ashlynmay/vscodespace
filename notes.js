@@ -50,7 +50,7 @@ arrays:
         array.size(); 
         array.pop(); removes last element and returns it
         array.push("x", "y"); adds element(s) (x, y) to the end of the array and returns the new length
-        array.shift();
+        array.shift(); removes first element and returns it
         map(); can be used to apply a function to all elements in an array, good time to use anonymous functions
 
 anonymous function:
