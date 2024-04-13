@@ -63,5 +63,7 @@ change color of element to purple:
                         $('#colorDiv').css('background-color', this.innerHTML.toLowerCase());
                     });
                 });
+
+jquery docs: https://api.jqu
 */
 
