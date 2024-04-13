@@ -5,7 +5,7 @@ var variable = data;
 conditionals: if, elseif, else, switch, ?: are included
 loops: while, do-while, for
 functions: function name() {}, some functions can be anonymous (no name)
-arrays: var
+arrays: var nums = [1, 2, 3, 4, 5]
 
 <script>include js in html</script>
 <link> rel="script" href="script.js"</link>
