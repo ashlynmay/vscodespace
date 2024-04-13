@@ -7,5 +7,9 @@ this allows you to manipulate the pages elements programmatically
 example html:
     <html>
         <head>
+        <title>Hello, world</title>
+        </head>
+        <body>
+            
     </html>
 */
