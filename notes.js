@@ -15,7 +15,7 @@ loops:
     {
         // use object[key] in here
     }
-
+    for (v)
 
 
 <script>include js in html</script>
