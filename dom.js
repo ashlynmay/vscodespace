@@ -52,5 +52,6 @@ change color of element to purple:
         script:
     jQuery:
         html: 
+        script:
 */
 
