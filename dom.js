@@ -24,5 +24,5 @@ major dom properties:
     nodeName: name of an HTML element, <title> would be title
     id: id attribute of an HTML element. <p id="greeting"> would be greeting
     parentNode: reference to node one level up: <title> would return <head>
-    childNodes: arra
+    childNodes: array of references to the nodes on level down: 
 */
