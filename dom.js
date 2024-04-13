@@ -42,5 +42,6 @@ jquery:
 
 change color of element:
     in js:
+        html: <button onclick="tur"
 */
 
