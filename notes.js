@@ -11,6 +11,9 @@ objects/structs: instead of function(object); do object.function();
         var herbie = {year : 1963, model: 'Beetle'};
 
 loops: 
+    
+
+
     for (var key in object)
     {
         // use object[key] in here
