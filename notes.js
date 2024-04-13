@@ -50,7 +50,7 @@ events:
     an event in HTML and JavaScript is a response to user interaction with the web page.w
     JavaScript has support for event handlers, which are callback functions that respond to HTML events.
 
-    event in html: <button 
+    event in html: <button onclick=""
 
 <script>include js in html</script>
 <link> rel="script" href="script.js"</link>
