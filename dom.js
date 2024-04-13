@@ -64,6 +64,7 @@ change color of element to purple:
                     });
                 });
 
-jquery docs: https://api.jqu
+jquery docs: https://api.jquery.com
+
 */
 
