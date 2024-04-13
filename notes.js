@@ -11,8 +11,6 @@ variables:
 conditionals: 
     if, elseif, else, switch, ?: are included
 
-
-
 functions: 
     function name() {}, some functions can be anonymous (no name)
 
