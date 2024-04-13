@@ -8,6 +8,8 @@ arrays: var nums = [1, 2, 3, 4, 5];
         var mixed = [1, true, 3.333, 'five'];
 
 objects/structs:
+        struct car herbie;
+        
 
 <script>include js in html</script>
 <link> rel="script" href="script.js"</link>
