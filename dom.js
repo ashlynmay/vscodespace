@@ -41,9 +41,9 @@ jquery:
 
 
 change color of element to purple:
-    in js:
+    in js w:
         html: <button onclick="turnPurple();">Purple</button>
         script: 
-    js but with 
+    js but with 1 function 
 */
 
