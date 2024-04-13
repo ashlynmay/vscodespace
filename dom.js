@@ -17,6 +17,6 @@ example html:
     </html>
 
 see DOM:
-    open developer console and run console.dir(document)
+    open developer console and run console.dir(document), and check children 
 
 */
