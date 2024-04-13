@@ -11,7 +11,7 @@ objects/structs: instead of function(object); do object.function();
         var herbie = {year : 1963, model: 'Beetle'};
 
 loops: 
-    var wkArray = ['Monday', 'Tuesday', ... 'Sundary']
+    var wkArray = ['Monday', 'Tuesday', ... 'Sundary'];
 
 
     for (var key in object)
