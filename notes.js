@@ -16,10 +16,10 @@ loops:
 
     for (var day in wkArray)
     {
-        // use object[key] in here
+        console.log(day);
     }
 
-    
+
     for (var key of object)
     {
         // use key in here
