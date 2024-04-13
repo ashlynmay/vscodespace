@@ -25,5 +25,6 @@ major dom properties:
     id: id attribute of an HTML element. <p id="greeting"> would be greeting
     parentNode: reference to node one level up: <title> would return <head>
     childNodes: array of references to the nodes on level down: <body> would return [h2, p, a]
-    attributes: array of attributes of an html elements:
+    attributes: array of attributes of an html elements
+    style: object containing th
 */
