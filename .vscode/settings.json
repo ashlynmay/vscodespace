@@ -3,5 +3,6 @@
     "cmake.configureOnOpen": false,
     "gitdoc.autoCommitDelay": 1000,
     "gitdoc.autoPullDelay": 1000,
-    "gitdoc.autoPull": "onCommit"
+    "gitdoc.autoPull": "onCommit",
+    "gitdoc.autoPushDelay": 1000
 }
