@@ -9,3 +9,4 @@ functions: function name() {}, some functions can be anonymous (no name)
 
 <script>include js in html</script>
 <link> rel="script" href="script.js"</link>
+*/
