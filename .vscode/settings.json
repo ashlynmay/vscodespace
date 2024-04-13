@@ -2,5 +2,5 @@
     "gitdoc.enabled": true,
     "cmake.configureOnOpen": false,
     "gitdoc.autoCommitDelay": 1000,
-    "gitdoc.autoPullDelay": 3000
+    "gitdoc.autoPullDelay": 1000
 }
