@@ -11,19 +11,40 @@ objects/structs: instead of function(object); do object.function();
         var herbie = {year : 1963, model: 'Beetle'};
 
 loops: 
-    var wkArray = ['Monday', 'Tuesday', ... 'Sundary'];
+    var wkArray = ['Monday', 'Tuesday', ... 'Sunday'];
 
+        for (var day in wkArray)
+        {
+            console.log(day);  (printf)
+        }
+    output: 
+        0,1,2,3,4,5,6
 
-    for (var day in wkArray)
-    {
-        console.log(day);
-    }
+        for (var day of object)
+        {
+            console.log(day);
+        }
+    output: Monday, Tuesday, ... Sunday
 
+printing:
+        console.lot(wkArrary[day] + ' is day number ' + (parseInt(day) + 1) + ' of the week! ');
+    output: Monday is day number 1 of the week!
 
-    for (var key of object)
-    {
-        // use key in here
-    }
+if adding a variable and a number, use parseInt(var)
+
+arrays:
+        array.size();
+        array.pop();
+        array.push(x);
+        array.shift();
+        map(); can be used to apply a function to all elements in an array, good time to use anonymous functions
+
+anonymous function:
+        var nums = [1,2,3,4,5];
+    
+    nums = nums.map(function(num) {
+        return num * 2;
+    });
 
 
 <script>include js in html</script>
