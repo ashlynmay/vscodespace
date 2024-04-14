@@ -1,10 +1,4 @@
 {
     "gitdoc.enabled": true,
-    "cmake.configureOnOpen": false,
-    "gitdoc.autoCommitDelay": 1000,
-    "gitdoc.autoPullDelay": 1000,
-    "gitdoc.autoPull": "onCommit",
-    "gitdoc.autoPushDelay": 1000,
-    "gitdoc.timeZone": "CST",
-    "gitdoc.commitOnClose": true
+    "cmake.configureOnOpen": false
 }
