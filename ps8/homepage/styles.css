@@ -20,5 +20,9 @@
 }
 
 #homecali {
-    border-radius: 20px
+    border-radius: 20px;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    margin: auto;
 }
