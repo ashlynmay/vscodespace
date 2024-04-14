@@ -1,2 +1,2 @@
-name = input("What is this image? ")
+name = input("What is your name? ")
 print(f"a placeholder image")
