@@ -3,5 +3,5 @@
 
 int main()
 {
-    printf("example image\n");
+    printf("hello, world\n");
 }
