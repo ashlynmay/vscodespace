@@ -17,5 +17,5 @@ padding-left
 margin-right
 text-align
 
-I chose to user JavaScript to warn the user when they click to see my very unimpressive resume, 
+I chose to use JavaScript to warn the user when they click to see my very unimpressive resume, 
 as it is very unimpressive and I used Bootstrap mainly for the cards and navigation bar.
