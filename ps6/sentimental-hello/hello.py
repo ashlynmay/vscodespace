@@ -1,2 +1,2 @@
 name = input("What is this image? ")
-print(f"hello, {name}")
+print(f"a placeholder image")
