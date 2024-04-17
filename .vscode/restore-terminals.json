@@ -7,7 +7,7 @@
         "splitTerminals": [
           {
             "name": "Terminal",
-            "commands": ["alias cd='HOME=~/vscodespace cd'", "alias flask='python -m flask'", "clear", "export NVM_DIR='$HOME/.nvm'", "[ -s '$NVM_DIR/nvm.sh' ] && '$NVM_DIR/nvm.sh'"]
+            "commands": ["alias cd='HOME=~/vscodespace cd'", "alias flask='python -m flask'", "clear", "export NVM_DIR='$HOME/.nvm'", "[ -s '$NVM_DIR/nvm.sh' ] && \. '$NVM_DIR/nvm.sh'"]
           }
         ]
       }
