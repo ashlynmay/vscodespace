@@ -58,6 +58,6 @@ fix 404 in app.py:
         return render_template("index.html")
         
         
-    @app.route
+    @app.route("/greet")
     
 """
