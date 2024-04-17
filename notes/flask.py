@@ -48,7 +48,7 @@ change "name = request.args["name"] to:
     name = request.args.get("name", "placeholder")        
 
 use html form to change link values:
-    <form action="/" method ="get">
+    <form action="/greet" method ="get">
         <input autocomplete=off autofocus name="name" placeholder="Name" type="text">
         <button type="submit">Greet<button>
 
