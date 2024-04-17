@@ -49,7 +49,7 @@ change "name = request.args["name"] to:
 
 use html form to change link values:
     <form method ="get">
-        <input
+        <input autocomplete=off
 
     
 """
