@@ -66,6 +66,6 @@ fix 404 in app.py:
         hello, {{ name }}
 
 bro but copying code is dumb ?
-    c
+    create file called layout.hyml 
     
 """
