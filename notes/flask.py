@@ -103,7 +103,7 @@ if u want to make a single route support multiple meethods:
             return render_template("index.html")
     
     in html:
-        <form method="post"> ~ (/greet doesnt exist anymore, so u can remove the action to return to "/")
+        <form method="post"> ~ (/greet doesnt exist anymore, so u can remove the action to return to where u came)
             code
         </form>
     
