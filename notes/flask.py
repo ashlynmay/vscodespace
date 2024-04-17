@@ -53,7 +53,7 @@ use html form to change link values:
         <button type="submit">Greet<button>
 
 fix 404 in app.py:
-    
+    @app.route("/")
     def index():
         return render_template("index.html")
     @app.route
