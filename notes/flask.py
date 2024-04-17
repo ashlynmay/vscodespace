@@ -67,6 +67,6 @@ fix 404 in app.py:
 
 bro but copying code is dumb ?
     create file called layout.hyml in templates/
-    copy 
+    copy code from 
     
 """
