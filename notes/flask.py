@@ -104,6 +104,7 @@ if u want to make a single route support multiple meethods:
     
     in html:
         <form method="post">
+            <content
     
     
 """
