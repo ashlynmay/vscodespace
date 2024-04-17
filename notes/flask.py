@@ -62,6 +62,7 @@ fix 404 in app.py:
     def greet():
         name = request.args.get("name", "world")
         return render_template("greet.html", name=name)
-    copy current index.html to greet.html as that is the code u want.
+    copy current index.html to greet.html as that is the code u want, but replace the form with:
+        
     
 """
