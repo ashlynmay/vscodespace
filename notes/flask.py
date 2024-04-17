@@ -69,6 +69,7 @@ bro but copying code is dumb ?
     create file called layout.hyml in templates/
     copy code from either greet or index.
     remove the content that is not the same on each page
-    
+    input:
+        {}
     
 """
