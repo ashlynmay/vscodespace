@@ -65,6 +65,7 @@ fix 404 in app.py:
     copy current index.html to greet.html as that is the code u want, but replace the form with:
         hello, {{ name }}
 
-
+bro but copying code is dumb ?
+    c
     
 """
