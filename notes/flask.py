@@ -48,7 +48,8 @@ change "name = request.args["name"] to:
     name = request.args.get("name", "placeholder")        
 
 use html form to change link values:
-
+    <form method ="get">
+        <input
 
     
 """
