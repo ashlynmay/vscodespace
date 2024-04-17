@@ -100,7 +100,6 @@ if u want to make a single route support multiple meethods:
         if request.method == "POST":
             name = request.form.get("name", "world")
             return render_template("greet.html", name=name)
-    
         return render_template("index.html")
     
     
