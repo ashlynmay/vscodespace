@@ -52,5 +52,7 @@ use html form to change link values:
         <input autocomplete=off autofocus name="name" placeholder="Name" type="text">
         <button type="submit">Greet<button>
 
+fix 404 in app.py:
+    def index():
     
 """
