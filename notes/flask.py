@@ -67,9 +67,40 @@ fix 404 in app.py:
 
 bro but copying code is dumb ?
     create file called layout.hyml in templates/
-    copy code from either greet or index.
-    remove the content that is not the same on each page
-    input:
-        {% block body %} ~ body can be named anything, but its convention to name it 
+        copy code from either greet or index.
+        remove the content that is not the same on each page
+        input:
+            {% block body %}{% endblock %} ~ body can be named anything, but its convention to name it what its inside (its jinja syntax)
+    inside of index and greet, remove any content that is inside of layout.html and insert this code:
+        {% extends "layout.html" %}
+        
+        {% block body %}
+        
+            hello, {{ name }} ~ ur code here
+        
+        {% endblock %}
+    
+how do i send sensitive info like passwords?
+    in app.py:
+        @app.route("/greet", methods=["POST"]) ~ you can also include both with methods=["GET", "POST"].
+        ~  other types of http requests: delete and put. they are less supported
+
+    in html:
+        <form action ="/greet" method="post"> ~ (instead of method="get")
+        
+    request.args will fail though, because there is no "name" key in it, as its not in the url. to fix this:
+
+    in app.py:
+        request.form.get is to be used instead of request.args.get, with the same syntax.
+
+if u want to make a single route support multiple meethods:
+    in app.py:
+    @app.route("/", methods=["GET", "POST"])
+    def index():
+        if request.method == "POST":
+            name = request.form.get("name", "world")
+            return render_template("greet.html", name=name)
+        return render_template("index.html")
+    
     
 """
