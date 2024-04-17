@@ -70,6 +70,6 @@ bro but copying code is dumb ?
     copy code from either greet or index.
     remove the content that is not the same on each page
     input:
-        {% block body %} 
+        {% block body %} ~ body can be named anything, but its convention to name it 
     
 """
