@@ -105,7 +105,7 @@ if u want to make a single route support multiple meethods:
     in html:
         <form method="post"> ~ (/greet doesnt exist anymore, so u can remove the action to return to where u came)
             code
-        </form
+        </form>
     
     
 """
