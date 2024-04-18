@@ -108,6 +108,7 @@ if u want to make a single route support multiple meethods:
         </form>
     
 clicking greet without any text will not use the "world" placeholder, as it is still getting a string, albeit empty. to fix:
-    
+    in app.py:
+        
 
 """
