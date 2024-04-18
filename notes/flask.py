@@ -111,6 +111,7 @@ clicking greet without any text will not use the "world" placeholder, as it is s
     in app.py:
         name = request.form.get("name") ~ remove "world" placeholder
         return render_template("greet.html", name=name)
-    
+
+    in html:
 
 """
