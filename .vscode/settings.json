@@ -2,5 +2,6 @@
     "gitdoc.enabled": true,
     "cmake.configureOnOpen": false,
     "liveServer.settings.port": 5501,
-    "synthwave84.disableGlow": false
+    "synthwave84.disableGlow": false,
+    "github.gitAuthentication": false
 }
