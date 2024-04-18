@@ -7,7 +7,7 @@
         "splitTerminals": [
           {
             "name": "Terminal",
-            "commands": ["export PATH=$PATH:/home/ipsum/.local/bin", "eval $(zoxide init bash)"", "alias cd='HOME=~/vscodespace cd'", "alias z='HOME=~/vscodespace z'", "alias flask='python -m flask'", "clear"]
+            "commands": ["export PATH=$PATH:/home/ipsum/.local/bin", "eval $(zoxide init bash)", "alias cd='HOME=~/vscodespace cd'", "alias z='HOME=~/vscodespace z'", "alias flask='python -m flask'", "clear"]
           }
         ]
       }
