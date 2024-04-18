@@ -117,7 +117,7 @@ clicking greet without any text will not use the "world" placeholder, as it is s
 
 html dropdown:
     <select name="name">
-        <option disabled value="world">world</option>
+        <option disabled selected>world</option>
         <option value="Ashlyn">Ashlyn</option>
         <option value="Ashley">Ashley</option>
         <option value="Ashlynn">Ashlynn</option>
