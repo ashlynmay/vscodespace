@@ -119,6 +119,6 @@ html dropdown:
     <select name="name">
         <option value="Ashlyn">Ashlyn</option>
         <option value="Ashley">Ashley</option>
-        <option value="Ashlyn">Ashlyn</option>
+        <option value="Ashlynn">Ashlynn</option>
     </select>
 """
