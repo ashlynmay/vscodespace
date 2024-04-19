@@ -160,5 +160,5 @@ in app.py:
     
 making an error page:
 in error.html:
-    
+    {% extends "layout.html" %}
 """
