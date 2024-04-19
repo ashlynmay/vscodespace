@@ -164,6 +164,6 @@ in error.html:
     {% block body %}
         <h1>Error</h1>
         <p>{{ message }}</p>
-        <img
+        <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="oh no!">
     {% endblock %}
 """
