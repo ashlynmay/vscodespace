@@ -254,5 +254,8 @@ what have we been using?
         view is everything human sees.
         controller is app.py
         model is database
+        
+cookies ?
+    
 
 """
