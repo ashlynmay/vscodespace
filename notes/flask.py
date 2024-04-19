@@ -282,5 +282,11 @@ cookies ?
         {% endblock %}
 
     in login.html:
-        
+        {% extends "layout.html" %}
+        {% block body %}
+            <form action="/login" method="post">
+                <input type="text" name="name">
+                <button type="submit">Login</button>
+            </form>
+        {% endblock %}
 """
