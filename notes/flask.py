@@ -161,4 +161,8 @@ in app.py:
 making an error page:
 in error.html:
     {% extends "layout.html" %}
+    {% block body %}
+        <h1>uh oh</h1>
+        <p>something went wrong</p>
+    {% endblock %}
 """
