@@ -28,7 +28,7 @@ def index():
 
         # TODO: Add the user's entry into the database
         
-        db.execute("")
+        db.execute("
         
         return redirect("/")
 
