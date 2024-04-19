@@ -205,7 +205,7 @@ how do i ensure that the information will survive after reboot or server restart
             delete = db.execute("DELETE FROM registrants WHERE id = ?", id)
         return redirect("/registrants")
     
-    @app.route("/registrants")    
+    @app.route("/register")    
         
             
 
