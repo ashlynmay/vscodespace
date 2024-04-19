@@ -234,16 +234,16 @@ how do i ensure that the information will survive after reboot or server restart
                 </thead>
                 <tbody>
                     {% for registrant in registrants %}
-                    <tr>
-                        <td>{{ registrant["name"] }}</td>
-                        <td>{{ registrant["value"] }}</td>
-                        <td>
-                            <form action="/deregister" method="post">
-                                <input type="hidden" name="id" value="{{ registrant["id"] }}">
-                                <input type="submit" value="Deregister">
-                            </form>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>{{ registrant["name"] }}</td>
+                            <td>{{ registrant["value"] }}</td>
+                            <td>
+                                <form action="/deregister" method="post">
+                                    <input type="hidden" name="id" value="{{ registrant["id"] }}">
+                                    <input type="submit" value="Deregister">
+                                </form>
+                            </td>
+                        </tr>
                     {% endfor %}
     
         
