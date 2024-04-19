@@ -241,7 +241,8 @@ how do i ensure that the information will survive after reboot or server restart
                                 <input type="hidden" name="id" value="{{ registrant["id"] }}">
                                 <input type="submit" value="Deregister">
                             </form>
-                        
+                        </td>
+                    
                     {% endfor %}
     
         
