@@ -63,7 +63,7 @@
         name = request.args.get("name", "world")
         return render_template("greet.html", name=name)
 #    copy current index.html to greet.html as that is the code u want, but replace the form with:
-        hello, {{ name }}
+#        hello, {{ name }}
 
 # bro but copying code is dumb ?
 #    create file called layout.hyml in templates/
@@ -75,23 +75,23 @@
 #    {% extends "layout.html" %}       
 #    {% block body %}
 #    hello, {{ name }} # ur code here
-    {% endblock %}
+#    {% endblock %}
     
-how do i send sensitive info like passwords?
-    in app.py:
-        @app.route("/greet", methods=["POST"]) ~ you can also include both with methods=["GET", "POST"].
-        ~  other types of http requests: delete and put. they are less supported
+# how do i send sensitive info like passwords?
+#     in app.py:
+        @app.route("/greet", methods=["POST"]) # you can also include both with methods=["GET", "POST"].
+        #  other types of http requests: delete and put. they are less supported
 
-    in html:
-        <form action ="/greet" method="post"> ~ (instead of method="get")
+#    in html:
+#        <form action ="/greet" method="post"> ~ (instead of method="get")
         
-    request.args will fail though, because there is no "name" key in it, as its not in the url. to fix this:
+#    request.args will fail though, because there is no "name" key in it, as its not in the url. to fix this:
 
-    in app.py:
-        request.form.get is to be used instead of request.args.get, with the same syntax.
+#    in app.py:
+#        request.form.get is to be used instead of request.args.get, with the same syntax.
 
-if u want to make a single route support multiple meethods:
-    in app.py:
+# if u want to make a single route support multiple meethods:
+#    in app.py:
         @app.route("/", methods=["GET", "POST"])
         def index():
             if request.method == "POST":
@@ -99,72 +99,74 @@ if u want to make a single route support multiple meethods:
                 return render_template("greet.html", name=name)
             return render_template("index.html")
     
-    in html:
-        <form method="post"> ~ (/greet doesnt exist anymore, so u can remove the action to return to where u came)
-            code
-        </form>
+#    in html:
+#        <form method="post"> ~ (/greet doesnt exist anymore, so u can remove the action to return to where u came)
+#            code
+#        </form>
     
-clicking greet without any text will not use the "world" placeholder, as it is still getting a string, albeit empty. to fix:
-    in app.py:
-        name = request.form.get("name") ~ remove "world" placeholder
+# clicking greet without any text will not use the "world" placeholder, as it is still getting a string, albeit empty. to fix:
+#    in app.py:
+        name = request.form.get("name") # remove "world" placeholder
         return render_template("greet.html", name=name)
 
-    in greet.html:
-        hello, {% if name %}{{ name }}{% else %}world{% endif %} ~ if name, print name (variable). else print "world".
+#    in greet.html:
+#        hello, {% if name %}{{ name }}{% else %}world{% endif %} ~ if name, print name (variable). else print "world".
 
-html dropdown:
-<form action="/register" method="post">
-    <select name="name">
-        <option disabled selected value="">Name</option>
-        <option value="Ashlyn">Ashlyn</option>
-        <option value="Ashley">Ashley</option>
-        <option value="Ashlynn">Ashlynn</option>
-    </select>
-</form>
+# html dropdown:
+# <form action="/register" method="post">
+#    <select name="name">
+#        <option disabled selected value="">Name</option>
+#        <option value="Ashlyn">Ashlyn</option>
+#        <option value="Ashley">Ashley</option>
+#        <option value="Ashlynn">Ashlynn</option>
+#    </select>
+# </form>
     
-verify that name is being submitted in app.py:
+# verify that name is being submitted in app.py:
     @app.route("register", methods=["POST"])
     def register():
         if not request.form.get("name"):
-            return render_template("failure.html") ~ assuming that failure.html is a file that exists
-        return render_template("success.html")  ~ assuming that success.html is a file that exists
+            return render_template("failure.html") # assuming that failure.html is a file that exists
+        return render_template("success.html")  # assuming that success.html is a file that exists
         
-how do i make sure its one of the names i have in html?
-    in app.py:
+# how do i make sure its one of the names i have in html?
+#    in app.py:
     NAMES = ["Ashlyn", "Ashley", "Ashlynn"]
-    ...
-    return render_template("index.html", names=NAMES)
+    def function():
+#    ...
+        return render_template("index.html", names=NAMES)
 
-    in index.html:
-        <select name="name">
-            {% for name in names %}
-                <option value="{{ name }}">{{ name }}</option>
-            {% endfor %}
-    in app.py: (/register):
+#    in index.html:
+#        <select name="name">
+#            {% for name in names %}
+#                <option value="{{ name }}">{{ name }}</option>
+#            {% endfor %}
+#    in app.py: (/register):
     def register():
         if not request.form.get("name") not in NAMES:
             return render_template("failure.html")
         return render_template("success.html")
     
-what if im using checkboxes and want to check all values selected?:
-in app.py:
-    if not request.form.get("name"):
-        return render_template("failure.html")
-    for name in request.form.getlist("name"):
-        if name not in NAMES:
+# what if im using checkboxes and want to check all values selected?:
+# in app.py:
+    def register():
+        if not request.form.get("name"):
             return render_template("failure.html")
-    return render_template("success.html")
+        for name in request.form.getlist("name"):
+            if name not in NAMES:
+                return render_template("failure.html")
+        return render_template("success.html")
     
-making an error page:
-    in error.html:
-        {% extends "layout.html" %}
-        {% block body %}
-            <h1>Error</h1>
-            <p>{{ message }}</p>
-            <img alt="Grumpy Cat" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTZiMzM3cTUxaXR2c29ncHM5Mnk2aHFuOG1xOXUxOTJpaGMxeDR1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LbGtuww7ZFhgQ/giphy.gif">
-        {% endblock %}
+# making an error page:
+#    in error.html:
+#        {% extends "layout.html" %}
+#        {% block body %}
+#            <h1>Error</h1>
+#            <p>{{ message }}</p>
+#            <img alt="Grumpy Cat" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTZiMzM3cTUxaXR2c29ncHM5Mnk2aHFuOG1xOXUxOTJpaGMxeDR1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LbGtuww7ZFhgQ/giphy.gif">
+#        {% endblock %}
         
-    in app.py:
+#    in app.py:
         if not request.form.get("name"):
             return render_template("error.html", message="Please select at least one name")
         for name in request.form.getlist("name"):
@@ -172,29 +174,27 @@ making an error page:
                 return render_template("error.html", message="Please select a valid name")
         return render_template("success.html")
     
-how do i actually register the a value to a name in app.py?
-    in app.py:
+# how do i actually register the a value to a name in app.py?
+#    in app.py:
     from flask import Flask, redirect, render_template, request
-        REGISTRANTS = {}
-        ...
-        @app.route("/register", methods=["POST"])
-        def register():
-            ... code to definine register
+    REGISTRANTS = {}
+#    ...
+    @app.route("/register", methods=["POST"])
+    def register():
+#        ... code to definine register
         REGISTRANTS[name] = value
         return redirect("https://google.com")
         
-how do i ensure that the information will survive after reboot or server restart?:
-    in app.py:
-        from cs50 import SQL
-        from flask import Flask, redirect, render_template, request
-        app = Flask(__name__)
-        db = SQL("sqlite:///database.db")
-        
-        NAMES = ["Ashlyn", "Ashley", "Ashlynn"]
-        
-        @app.route("/")
-        def index():
-            return render_template("index.html", names=NAMES)
+# how do i ensure that the information will survive after reboot or server restart?:
+#     in app.py:
+    from cs50 import SQL
+    from flask import Flask, redirect, render_template, request
+    app = Flask(__name__)
+    db = SQL("sqlite:///database.db")    
+    NAMES = ["Ashlyn", "Ashley", "Ashlynn"]    
+    @app.route("/")
+    def index():
+        return render_template("index.html", names=NAMES)
         
         @app.route("/deregister", methods=["POST"])
         def deregister():
@@ -217,43 +217,43 @@ how do i ensure that the information will survive after reboot or server restart
             registrants = db.execute("SELECT * FROM registrants")
             return render_template("registrants.html", registrants=registrants)
     
-    in registrants.html:
-        {% extends "layout.html" %}
-        {% block body %}
-            <h1>Registrants</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Value</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for registrant in registrants %}
-                        <tr>
-                            <td>{{ registrant["name"] }}</td>
-                            <td>{{ registrant["value"] }}</td>
-                            <td>
-                                <form action="/deregister" method="post">
-                                    <input type="hidden" name="id" value="{{ registrant["id"] }}">
-                                    <button type="submit" value="Deregister">Deregister</button>
-                                </form>
-                            </td>
-                        </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        {% endblock %}
+#    in registrants.html:
+#        {% extends "layout.html" %}
+#        {% block body %}
+#            <h1>Registrants</h1>
+#            <table>
+#                <thead>
+#                    <tr>
+#                        <th>Name</th>
+#                        <th>Value</th>
+#                        <th></th>
+#                    </tr>
+#                </thead>
+#                <tbody>
+#                    {% for registrant in registrants %}
+#                        <tr>
+#                            <td>{{ registrant["name"] }}</td>
+#                            <td>{{ registrant["value"] }}</td>
+#                            <td>
+#                                <form action="/deregister" method="post">
+#                                    <input type="hidden" name="id" value="{{ registrant["id"] }}">
+#                                    <button type="submit" value="Deregister">Deregister</button>
+#                                </form>
+#                            </td>
+#                       </tr>
+#                    {% endfor %}
+#                </tbody>
+#            </table>
+#        {% endblock %}
         
-what have we been using?
-    MVC = model, view, controller. 
-        view is everything human sees.
-        controller is app.py
-        model is database
+# what have we been using?
+#    MVC = model, view, controller. 
+#         view is everything human sees.
+#        controller is app.py
+#        model is database
         
-cookies ?
-    in app.py:
+# cookies ?
+#    in app.py:
         from flask import Flask, redirect, render_template, request, session
         from flask_session import Session
         app = Flask(__name__)
@@ -272,22 +272,22 @@ cookies ?
                 return redirect("/")
             return render_template("login.html")
     
-    in index.html:
-        {% extends "layout.html" %}
-        {% block body %}
-            {& if name %}
-                You are logged in as {{ name }}.
-            {& else %}
-                You are not logged in.
-            {& endif &}
-        {% endblock %}
+#    in index.html:
+#        {% extends "layout.html" %}
+#        {% block body %}
+#            {& if name %}
+#                You are logged in as {{ name }}.
+#            {& else %}
+#                You are not logged in.
+#            {& endif &}
+#        {% endblock %}
 
-    in login.html:
-        {% extends "layout.html" %}
-        {% block body %}
-            <form action="/login" method="post">
-                <input autocomplete=off autofocus placeholder="Name" type="text" name="name">
-                <button type="submit">Login</button>
-            </form>
-        {% endblock %}
-"""
+#    in login.html:
+#        {% extends "layout.html" %}
+#        {% block body %}
+#            <form action="/login" method="post">
+#                <input autocomplete=off autofocus placeholder="Name" type="text" name="name">
+#                <button type="submit">Login</button>
+#            </form>
+#       {% endblock %}
+#
