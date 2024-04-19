@@ -153,5 +153,5 @@ what if im using checkboxes and what all values selected?:
 in app.py:
     if not request.form.get("name"):
         return render_template("failure.html")
-    for name in request.form.getall("sport"):
+    for name in request.form.getall("name"):
 """
