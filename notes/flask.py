@@ -224,6 +224,7 @@ how do i ensure that the information will survive after reboot or server restart
         {% extends "layout.html" %}
         {% block body %}
             <h1>Registrants</h1>
+            <table>
             
         {% for registrant in registrants %}
             <li>{{ registrant["name"] }}: {{ registrant["value"] }}</li>
