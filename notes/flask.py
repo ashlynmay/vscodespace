@@ -219,7 +219,6 @@ how do i ensure that the information will survive after reboot or server restart
         registrants = db.execute("SELECT * FROM registrants")
         return render_template("registrants.html", registrants=registrants)
     
-    in
         
             
 
