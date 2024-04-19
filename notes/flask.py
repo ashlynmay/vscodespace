@@ -260,5 +260,6 @@ cookies ?
     from flask import Flask, redirect, render_template, request, session
     app = Flask(__name__)
     app.condig["SESSION_PERMANENT"] = False
+    
 
 """
