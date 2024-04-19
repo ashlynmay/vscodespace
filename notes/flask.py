@@ -221,6 +221,7 @@ how do i ensure that the information will survive after reboot or server restart
             return render_template("registrants.html", registrants=registrants)
     
     in registrants.html:
+        {% extends "layout.html" %}
         {% for registrant in registrants %}
             <li>{{ registrant["name"] }}: {{ registrant["value"] }}</li>
         {% endfor %}
