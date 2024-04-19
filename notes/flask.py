@@ -132,6 +132,7 @@ verify that name is being submitted in app.py:
             return render_template("failure.html") ~ assuming that failure.html is a file that exists
         return render_template("success.html")  ~ assuming that success.html is a file that exists
         
+how do i make sure its one of the names i have in html?
 
 
 """
