@@ -250,6 +250,6 @@ how do i ensure that the information will survive after reboot or server restart
         {% endblock %}
         
 what have we been using?
-    MVC 
+    MVC = model, view, controller.
 
 """
