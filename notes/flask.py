@@ -212,6 +212,7 @@ how do i ensure that the information will survive after reboot or server restart
         if not value or not name in NAMES:
             return render_template("failure.html")
             
+    db
         
             
 
