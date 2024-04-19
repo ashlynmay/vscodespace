@@ -212,7 +212,8 @@ how do i ensure that the information will survive after reboot or server restart
         if not value or not name in NAMES:
             return render_template("failure.html")
             
-    db
+    db.execute("INSERT INTO registrants (name, value) VALUES (?, ?)", name, value)
+    
         
             
 
