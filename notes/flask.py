@@ -185,6 +185,8 @@ how do i actually register the a value to a name in app.py?
             ... code to definine register
         REGISTRANTS[name] = value
         return redirect("https://google.com")
+        
+
             
 
 """
