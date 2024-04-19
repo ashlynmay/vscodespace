@@ -159,5 +159,6 @@ in app.py:
     return render_template("success.html")
     
 making an error page:
-
+in error.html:
+    
 """
