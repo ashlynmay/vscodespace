@@ -247,7 +247,7 @@ how do i ensure that the information will survive after reboot or server restart
                     {% endfor %}
                 </tbody>
             </table>
-        
+        {% endblock %}
         
             
 
