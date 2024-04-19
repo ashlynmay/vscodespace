@@ -187,7 +187,7 @@ how do i actually register the a value to a name in app.py?
         return redirect("https://google.com")
         
 how do i ensure that the information will survive after reboot or server restart?:
-    
+    from cs50 im
             
 
 """
