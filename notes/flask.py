@@ -273,7 +273,7 @@
             return render_template("login.html")
         
         @app.route("/logout")
-        def logout():
+        def logout(): 
             session.clear()
             return redirect("/")
     
