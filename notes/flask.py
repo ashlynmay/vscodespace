@@ -168,6 +168,11 @@ in error.html:
     {% endblock %}
     
 in app.py:
-
+    if not request.form.get("name"):
+        return render_template("failure.html")
+    for name in request.form.getlist("name"):
+        if name not in NAMES:
+            return render_template("failure.html")
+    return render_template("success.html")
     
 """
