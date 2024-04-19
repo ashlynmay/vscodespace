@@ -155,5 +155,6 @@ in app.py:
         return render_template("failure.html")
     for name in request.form.getall("name"):
         if name not in NAMES:
-        
+            return render_template("failure.html")
+            
 """
