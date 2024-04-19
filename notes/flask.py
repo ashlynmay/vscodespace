@@ -194,6 +194,8 @@ how do i ensure that the information will survive after reboot or server restart
     
     NAMES = ["Ashlyn", "Ashley", "Ashlynn"]
     
+    @app.route("/")
+    
     @app.route("/register", methods=["POST"])
             
 
