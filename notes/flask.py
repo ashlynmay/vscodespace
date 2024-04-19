@@ -265,7 +265,7 @@ cookies ?
         
         @app.route("/")
         def index():
-            return render_template("index.html")
+            return render_template("index.html" name=session.get("name"))
             
         @app.route("/login", methods=["POST"])
         def login():
