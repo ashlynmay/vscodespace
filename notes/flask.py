@@ -252,6 +252,7 @@ how do i ensure that the information will survive after reboot or server restart
 what have we been using?
     MVC = model, view, controller. 
         view is everything human sees.
-        
+        controller is app.py
+        model is database
 
 """
