@@ -164,6 +164,6 @@ in error.html:
     {% block body %}
         <h1>Error</h1>
         <p>{{ message }}</p>
-        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTZiMzM3cTUxaXR2c29ncHM5Mnk2aHFuOG1xOXUxOTJpaGMxeDR1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LbGtuww7ZFhgQ/giphy.gif" alt="oh no!">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTZiMzM3cTUxaXR2c29ncHM5Mnk2aHFuOG1xOXUxOTJpaGMxeDR1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LbGtuww7ZFhgQ/giphy.gif" alt="grumpy cat">
     {% endblock %}
 """
