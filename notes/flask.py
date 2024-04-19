@@ -151,5 +151,6 @@ how do i make sure its one of the names i have in html?
     
 what if im using checkboxes and what all values selected?:
 in app.py:
-    if not request.form.get("name") not in NAMES:
+    if not request.form.get("name"):
+    
 """
