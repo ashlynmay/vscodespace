@@ -208,6 +208,7 @@ how do i ensure that the information will survive after reboot or server restart
     @app.route("/register", methods=["POST"])
     def register():
         name = request.form.get("name") 
+        value = request.form.get("value")
            
         
             
