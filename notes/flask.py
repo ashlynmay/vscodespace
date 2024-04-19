@@ -201,6 +201,7 @@ how do i ensure that the information will survive after reboot or server restart
     @app.route("/deregister", methods=["POST"])
     def deregister():
         id = request.form.get("id")
+        if id:
         
         
             
