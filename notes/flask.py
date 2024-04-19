@@ -271,7 +271,8 @@ cookies ?
         {% extends "layout.html" %}
         {% block body %}
             {& if name %}
-            
+                You are logged in as {{ name }}.
+                
             
         {% endblock %}
 
