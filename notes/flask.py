@@ -195,6 +195,8 @@ how do i ensure that the information will survive after reboot or server restart
     NAMES = ["Ashlyn", "Ashley", "Ashlynn"]
     
     @app.route("/")
+    def index():
+        return render_template("index.html", names=NAMES)
     
     @app.route("/register", methods=["POST"])
             
