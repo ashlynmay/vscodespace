@@ -272,7 +272,9 @@ cookies ?
         {% block body %}
             {& if name %}
                 You are logged in as {{ name }}.
-                
+            
+            {& else %}
+            
             
         {% endblock %}
 
