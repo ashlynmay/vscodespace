@@ -187,7 +187,7 @@ how do i actually register the a value to a name in app.py?
         return redirect("https://google.com")
         
 how do i ensure that the information will survive after reboot or server restart?:
-in app.py
+in app.py:
     from cs50 import SQL
     from flask import Flask, redirect, render_template, request
     app = Flask(__name__)
