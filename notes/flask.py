@@ -162,7 +162,7 @@ making an error page:
 in error.html:
     {% extends "layout.html" %}
     {% block body %}
-        <p></p>
+        <p>{{ error }}</p>
         <p>something went wrong</p>
     {% endblock %}
 """
