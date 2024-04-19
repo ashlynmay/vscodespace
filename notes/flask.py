@@ -139,5 +139,6 @@ how do i make sure its one of the names i have in html?
     return render_template("index.html", names=NAMES)
 
     in index.html:
+        <select name="name">
         
 """
