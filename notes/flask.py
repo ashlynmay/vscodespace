@@ -237,6 +237,7 @@ how do i ensure that the information will survive after reboot or server restart
                         <td>{{ registrant["name"] }}</td>
                         <td>{{ registrant["value"] }}</td>
                         <td>
+                            
                     {% endfor %}
     
         
