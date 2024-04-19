@@ -269,7 +269,7 @@ cookies ?
             
         @app.route("/login", methods=["POST"])
         def login():
-            return render
+            return render_template("login.html")
     
     in index.html:
         {% extends "layout.html" %}
