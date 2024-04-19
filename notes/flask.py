@@ -279,7 +279,7 @@ cookies ?
             {& else %}
                 You are not logged in.
             {& endif &}
-            
         {% endblock %}
 
+    
 """
