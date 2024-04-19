@@ -192,7 +192,7 @@ how do i ensure that the information will survive after reboot or server restart
     app = Flask(__name__)
     db = SQL("sqlite:///database.db")
     
-    
+    NAMES = []
             
 
 """
