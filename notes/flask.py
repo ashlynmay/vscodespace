@@ -270,7 +270,7 @@ cookies ?
     in index.html:
         {% extends "layout.html" %}
         {% block body %}
-            {}
+            {&}
         {% endblock %}
 
 """
