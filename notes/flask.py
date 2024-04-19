@@ -123,6 +123,6 @@ html dropdown:
         <option value="Ashlynn">Ashlynn</option>
     </select>
     
-verifythat 
+verifythat name is being submitted:
 
 """
