@@ -269,6 +269,8 @@ cookies ?
     
     in index.html:
         {% extends "layout.html" %}
-        
+        {% block body %}
+            <h1>Hello, {{ session["name"] }}!</h1>
+        {% endblock %}
 
 """
