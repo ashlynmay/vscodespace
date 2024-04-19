@@ -172,7 +172,7 @@ in app.py:
         return render_template("error.html", message="Please select at least one name")
     for name in request.form.getlist("name"):
         if name not in NAMES:
-            return render_template("error.html")
+            return render_template("error.html", message="Please select at least one name")
     return render_template("success.html")
     
 """
