@@ -257,6 +257,7 @@ what have we been using?
         
 cookies ?
     in app.py:
-    from flask import Flask, redirect, render_template, request
+    from flask import Flask, redirect, render_template, request, session
+    
 
 """
