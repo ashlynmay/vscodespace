@@ -127,5 +127,6 @@ verify that name is being submitted in app.py:
     @app.route("register")
     def register():
         if not request.form.get("name"):
+            return "failure"
 
 """
