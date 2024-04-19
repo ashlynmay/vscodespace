@@ -214,6 +214,8 @@ how do i ensure that the information will survive after reboot or server restart
         db.execute("INSERT INTO registrants (name, value) VALUES (?, ?)", name, value)
         return redirect("/registrants")
     
+    
+    
         
             
 
