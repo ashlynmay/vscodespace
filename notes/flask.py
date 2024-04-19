@@ -285,7 +285,7 @@ cookies ?
         {% extends "layout.html" %}
         {% block body %}
             <form action="/login" method="post">
-                <input type="text" name="name">
+                <input autocomplete=off autofocus type="text" name="name">
                 <button type="submit">Login</button>
             </form>
         {% endblock %}
