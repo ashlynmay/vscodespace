@@ -259,6 +259,6 @@ cookies ?
     in app.py:
     from flask import Flask, redirect, render_template, request, session
     app = Flask(__name__)
-    app
+    app.condig
 
 """
