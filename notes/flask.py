@@ -268,6 +268,6 @@ cookies ?
             return render_template("index.html")
     
     in index.html:
-    
+        
 
 """
