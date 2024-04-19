@@ -265,20 +265,25 @@
         def index():
             return render_template("index.html" name=session.get("name"))
             
-        @app.route("/login", methods=["POST"])
+        @app.route("/login", methods=["GET", "POST"])
         def login():
             if request.method == "POST":
                 session["name"] = request.form.get("name")
                 return redirect("/")
             return render_template("login.html")
+        
+        @app.route("/logout")
+        def logout():
+            session.clear()
+            return redirect("/")
     
 #    in index.html:
 #        {% extends "layout.html" %}
 #        {% block body %}
 #            {& if name %}
-#                You are logged in as {{ name }}.
+#                You are logged in as {{ name }}. <a href="/logout">Log out</a>.
 #            {& else %}
-#                You are not logged in.
+#                You are not logged in. <a href="/login">Log in</a>.
 #            {& endif &}
 #        {% endblock %}
 
