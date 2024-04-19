@@ -146,6 +146,7 @@ how do i make sure its one of the names i have in html?
     in app.py: (/register):
     def register():
         if not request.form.get("name") not in NAMES:
-        
+            return render_template("failure.html")
+        return render_template("success.html")
     
 """
