@@ -169,7 +169,7 @@ in error.html:
     
 in app.py:
     if not request.form.get("name"):
-        return render_template("error.html", message=")
+        return render_template("error.html", message="Please select at least one name")
     for name in request.form.getlist("name"):
         if name not in NAMES:
             return render_template("failure.html")
