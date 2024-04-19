@@ -226,6 +226,7 @@ how do i ensure that the information will survive after reboot or server restart
             <h1>Registrants</h1>
             <table>
                 <thead>
+                    <tr>
         {% for registrant in registrants %}
             <li>{{ registrant["name"] }}: {{ registrant["value"] }}</li>
         {% endfor %}
