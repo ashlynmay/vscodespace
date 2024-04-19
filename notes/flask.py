@@ -149,7 +149,7 @@ how do i make sure its one of the names i have in html?
             return render_template("failure.html")
         return render_template("success.html")
     
-what if im using checkboxes and what all values selected?:
+what if im using checkboxes and want to check all values selected?:
 in app.py:
     if not request.form.get("name"):
         return render_template("failure.html")
