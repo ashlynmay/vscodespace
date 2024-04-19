@@ -141,5 +141,6 @@ how do i make sure its one of the names i have in html?
     in index.html:
         <select name="name">
             {% for name in names %}
-            
+                <option value="{{ name }}">{{ name }}</option>
+            {% endfor %}
 """
