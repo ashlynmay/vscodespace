@@ -166,4 +166,8 @@ in error.html:
         <p>{{ message }}</p>
         <img alt="Grumpy Cat" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTZiMzM3cTUxaXR2c29ncHM5Mnk2aHFuOG1xOXUxOTJpaGMxeDR1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LbGtuww7ZFhgQ/giphy.gif">
     {% endblock %}
+    
+in app.py:
+
+    
 """
