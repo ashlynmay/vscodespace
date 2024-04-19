@@ -116,6 +116,7 @@ clicking greet without any text will not use the "world" placeholder, as it is s
         hello, {% if name %}{{ name }}{% else %}world{% endif %} ~ if name, print name (variable). else print "world".
 
 html dropdown:
+<input
     <select name="name">
         <option disabled selected value="">Name</option>
         <option value="Ashlyn">Ashlyn</option>
