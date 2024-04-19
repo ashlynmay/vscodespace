@@ -143,4 +143,5 @@ how do i make sure its one of the names i have in html?
             {% for name in names %}
                 <option value="{{ name }}">{{ name }}</option>
             {% endfor %}
+    in app.pt
 """
