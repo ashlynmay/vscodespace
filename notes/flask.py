@@ -262,6 +262,7 @@ cookies ?
     app.condig["SESSION_PERMANENT"] = False
     app.config["SESSION_TYPE"] = "filesystem"
     
-    @
+    @app.route("/")
+    
 
 """
