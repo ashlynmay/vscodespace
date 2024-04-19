@@ -210,7 +210,7 @@ how do i ensure that the information will survive after reboot or server restart
         name = request.form.get("name") 
         value = request.form.get("value")
         if not value or not name in NAMES:
-            
+            return render
         
             
 
