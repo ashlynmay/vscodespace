@@ -186,7 +186,8 @@ how do i actually register the a value to a name in app.py?
         REGISTRANTS[name] = value
         return redirect("https://google.com")
         
-how do i ensure that the information will survive after reboot or server restart?
+how do i ensure that the information will survive after reboot or server restart?:
+    
             
 
 """
