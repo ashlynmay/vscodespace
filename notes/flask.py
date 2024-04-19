@@ -123,6 +123,7 @@ html dropdown:
         <option value="Ashley">Ashley</option>
         <option value="Ashlynn">Ashlynn</option>
     </select>
+</form>
     
 verify that name is being submitted in app.py:
     @app.route("register", methods=["POST"])
