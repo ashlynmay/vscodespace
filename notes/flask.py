@@ -199,7 +199,7 @@ how do i ensure that the information will survive after reboot or server restart
         return render_template("index.html", names=NAMES)
     
     @app.route("/register", methods=["POST"])
-    
+    def register():
             
 
 """
