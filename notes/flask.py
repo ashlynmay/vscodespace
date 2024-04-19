@@ -129,7 +129,7 @@ verify that name is being submitted in app.py:
     @app.route("register", methods=["POST"])
     def register():
         if not request.form.get("name"):
-            return render_template("failure.html") ~ assuming that failure.html is 
-        return render_template("success.html") 
+            return render_template("failure.html") ~ assuming that failure.html is a file that exists
+        return render_template("success.html")  
 
 """
