@@ -123,6 +123,7 @@ html dropdown:
         <option value="Ashlynn">Ashlynn</option>
     </select>
     
-verify that name is being submitted:
+verify that name is being submitted in app.py:
+
 
 """
