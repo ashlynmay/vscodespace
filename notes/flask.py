@@ -267,7 +267,9 @@ cookies ?
         def index():
             return render_template("index.html")
             
-        @app.route()
+        @app.route("/login", methods=["POST"])
+        def login():
+        
     
     in index.html:
         {% extends "layout.html" %}
