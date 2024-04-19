@@ -130,6 +130,6 @@ verify that name is being submitted in app.py:
     def register():
         if not request.form.get("name"):
             return render_template("failure.html")
-        return render_template("success.html")
+        return render_template("success.html") 
 
 """
