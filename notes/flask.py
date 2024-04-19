@@ -243,7 +243,7 @@ how do i ensure that the information will survive after reboot or server restart
                                 <input type="submit" value="Deregister">
                             </form>
                         </td>
-                    
+                    </tr>
                     {% endfor %}
     
         
