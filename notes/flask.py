@@ -164,6 +164,6 @@ in error.html:
     {% block body %}
         <h1>Error</h1>
         <p>{{ message }}</p>
-        <p>something went wrong</p>
+        <img
     {% endblock %}
 """
