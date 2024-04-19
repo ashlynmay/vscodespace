@@ -177,5 +177,6 @@ making an error page:
     
 how do i actually register the a value to a name in app.py?
     in app.py:
-        REGISTRANTS
+        REGISTRANTS = {}
+        
 """
