@@ -30,6 +30,7 @@ def index():
         request.form.get("name")
         request.form.get("month")
         request.form.get("day")
+        INSERT 
         
         return redirect("/")
 
