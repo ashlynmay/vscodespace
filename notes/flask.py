@@ -270,7 +270,7 @@ cookies ?
         @app.route("/login", methods=["POST"])
         def login():
             if request.method == "POST":
-                session
+                session["name"] = request.form.get("name")
             return render_template("login.html")
     
     in index.html:
