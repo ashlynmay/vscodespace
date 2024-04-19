@@ -271,6 +271,7 @@ cookies ?
         def login():
             if request.method == "POST":
                 session["name"] = request.form.get("name")
+                return redirect("/")
             return render_template("login.html")
     
     in index.html:
