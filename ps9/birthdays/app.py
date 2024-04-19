@@ -29,7 +29,7 @@ def index():
         # TODO: Add the user's entry into the database
         request.form.get("name")
         request.form.get("month")
-        request.form.get("nam")
+        request.form.get("day")
         
         return redirect("/")
 
