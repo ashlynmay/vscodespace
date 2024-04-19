@@ -232,6 +232,7 @@ how do i ensure that the information will survive after reboot or server restart
                         <th></th>
                     </tr>
                 </thead>
+                
             
             
         {% for registrant in registrants %}
