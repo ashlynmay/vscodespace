@@ -245,7 +245,9 @@ how do i ensure that the information will survive after reboot or server restart
                             </td>
                         </tr>
                     {% endfor %}
-    
+                </tbody>
+            </table>
+        
         
             
 
