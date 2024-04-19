@@ -153,7 +153,7 @@ what if im using checkboxes and want to check all values selected?:
 in app.py:
     if not request.form.get("name"):
         return render_template("failure.html")
-    for name in request.form.getall("name"):
+    for name in request.form.getlist("name"):
         if name not in NAMES:
             return render_template("failure.html")
     return render_template("success.html")
