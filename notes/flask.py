@@ -136,6 +136,6 @@ how do i make sure its one of the names i have in html?
     in app.py:
     NAMES = ["Ashlyn", "Ashley", "Ashlynn"]
     ...
-    return render_template("register.html", names=NAMES)
+    return render_template("index.html", names=NAMES)
 
 """
