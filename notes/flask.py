@@ -175,6 +175,7 @@ making an error page:
                 return render_template("error.html", message="Please select a valid name")
         return render_template("success.html")
     
-how do i actually register the names?:
+how do i actually register the names?
+
     
 """
