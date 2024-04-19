@@ -159,21 +159,21 @@ in app.py:
     return render_template("success.html")
     
 making an error page:
-in error.html:
-    {% extends "layout.html" %}
-    {% block body %}
-        <h1>Error</h1>
-        <p>{{ message }}</p>
-        <img alt="Grumpy Cat" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTZiMzM3cTUxaXR2c29ncHM5Mnk2aHFuOG1xOXUxOTJpaGMxeDR1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LbGtuww7ZFhgQ/giphy.gif">
-    {% endblock %}
-    
-in app.py:
-    if not request.form.get("name"):
-        return render_template("error.html", message="Please select at least one name")
-    for name in request.form.getlist("name"):
-        if name not in NAMES:
-            return render_template("error.html", message="Please select a valid name")
-    return render_template("success.html")
+    in error.html:
+        {% extends "layout.html" %}
+        {% block body %}
+            <h1>Error</h1>
+            <p>{{ message }}</p>
+            <img alt="Grumpy Cat" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTZiMzM3cTUxaXR2c29ncHM5Mnk2aHFuOG1xOXUxOTJpaGMxeDR1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LbGtuww7ZFhgQ/giphy.gif">
+        {% endblock %}
+        
+    in app.py:
+        if not request.form.get("name"):
+            return render_template("error.html", message="Please select at least one name")
+        for name in request.form.getlist("name"):
+            if name not in NAMES:
+                return render_template("error.html", message="Please select a valid name")
+        return render_template("success.html")
     
 
     
