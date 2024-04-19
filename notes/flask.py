@@ -176,6 +176,7 @@ making an error page:
         return render_template("success.html")
     
 how do i actually register the names?
-
+    in app.py:
+    
     
 """
