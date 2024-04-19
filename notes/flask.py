@@ -209,7 +209,7 @@ how do i ensure that the information will survive after reboot or server restart
     def register():
         name = request.form.get("name") 
         value = request.form.get("value")
-        if not name or not value:   
+        if not value or not value:   
         
             
 
