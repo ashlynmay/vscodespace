@@ -202,7 +202,7 @@ how do i ensure that the information will survive after reboot or server restart
     def deregister():
         id = request.form.get("id")
         if id:
-            de
+            delete = db.execute("DELETE FROM registrants WHERE id = ?", id)
         
             
 
