@@ -28,6 +28,8 @@ def index():
 
         # TODO: Add the user's entry into the database
         request.form.get("name")
+        request.form.get("name")
+        request.form.get("name")
         
         return redirect("/")
 
