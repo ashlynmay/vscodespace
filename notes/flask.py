@@ -240,7 +240,7 @@ how do i ensure that the information will survive after reboot or server restart
                             <td>
                                 <form action="/deregister" method="post">
                                     <input type="hidden" name="id" value="{{ registrant["id"] }}">
-                                    <button type="submit" value="Deregister"><
+                                    <button type="submit" value="Deregister">Deregister</button>
                                 </form>
                             </td>
                         </tr>
