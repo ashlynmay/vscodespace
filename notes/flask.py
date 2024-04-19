@@ -269,7 +269,8 @@ cookies ?
             
         @app.route("/login", methods=["POST"])
         def login():
-            if
+            if request.method == "POST":
+                
             return render_template("login.html")
     
     in index.html:
