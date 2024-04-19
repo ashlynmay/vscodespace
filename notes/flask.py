@@ -198,8 +198,8 @@ how do i ensure that the information will survive after reboot or server restart
     def index():
         return render_template("index.html", names=NAMES)
     
-    @app.route("/register", methods=["POST"])
-    def register():
+    @app.route("/deregister", methods=["POST"])
+    def deregister():
         id = request.form.get("id")
         
             
