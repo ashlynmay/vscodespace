@@ -191,6 +191,7 @@ how do i ensure that the information will survive after reboot or server restart
     from flask import Flask, redirect, render_template, request
     app = Flask(__name__)
     db = SQL("sqlite:///database.db")
+    
             
 
 """
