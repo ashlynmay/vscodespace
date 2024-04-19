@@ -182,6 +182,8 @@ how do i actually register the a value to a name in app.py?
         @app.route("/register", methods=["POST"])
         def register():
             ... code to definine register
-            REGISTRANTS[name] = value
+        REGISTRANTS[name] = value
+        
+            
 
 """
