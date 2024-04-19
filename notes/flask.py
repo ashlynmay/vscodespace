@@ -205,7 +205,9 @@ how do i ensure that the information will survive after reboot or server restart
             delete = db.execute("DELETE FROM registrants WHERE id = ?", id)
         return redirect("/registrants")
     
-    @app.route("/register", methods=["POST"])    
+    @app.route("/register", methods=["POST"])
+    def register():
+        name = request.form.get("name")    
         
             
 
