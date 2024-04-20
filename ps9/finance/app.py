@@ -111,7 +111,7 @@ def quote():
         if lookup(request.form.get("symbol")) != None:
             
         else:
-            return apology("mo")
+            return apology("")
     
     # User reached route via GET (as by clicking a link or via redirect)
     else:
