@@ -110,7 +110,7 @@ def quote():
     if request.method == "POST":
         if lookup(request.form.get("symbol")) != None:
             result = lookup(request.form.get("symbol"))
-            return render_template("quoted.html", symbol="result[symbol]", price="price from lookup")
+            return render_template("quoted.html", symbol="result[symbol]", price="result[]")
         else:
             return apology("stock not found", 403)
     
