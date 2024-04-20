@@ -223,8 +223,8 @@ def sell():
         elif lookup(request.form.get("symbol")) == None:
             return apology("stock not found", 402)
         
-        share_ = db.execute("SELECT shares FROM purchases WHERE id = ? AND stock IS ?", session["user_id"], request.form.get("symbol"))
-        shares = cash_result[0]["cash"]
+        share_result = db.execute("SELECT shares FROM purchases WHERE id = ? AND stock IS ?", session["user_id"], request.form.get("symbol"))
+        shares = share_result[0]["cash"]
         if request.form.get("shares") < 1:
             return apology("you cant sell less than 1 share")
         elif request.form.get("shares") >  
