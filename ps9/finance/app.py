@@ -129,7 +129,7 @@ def register():
 
         # Ensure username exists and password is correct
         if db.execute("SELECT username FROM users WHERE username IS ?" request.form.get("username")) == NULL:
-            hpswd = 
+            hpswd = generate_password_hash()
             return apology("invalid username and/or password", 403)
 
         # Remember which user has logged in
