@@ -56,6 +56,7 @@ def buy():
             price = (lookup(request.form.get("symbol"))["price"])
             shares = (request.form.get("shares"))
             stock = str(request.form.get("symbol"))
+            stock = stock.upper()
             total = float(price) * int(shares)
             if cash - total > 0:
                 if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
