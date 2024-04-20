@@ -20,7 +20,7 @@
             <td>{{ tmpstock = (db.execute("SELECT stock FROM purchases WHERE id = ?", session["user_id"]))[0]["stock"] }}</td>
             <td>{{ tmpshare = (db.execute("SELECT shares FROM purchases WHERE stock IS ? id = ?", tmpstock, session["user_id"]))[0]["shares"] }}</td>
             <td>{{ price = lookup(tmpstock) }}</td>
-            <td>{{ total+=price  }}</td>
+            <td>{{ total+=price }}</td>
         </tr>
     </table>
 {% endblock %}
