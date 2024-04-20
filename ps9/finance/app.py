@@ -226,8 +226,8 @@ def sell():
             return apology("you cant sell less than 1 share", 402)
         share_result = db.execute("SELECT shares FROM purchases WHERE id = ? AND stock IS ?", (session["user_id"], request.form.get("symbol")))
         if share_result:
-        shares = share_result[0]["shares"]
-else:
+            shares = share_result[0]["shares"]
+        else:
     # Handle the case where share_result is empty
     shares = 0
         updated_shares = shares - request.form.get("shares")
