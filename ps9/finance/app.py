@@ -40,6 +40,7 @@ def index():
     shares = db.execute("SELECT shares FROM purchases WHERE id = ?", session["user_id"])
     
     price = lookup("stock")["price"]
+    
     total = sum(price)
     return render_template("index.html", purchases = purchases)
 
