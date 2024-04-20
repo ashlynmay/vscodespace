@@ -130,7 +130,7 @@ def register():
             hpswd = generate_password_hash(request.form.get("password"))
             db.execute("INSERT INTO users (username, hash, cash) VALUES (?, ?, 0)", request.form.get("username"), hpswd)
             return redirect("/")
-        else:
+        elif :
             return apology("username already taken", 403)
 
     # User reached route via GET (as by clicking a link or via redirect)
