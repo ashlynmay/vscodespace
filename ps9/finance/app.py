@@ -65,7 +65,7 @@ def buy():
                 if existing_shares:
                     existing_shares_int = existing_shares[0]["shares"]
                     updated_shares = existing_shares_int + int(shares)  # Convert shares to an integer
-        db.execute("UPDATE purchases SET shares = ? WHERE stock = ? AND id = ?", updated_shares, stock, session["user_id"])
+                    db.execute("UPDATE purchases SET shares = ? WHERE stock = ? AND id = ?", updated_shares, stock, session["user_id"])
     else:
         db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, int(shares), price, total)
     
