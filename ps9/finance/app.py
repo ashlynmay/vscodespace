@@ -57,7 +57,7 @@ def buy():
             price = (lookup(request.form.get("symbol"))["price"])
             shares = (request.form.get("shares"))
             stock = (request.form.get("symbol"))
-            total = 
+            total = price*shares
             if cash-(price*shares) > 0:
                 if db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
                     db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, shares, price, )
