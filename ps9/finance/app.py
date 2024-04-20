@@ -227,7 +227,7 @@ def sell():
         share_result = db.execute("SELECT shares FROM purchases WHERE id = ? AND stock IS ?", session["user_id"], request.form.get("symbol"))
         shares = share_result[0]["shares"]
         updated_shares = shares - request.form.get("shares")
-        total_result = db.execute("SELECT shares FROM purchases WHERE id = ? AND stock IS ?", session["user_id"], request.form.get("symbol"))
+        total_result = db.execute("SELECT total FROM purchases WHERE id = ? AND stock IS ?", session["user_id"], request.form.get("symbol"))
         total = total_result[0]["total"]
         updated_total = total - request.form.get("shares")
         if request.form.get("shares") > shares:
