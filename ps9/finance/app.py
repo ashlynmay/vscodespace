@@ -58,17 +58,20 @@ def buy():
             stock = (request.form.get("symbol"))
             total = float(price) * int(shares)
             if cash - total > 0:
-                if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
-                    db.execute("CREATE TABLE purchases (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total NUMERIC NOT NULL)")
-                existing_shares = db.execute("SELECT shares FROM purchases WHERE stock = ? AND id = ?", stock, session["user_id"])
-                if existing_shares:
-                    updated_shares = existing_shares[0]["shares"] + shares
-                    db.execute("UPDATE purchases SET shares = ? WHERE stock = ? AND id = ?", updated_shares, stock, session["user_id"])
-                else:
-                    db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, shares, price, total)
-                return redirect("/")
-            else:
-                return apology("not enough funds to complete purchase", 402)
+    if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
+        db.execute("CREATE TABLE purchases (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total NUMERIC NOT NULL)")
+
+    existing_shares = db.execute("SELECT shares FROM purchases WHERE stock = ? AND id = ?", stock, session["user_id"])
+    if existing_shares:
+        existing_shares_int = existing_shares[0]["shares"]
+        updated_shares = existing_shares_int + int(shares)  # Convert shares to an integer
+        db.execute("UPDATE purchases SET shares = ? WHERE stock = ? AND id = ?", updated_shares, stock, session["user_id"])
+    else:
+        db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, int(shares), price, total)
+    
+    return redirect("/")
+else:
+    return apology("not enough funds to complete purchase", 402)
         
     # User reached route via GET (as by clicking a link or via redirect)
     else:
