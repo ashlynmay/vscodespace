@@ -234,7 +234,7 @@ def sell():
         else:
             shares = 0
         updated_shares = shares - int(request.form.get("shares"))
-        total_result = db.execute("SELECT total FROM purchases WHERE id = ? AND stock = ?", session["user_id"], request.form.get("symbol"))
+        total_result = db.execute("SELECT total FROM purchases WHERE id = ? AND stock = ?", session["user_id"], stock)
         total = total_result[0]["total"]
         price = lookup(request.form.get("symbol"))["price"]
         ntotal = int(request.form.get("shares")) * price
