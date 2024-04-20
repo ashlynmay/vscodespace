@@ -36,7 +36,7 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
     if request.method == "POST":
-        
+        code bleh :P
     else:
         return render_template("buy.html")
 
