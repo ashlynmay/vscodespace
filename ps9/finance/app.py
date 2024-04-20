@@ -136,6 +136,7 @@ def register():
             hpswd = generate_password_hash(request.form.get("password"))
             db.execute("INSERT INTO users (username, hash, cash) VALUES (?, ?, 0)", request.form.get("username"), hpswd)
             uid_result = db.execute("SELECT id FROM users WHERE username = ?", (request.form.get("username"),))
+            
             if uid_result:
                  uid = uid_result[0]["id"]
                  session["user_id"] = uid
