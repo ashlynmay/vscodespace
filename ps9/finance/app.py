@@ -119,7 +119,7 @@ def register():
             return apology("must provide username", 403)
 
         # Ensure password was submitted and confirmed
-        elif not request.form.get("password") or  request.form.get("confirmation"):
+        elif not request.form.get("password") or not request.form.get("confirmation"):
             return apology("must provide and confirm password", 403)
         
         elif not request.form.get("password") == request.form.get("confirmation"):
