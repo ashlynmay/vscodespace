@@ -113,7 +113,6 @@ def quote():
     # User reached route via GET (as by clicking a link or via redirect)
     else:
         return render_template("quote.html")
-    return apology("TODO")
 
 
 @app.route("/register", methods=["GET", "POST"])
