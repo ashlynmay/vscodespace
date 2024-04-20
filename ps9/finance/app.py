@@ -36,6 +36,8 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
     if request.method == "POST":
+        
+    if request.method == "POST":
     return apology("TODO")
 
 
