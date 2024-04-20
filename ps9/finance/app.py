@@ -110,7 +110,8 @@ def quote():
     if request.method == "POST":
         if lookup(request.form.get("symbol")) != None:
             
-            
+        else:
+            return 
     
     # User reached route via GET (as by clicking a link or via redirect)
     else:
