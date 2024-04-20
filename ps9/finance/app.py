@@ -41,7 +41,6 @@ def index():
     
     price = lookup("stock")["price"]
     total = sum(price)
-    
     return render_template("index.html", purchases = purchases)
 
 
