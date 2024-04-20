@@ -48,7 +48,7 @@ def buy():
             return apology("stock not found", 403)
 #            result = lookup(request.form.get("symbol"))
 #            return render_template("quoted.html", symbol=result["symbol"], price=result["price"])
-        else:
+        elif :
             return apology("stock not found", 403)
     
     # User reached route via GET (as by clicking a link or via redirect)
