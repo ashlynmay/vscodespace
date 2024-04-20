@@ -36,7 +36,7 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
     purchases = db.execute("SELECT * FROM purchases")
-    stock = db.execute
+    stock = db.execute("")
     shares =
     price =
     total =
