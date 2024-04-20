@@ -49,7 +49,7 @@ def buy():
 #            result = lookup(request.form.get("symbol"))
 #            return render_template("quoted.html", symbol=result["symbol"], price=result["price"])
         elif request.form.get("shares") < 1:
-            return apology("", 403)
+            return apology("you cannot purchase less than 1 share", 403)
     
     # User reached route via GET (as by clicking a link or via redirect)
     else:
