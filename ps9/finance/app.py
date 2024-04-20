@@ -131,7 +131,7 @@ def register():
         if db.execute("SELECT username FROM users WHERE username IS ?" request.form.get("username")) == NULL:
             hpswd = generate_password_hash(request.form.get("password"))
         else:
-            return apology("", 403)
+            return apology("username already taken", 403)
 
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
