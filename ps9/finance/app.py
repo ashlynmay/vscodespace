@@ -38,7 +38,7 @@ def index():
     if request.method == "POST":
         
     if request.method == "POST":
-    return apology("TODO")
+        return apology("TODO")
 
 
 @app.route("/buy", methods=["GET", "POST"])
