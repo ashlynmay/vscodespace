@@ -47,6 +47,7 @@ def index():
         prices.append(stock_price) 
         shares_for_stock = next((share["shares"] for share in shares if share["stock"] == entry["stock"]), 0)
         total_value = stock_price * shares_for_stock["shares"]
+        total += total_value
     combined_data = [{"stock": entry["stock"], "shares": shares_for_stock["shares"], "price": stock_price, "total_value": stock_price * shares_for_stock["shares"]} for entry, shares_for_stock, stock_price in zip(stock, shares, prices)]
 
 
