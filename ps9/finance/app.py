@@ -58,7 +58,7 @@ def buy():
             shares = (request.form.get("shares"))
             if cash-(price*shares) > 0:
                 if db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
-                    db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?,)")
+                    db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)")
                 else:
                     db.execute("CREATE TABLE purchases (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total NUMERIC NOT NULL)")
             else:
