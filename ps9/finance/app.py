@@ -46,6 +46,7 @@ def index():
         stock_price = lookup(entry["stock"])["price"]
         prices.append(stock_price)
         total_value = db.execute("SELECT ")
+        
         total += total_value
         shares_for_stock = next((share["shares"] for share in shares if share["stock"] == entry["stock"]), 0)
 
