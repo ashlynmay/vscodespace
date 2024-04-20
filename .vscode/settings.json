@@ -3,5 +3,6 @@
     "cmake.configureOnOpen": false,
     "liveServer.settings.port": 5501,
     "synthwave84.disableGlow": false,
-    "github.gitAuthentication": true
+    "github.gitAuthentication": true,
+    "terminal.integrated.fontFamily": "Hack NF"
 }
