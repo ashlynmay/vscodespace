@@ -230,7 +230,7 @@ def sell():
         total_result = db.execute("SELECT total FROM purchases WHERE id = ? AND stock IS ?", session["user_id"], request.form.get("symbol"))
         total = total_result[0]["total"]
         price = lookup(request.form.get("symbol"))
-        updated_total = total - (request.form.get("shares") * 
+        updated_total = total - (request.form.get("shares") * price)
         if request.form.get("shares") > shares:
             return apology("you dont have that many shares to sell", 402)
         else:
