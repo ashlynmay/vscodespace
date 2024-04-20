@@ -66,7 +66,7 @@ def buy():
                         db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, shares, price, total)
                     else:
                         shares_result = db.execute("SELECT shares FROM purchases WHERE stock IS ? AND id = ?", stock, session["user_id"])
-                        tshares = 
+                        tshares = shares_result[0][""]
                         db.execute("UPDATE purchases SET shares = ? WHERE stock IS ? AND id = ?", shares, stock, session["user_id"])
                 return redirect("/")
             else:
