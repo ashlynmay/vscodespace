@@ -221,6 +221,7 @@ def sell():
     """Sell shares of stock"""
     if request.method == "POST":
         stock = request.form.get("symbol")
+        stock = stock.upper()
         if not request.form.get("symbol") or not request.form.get("shares"):
             return apology("must provide stock symbol and the amount of shares", 402)
         elif lookup(request.form.get("symbol")) == None:
