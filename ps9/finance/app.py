@@ -91,6 +91,7 @@ def buy():
                 if existing_total:
                     existing_total_int = existing_total[0]["total"]
                     updated_total = existing_total_int + int(total)  # Convert shares to an integer
+                    existing_
                     
                     db.execute("UPDATE purchases SET shares = ?, total = ? WHERE stock = ? AND id = ?", updated_shares, updated_total, stock, session["user_id"])
                     db.execute("INSERT INTO history (id, stock, shares, price, total, type, dt) VALUES (?, ?, ?, ?, ?, 'BUY', ?)", session["user_id"], stock, int(shares), price, total, current_datetime)
