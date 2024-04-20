@@ -48,7 +48,7 @@ def index():
         shares_for_stock = next((shares["shares"] for shares in shares if shares["stock"] == entry["stock"]), 0)
         total += shares_for_stock * stock_price
     
-    return render_template("index.html", stock = stock, shares = shares, total=total)
+    return render_template("index.html", stock = stock, shares = shares, prices = prices, total=total)
 
 
 @app.route("/buy", methods=["GET", "POST"])
