@@ -57,8 +57,8 @@ def buy():
             price = (lookup(request.form.get("symbol"))["price"])
             if cash-(price*shares) > 0:
                 payment successful
-        elif:
-            
+            else:
+                
             
     
     # User reached route via GET (as by clicking a link or via redirect)
