@@ -42,8 +42,8 @@ def index():
     cash = cash_result[0]["cash"] if cash_result else 0
 
     total = cash
-for purchase in purchased:
-    total += purchase["price"]
+    for purchase in purchased:
+        total += purchase["price"]
     for entry in stock:
         stock_price = lookup(entry["stock"])["price"]
         prices.append(stock_price) 
