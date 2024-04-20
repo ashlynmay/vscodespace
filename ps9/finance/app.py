@@ -229,4 +229,4 @@ def sell():
         if request.form.get("shares") > shares:
             return apology("you dont have that many shares to sell", 402)
         else:
-            db.execute(""UPDATE purchases SET shares = ?, total = ? WHERE stock = ? AND id = ?", updated_shares, updated_total, stock, session["user_id"])
+            db.execute("UPDATE purchases SET shares = ?, total = ? WHERE stock = ? AND id = ?", updated_shares, updated_total, stock, session["user_id"])
