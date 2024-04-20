@@ -45,7 +45,7 @@ def buy():
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
         if lookup(request.form.get("symbol")) == None:
-            return apology("stock not found", 403)
+            return apology("stock not found", 402)
 #            result = lookup(request.form.get("symbol"))
 #            return render_template("quoted.html", symbol=result["symbol"], price=result["price"])
         elif request.form.get("shares") < 1:
