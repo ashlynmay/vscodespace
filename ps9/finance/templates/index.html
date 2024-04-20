@@ -17,7 +17,7 @@
         </thead>
         <tr>
             {{% for purchase in purchases %}}
-            <td>{{ symbol }}</td>
+            <td>{{ db.execute("SELECT * FROM purchases") }}</td>
             <td>{{ shares }}</td>
             <td>{{ price }}</td>
             <td>{{ total }}</td>
