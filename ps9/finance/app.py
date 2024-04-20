@@ -37,7 +37,7 @@ def index():
     """Show portfolio of stocks"""
     stock = db.execute("SELECT stock FROM purchases WHERE id = ?", session["user_id"])
     shares = db.execute("SELECT stock, shares FROM purchases WHERE id = ?", session["user_id"])
-    purchased = db.execute("SELECT price FROM purchases WHERE id = ?", )
+    purchased = db.execute("SELECT price FROM purchases WHERE id = ?", session[])
     cash_result = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
     cash = cash_result[0]["cash"] if cash_result else 0
 
