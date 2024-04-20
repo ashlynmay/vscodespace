@@ -41,7 +41,7 @@ def index():
     cash_result = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
     cash = cash_result[0]["cash"] if cash_result else 0
 
-    total = cash + sum((purchased["0"])
+    total = cash + sum(purchased["0"])
     prices = []
     for entry in stock:
         stock_price = lookup(entry["stock"])["price"]
