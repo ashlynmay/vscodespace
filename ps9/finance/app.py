@@ -54,7 +54,7 @@ def buy():
             return apology("you cannot purchase less than 1 share", 402)
         else:
             cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
-            price = (lookup(request.form.get("symbol"))
+            price = (lookup(request.form.get("symbol"))[""])
             
     
     # User reached route via GET (as by clicking a link or via redirect)
