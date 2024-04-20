@@ -70,7 +70,7 @@ def buy():
                     db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, int(shares), price, total)
     
             return redirect("/")
-else:
+            else:
     return apology("not enough funds to complete purchase", 402)
         
     # User reached route via GET (as by clicking a link or via redirect)
