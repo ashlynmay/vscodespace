@@ -56,7 +56,7 @@ def buy():
             cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
             price = (lookup(request.form.get("symbol"))["price"])
             shares = (request.form.get("shares"))
-            stock = (r)
+            stock = (request.form.get("symbol"))
             if cash-(price*shares) > 0:
                 if db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
                     db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], )
