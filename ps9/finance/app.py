@@ -59,7 +59,7 @@ def buy():
                 if db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
                     db.execute("INSERT INTO purchases (id, stock, shares, price, total)")
                 else:
-                    db.execute("CREATE TABLE purchases ()")
+                    db.execute("CREATE TABLE purchases ( id INTEGER)")
             else:
                 return apology("not enough funds to complete purchase", 402)
             
