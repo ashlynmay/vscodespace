@@ -137,7 +137,7 @@ def register():
             db.execute("INSERT INTO users (username, hash, cash) VALUES (?, ?, 0)", request.form.get("username"), hpswd)
             uid_result = db.execute("SELECT id FROM users WHERE username = ?", (request.form.get("username"),))
             if uid_result:
-    uid = uid_result[0]["id"]
+                 uid = uid_result[0]["id"]
     session["user_id"] = uid
             return redirect("/")
         elif len(db.execute("SELECT username FROM users WHERE username IS ?", (request.form.get("username"), ))) > 0:
