@@ -36,10 +36,7 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
     purchases = db.execute("SELECT * FROM purchases")
-    if request.method == "POST":
-        
-    else:
-        return render_template("index.html", purchases = purchases)
+    return render_template("index.html", purchases = purchases)
 
 
 @app.route("/buy", methods=["GET", "POST"])
