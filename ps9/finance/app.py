@@ -109,7 +109,7 @@ def quote():
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
         if lookup(request.form.get("symbol")) != None:
-            result = layout()
+            result = layout(request.form.get)
         else:
             return apology("stock not found", 403)
     
