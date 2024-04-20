@@ -65,8 +65,7 @@ def buy():
                 redirect("/")
             else:
                 return apology("not enough funds to complete purchase", 402)
-            
-    
+        
     # User reached route via GET (as by clicking a link or via redirect)
     else:
         return render_template("buy.html")
