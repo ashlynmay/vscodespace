@@ -165,7 +165,7 @@ def register():
         # Ensure username does not exist and create a new account.
         elif len(db.execute("SELECT username FROM users WHERE username = ?", (request.form.get("username"), ))) == 0:
             hpswd = generate_password_hash(request.form.get("password"))
-            db.execute("INSERT INTO users (username, hash, cash) VALUES (?, ?, 0)", request.form.get("username"), hpswd)
+            db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", request.form.get("username"), hpswd)
             uid_result = db.execute("SELECT id FROM users WHERE username = ?", (request.form.get("username"),))
             # Log into newly created account.
             if uid_result:
