@@ -109,7 +109,7 @@ def quote():
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
         if lookup(request.form.get("symbol")) != None:
-            return render_template("quoted.html", symbol="", price="money")
+            return render_template("quoted.html", symbol="lookup(request.form.get("symbol"))", price="money")
         else:
             return apology("stock not found", 403)
     
