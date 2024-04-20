@@ -122,7 +122,7 @@ def register():
         elif not request.form.get("password"):
             return apology("must provide password", 403)
 
-        # Ensure username does not exists, and if not, create a
+        # Ensure username does not exists, and if not, create a new account.
         if db.execute("SELECT username FROM users WHERE username IS ?" request.form.get("username")) == NULL:
             hpswd = generate_password_hash(request.form.get("password"))
             db.execute("INSERT INTO users (username, hash, cash) VALUES (?, ?, 0)", request.form.get("username"), hpswd)
