@@ -56,7 +56,9 @@ def buy():
             cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
             price = (lookup(request.form.get("symbol"))["price"])
             if cash-(price*shares) > 0:
-                
+                payment successful
+        elif:
+            
             
     
     # User reached route via GET (as by clicking a link or via redirect)
