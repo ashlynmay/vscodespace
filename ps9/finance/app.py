@@ -106,7 +106,8 @@ def logout():
 @login_required
 def quote():
     """Get stock quote."""
-    if request
+    if request.method == "POST":
+        
     return apology("TODO")
 
 
