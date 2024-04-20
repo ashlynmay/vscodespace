@@ -35,7 +35,7 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-    purchases = db.execute("")
+    purchases = db.execute("SELECT * FROM purchases")
     if request.method == "POST":
         code bleh :P
     else:
