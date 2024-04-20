@@ -38,7 +38,7 @@ def index():
     if request.method == "POST":
         
     if request.method == "POST":
-        render_template("buy.html")
+        return render_template("buy.html")
 
 
 @app.route("/buy", methods=["GET", "POST"])
