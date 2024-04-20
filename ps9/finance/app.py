@@ -223,7 +223,7 @@ def sell():
         elif lookup(request.form.get("symbol")) == None:
             return apology("stock not found", 402)
         
-        elif request.form.get("shares") < 1:
+        if request.form.get("shares") < 1:
             return apology("you cant sell less than 1 share")
         elif request.form.get("shares") >  
         else:
