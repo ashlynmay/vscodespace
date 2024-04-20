@@ -113,7 +113,7 @@ def quote():
 def register():
     """Register user"""
     rows = db.execute(
-            "INSERT username, password) FROM users WHERE username = ?", request.form.get("username")
+            "INSERT (username, password) FROM users WHERE username = ?", request.form.get("username")
         )
 
         # Ensure username exists and password is correct
