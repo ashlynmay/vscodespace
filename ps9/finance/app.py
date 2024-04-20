@@ -96,7 +96,7 @@ def buy():
                     db.execute("UPDATE users SET cash = ?", (cash - updated_total))
                 else:
                     db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, int(shares), price, total)
-                    db.execute("INSERT INTO history (id, stock, shares, price, total, type, dt) VALUES (?, ?, ?, ?, ?, 'buy', ?)", session["user_id"], stock, int(shares), price, total, current_datetime)
+                    db.execute("INSERT INTO history (id, stock, shares, price, total, type, dt) VALUES (?, ?, ?, ?, ?, 'BUY', ?)", session["user_id"], stock, int(shares), price, total, current_datetime)
                 return redirect("/")
             else:
                 return apology("not enough funds to complete purchase", 402)
