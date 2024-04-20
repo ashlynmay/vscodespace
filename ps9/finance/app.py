@@ -58,7 +58,7 @@ def buy():
             if cash-(price*shares) > 0:
                 payment successful
             else:
-                
+                return apology("")
             
     
     # User reached route via GET (as by clicking a link or via redirect)
