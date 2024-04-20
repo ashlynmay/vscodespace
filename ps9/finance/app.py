@@ -55,6 +55,7 @@ def buy():
         else:
             cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
             
+            
     
     # User reached route via GET (as by clicking a link or via redirect)
     else:
