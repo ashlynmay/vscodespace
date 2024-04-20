@@ -57,20 +57,20 @@ def buy():
             shares = (request.form.get("shares"))
             stock = (request.form.get("symbol"))
             total = float(price) * int(shares)
-            if cash-(total) > 0:
-                if db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
-                    db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, shares, price, total)                
-                else:
-                    db.execute("CREATE TABLE purchases (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total NUMERIC NOT NULL)")
-                    if db.execute("SELECT shares FROM purchases WHERE stock IS ? AND id = ?", stock, session["user_id"]):
-                        db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, shares, price, total)
-                    else:
-                        shares_result = db.execute("SELECT shares FROM purchases WHERE stock IS ? AND id = ?", stock, session["user_id"])
-                        tshares = shares_result[0]["shares"] if cash_result else 0
-                        db.execute("UPDATE purchases SET shares = ? WHERE stock IS ? AND id = ?", tshares, stock, session["user_id"])
-                return redirect("/")
-            else:
-                return apology("not enough funds to complete purchase", 402)
+            if cash - total > 0:
+    if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
+        db.execute("CREATE TABLE purchases (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total NUMERIC NOT NULL)")
+
+    existing_shares = db.execute("SELECT shares FROM purchases WHERE stock = ? AND id = ?", stock, session["user_id"])
+    if existing_shares:
+        updated_shares = existing_shares[0]["shares"] + shares
+        db.execute("UPDATE purchases SET shares = ? WHERE stock = ? AND id = ?", updated_shares, stock, session["user_id"])
+    else:
+        db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, shares, price, total)
+    
+    return redirect("/")
+else:
+    return apology("not enough funds to complete purchase", 402)
         
     # User reached route via GET (as by clicking a link or via redirect)
     else:
