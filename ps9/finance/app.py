@@ -50,6 +50,8 @@ def buy():
 #            return render_template("quoted.html", symbol=result["symbol"], price=result["price"])
         elif request.form.get("shares") < 1:
             return apology("you cannot purchase less than 1 share", 402)
+        else:
+            
     
     # User reached route via GET (as by clicking a link or via redirect)
     else:
