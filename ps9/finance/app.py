@@ -108,7 +108,7 @@ def quote():
     """Get stock quote."""
     if request.method == "POST":
         
-    else:
+        else:
         return render_template("register.html")
     return apology("TODO")
 
