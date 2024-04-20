@@ -57,7 +57,7 @@ def buy():
             price = (lookup(request.form.get("symbol"))["price"])
             if cash-(price*shares) > 0:
                 if db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
-                    db.execute("INSERT INTO purchases (id, )")
+                    db.execute("INSERT INTO purchases (id, stock, shares, price)")
             else:
                 return apology("not enough funds to complete purchase", 402)
             
