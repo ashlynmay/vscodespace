@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell a given stock.
+{% endblock %}
+
+{% block main %}
+    <h4>Sell a given stock.</h4>
+    <hr>
+        <form action="/sell" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" maxlength="5" class="form-control mx-auto w-auto" name="symbol" placeholder="Stock Symbol" type="text">
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" maxlength="5" class="form-control mx-auto w-auto" name="shares" placeholder="Amount of Shares" type="number">
+            </div>
+            <button class="btn btn-primary" type="submit">Purchase</button>
+        </form>
+{% endblock %}

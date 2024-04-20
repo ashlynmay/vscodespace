@@ -4,7 +4,7 @@ from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
 from werkzeug.security import check_password_hash, generate_password_hash
-
+from datetime import datetime
 from helpers import apology, login_required, lookup, usd
 
 # Configure application
@@ -36,19 +36,21 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
     stock = db.execute("SELECT stock FROM purchases WHERE id = ?", session["user_id"])
-    shares = db.execute("SELECT shares FROM purchases WHERE id = ?", session["user_id"])
+    shares = db.execute("SELECT stock, shares FROM purchases WHERE id = ?", session["user_id"])
     cash_result = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
     cash = cash_result[0]["cash"] if cash_result else 0
-    
+
+
     prices = []
-    total = cash
     for entry in stock:
         stock_price = lookup(entry["stock"])["price"]
         prices.append(stock_price)
-        shares_for_stock = next((shares["shares"] for shares in shares if shares["stock"] == entry["stock"]), 0)
-        total += shares_for_stock * stock_price
-    
-    return render_template("index.html", stock = stock, shares = shares, prices = prices, total=total)
+        shares_for_stock = next((share["shares"] for share in shares if share["stock"] == entry["stock"]), 0)
+
+    combined_data = [{"stock": entry["stock"], "shares": shares_for_stock["shares"], "price": stock_price, "total_value": stock_price * shares_for_stock["shares"]} for entry, shares_for_stock, stock_price in zip(stock, shares, prices)]
+
+
+    return render_template("index.html", combined_data=combined_data, cash=cash)
 
 
 @app.route("/buy", methods=["GET", "POST"])
@@ -72,17 +74,27 @@ def buy():
             stock = stock.upper()
             total = float(price) * int(shares)
             if cash - total > 0:
+                current_datetime = datetime.now()
                 if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
                     db.execute("CREATE TABLE purchases (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total NUMERIC NOT NULL)")
+                if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='history'"):
+                    db.execute("CREATE TABLE history (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total NUMERIC NOT NULL, type TEXT NOT NULL, dt DATETIME)")
 
                 existing_shares = db.execute("SELECT shares FROM purchases WHERE stock = ? AND id = ?", stock, session["user_id"])
+                existing_total = db.execute("SELECT total FROM purchases WHERE stock = ? AND id = ?", stock, session["user_id"])
                 if existing_shares:
                     existing_shares_int = existing_shares[0]["shares"]
                     updated_shares = existing_shares_int + int(shares)  # Convert shares to an integer
-                    db.execute("UPDATE purchases SET shares = ? WHERE stock = ? AND id = ?", updated_shares, stock, session["user_id"])
+                    
+                if existing_total:
+                    existing_total_int = existing_total[0]["total"]
+                    updated_total = existing_total_int + int(total)  # Convert shares to an integer
+                    
+                    db.execute("UPDATE purchases SET shares = ?, total = ? WHERE stock = ? AND id = ?", updated_shares, updated_total, stock, session["user_id"])
+                    db.execute("INSERT INTO history (id, stock, shares, price, total, type, dt) VALUES (?, ?, ?, ?, ?, 'buy', ?)", session["user_id"], stock, int(shares), price, total, current_datetime)
                 else:
                     db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, int(shares), price, total)
-    
+                    db.execute("INSERT INTO history (id, stock, shares, price, total, type, dt) VALUES (?, ?, ?, ?, ?, 'buy', ?)", session["user_id"], stock, int(shares), price, total, current_datetime)
                 return redirect("/")
             else:
                 return apology("not enough funds to complete purchase", 402)
@@ -96,7 +108,8 @@ def buy():
 @login_required
 def history():
     """Show history of transactions"""
-    return apology("TODO")
+    history = db.execute("SELECT * FROM history WHERE id = ? ORDER BY dt DESC", session["user_id"])
+    return render_template("history.html", history = history)
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -204,4 +217,12 @@ def register():
 @login_required
 def sell():
     """Sell shares of stock"""
-    return apology("TODO")
+    if request.method == "POST":
+        if not request.form.get("symbol") or not request.form.get("shares"):
+            return apology("must provide stock symbol and the amount of shares", 402)
+        elif lookup(request.form.get("symbol")) == None:
+            return apology("stock not found", 402)
+        elif request.form.get("shares") < 1:
+            return apology("you cant sell less than 1 share")
+        else:
+            db.execute("")
