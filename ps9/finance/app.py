@@ -48,8 +48,6 @@ def buy():
             return apology("must provide stock symbol and the amount of shares", 402)
         elif lookup(request.form.get("symbol")) == None:
             return apology("stock not found", 402)
-#            result = lookup(request.form.get("symbol"))
-#            return render_template("quoted.html", symbol=result["symbol"], price=result["price"])
         elif request.form.get("shares") < 1:
             return apology("you cannot purchase less than 1 share", 402)
         else:
