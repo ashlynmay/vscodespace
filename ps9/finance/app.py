@@ -236,7 +236,7 @@ def sell():
         ntotal = int(request.form.get("shares")) * price
         updated_total = total - ntotal
         current_datetime = datetime.now()
-        if int(request.form.get("shares") > shares:
+        if int(request.form.get("shares")) > shares:
             return apology("you dont have that many shares to sell", 402)
         else:
             db.execute("UPDATE purchases SET shares = ?, total = ? WHERE stock = ? AND id = ?", updated_shares, updated_total, request.form.get("symbol"), session["user_id"])
