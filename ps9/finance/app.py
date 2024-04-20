@@ -38,6 +38,7 @@ def index():
     purchases = db.execute("SELECT * FROM purchases")
     stock =
     shares =
+    price =
     total =
     return render_template("index.html", purchases = purchases)
 
