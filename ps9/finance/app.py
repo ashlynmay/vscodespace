@@ -112,7 +112,7 @@ def quote():
     
     # User reached route via GET (as by clicking a link or via redirect)
     else:
-        return render_template(".html")
+        return render_template("/")
     return apology("TODO")
 
 
