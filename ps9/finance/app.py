@@ -62,7 +62,7 @@ def buy():
                     db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, shares, price, total)                
                 else:
                     db.execute("CREATE TABLE purchases (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total NUMERIC NOT NULL)")
-                    if db.execute("SELECT shares FROM purchases WHERE stock IS ? AND id", stock):
+                    if db.execute("SELECT shares FROM purchases WHERE stock IS ? AND id = ?", stock, ):
                         db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, shares, price, total)
                     else:
                         db.execute("INSERT INTO purchases (shares)")
