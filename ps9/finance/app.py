@@ -135,8 +135,10 @@ def register():
         elif len(db.execute("SELECT username FROM users WHERE username = ?", (request.form.get("username"), ))) == 0:
             hpswd = generate_password_hash(request.form.get("password"))
             db.execute("INSERT INTO users (username, hash, cash) VALUES (?, ?, 0)", request.form.get("username"), hpswd)
-            uid = db.execute("SELECT id FROM users WHERE username = ?", (request.form.get("username"),))
-            session[uid]
+            uid_result = db.execute("SELECT id FROM users WHERE username = ?", (request.form.get("username"),))
+if uid_result:
+    uid = uid_result[0]["id"]
+    session["user_id"] = uid
             return redirect("/")
         elif len(db.execute("SELECT username FROM users WHERE username IS ?", (request.form.get("username"), ))) > 0:
             return apology("username already taken", 403)
