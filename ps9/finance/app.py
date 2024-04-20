@@ -55,7 +55,7 @@ def buy():
         else:
             cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
             price = (lookup(request.form.get("symbol"))["price"])
-            if
+            if cash
             
     
     # User reached route via GET (as by clicking a link or via redirect)
