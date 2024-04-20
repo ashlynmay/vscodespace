@@ -224,7 +224,7 @@ def sell():
         stock = stock.upper()
         if not request.form.get("symbol") or not request.form.get("shares"):
             return apology("must provide stock symbol and the amount of shares", 402)
-        elif lookup(request.form.get("symbol")) == None:
+        elif lookup(stock) == None:
             return apology("stock not found", 402)
         elif int(request.form.get("shares")) < 1:
             return apology("you cant sell less than 1 share", 402)
