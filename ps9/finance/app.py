@@ -222,7 +222,7 @@ def sell():
     if request.method == "POST":
         stock = request.form.get("symbol")
         stock = stock.upper()
-        if not stock or not request.form.get("shares"):
+        if not  or not request.form.get("shares"):
             return apology("must provide stock symbol and the amount of shares", 402)
         elif lookup(request.form.get("symbol")) == None:
             return apology("stock not found", 402)
