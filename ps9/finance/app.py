@@ -67,7 +67,7 @@ def buy():
                     else:
                         shares_result = db.execute("SELECT shares FROM purchases WHERE stock IS ? AND id = ?", stock, session["user_id"])
                         tshares = shares_result[0]["shares"] if cash_result else 0
-                        db.execute("UPDATE purchases SET shares = ? WHERE stock IS ? AND id = ?", shares, stock, session["user_id"])
+                        db.execute("UPDATE purchases SET shares = ? WHERE stock IS ? AND id = ?", tshares, stock, session["user_id"])
                 return redirect("/")
             else:
                 return apology("not enough funds to complete purchase", 402)
