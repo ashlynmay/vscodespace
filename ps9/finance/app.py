@@ -131,7 +131,7 @@ def register():
             return apology("username already taken", 403)
 
         # Remember which user has logged in
-        session["user_id"] = db.execute("SELECT id FROM users WHERE username IS ?" )
+        session["user_id"] = db.execute("SELECT id FROM users WHERE username IS ?", request.form.get("username"))
 
     # User reached route via GET (as by clicking a link or via redirect)
     else:
