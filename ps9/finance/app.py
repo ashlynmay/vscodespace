@@ -227,6 +227,7 @@ def sell():
         share_result = db.execute("SELECT shares FROM purchases WHERE id = ? AND stock IS ?", session["user_id"], request.form.get("symbol"))
         shares = share_result[0]["shares"]
         if request.form.get("shares") > shares:
+            
          
         else:
             db.execute("")
