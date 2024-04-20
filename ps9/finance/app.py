@@ -39,7 +39,7 @@ def index():
     stock = db.execute("SELECT stock FROM purchases WHERE id = ?", session["user_id"])
     shares = db.execute("SELECT shares FROM purchases WHERE id = ?", session["user_id"])
     cash_result = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
-    price
+    price = 
     cash = cash_result[0]["cash"] if cash_result else 0
     for entry in stock:
         price["entry"] = lookup("stock")["price"]
