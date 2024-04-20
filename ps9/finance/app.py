@@ -42,6 +42,17 @@ def index():
 @login_required
 def buy():
     """Buy shares of stock"""
+    # User reached route via POST (as by submitting a form via POST)
+    if request.method == "POST":
+        if lookup(request.form.get("symbol")) != None:
+            result = lookup(request.form.get("symbol"))
+            return render_template("quoted.html", symbol=result["symbol"], price=result["price"])
+        else:
+            return apology("stock not found", 403)
+    
+    # User reached route via GET (as by clicking a link or via redirect)
+    else:
+        return render_template("quote.html")
     return apology("TODO")
 
 
