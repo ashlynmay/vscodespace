@@ -228,6 +228,5 @@ def sell():
         shares = share_result[0]["shares"]
         if request.form.get("shares") > shares:
             return apology("you dont have that many shares to sell", 402)
-         
         else:
             db.execute("")
