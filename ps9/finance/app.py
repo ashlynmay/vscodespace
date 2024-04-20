@@ -122,11 +122,6 @@ def register():
         elif not request.form.get("password"):
             return apology("must provide password", 403)
 
-        # Send Username 
-        rows = db.execute(
-            "SELECT * FROM users WHERE username = ?", request.form.get("username")
-        )
-
         # Ensure username exists and password is correct
         if db.execute("SELECT username FROM users WHERE username IS ?" request.form.get("username")) == NULL:
             hpswd = generate_password_hash(request.form.get("password"))
