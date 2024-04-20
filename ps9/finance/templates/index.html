@@ -16,7 +16,7 @@
             </tr>
         </thead>
         <tr>
-            {{% for purchase in stock %}}
+            {% for purchase in stock %}
             <td>{{ stock[purchase] }}</td>
             <td>{{ shares[purchase] }}</td>
             <td>{{ prices[purchase] }}</td>
