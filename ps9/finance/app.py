@@ -40,7 +40,6 @@ def index():
     shares = db.execute("SELECT shares FROM purchases WHERE id = ?", session["user_id"])
     cash_result = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
     cash = cash_result[0]["cash"] if cash_result else 0
-    price =
     for entry in stock:
         price["entry"] = lookup("stock")["price"]
     total = (sum(price)+
