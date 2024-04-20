@@ -126,7 +126,7 @@ def register():
             return apology("passwords provided do not match", 403)
 
         # Ensure username does not exists, and if not, create a new account.
-        elif len(db.execute("SELECT username FROM users WHERE username = ?" request.form.get("username") )) == 0:
+        elif len(db.execute("SELECT username FROM users WHERE username = ?" (request.form.get("username") )) == 0:
             hpswd = generate_password_hash(request.form.get("password"))
             db.execute("INSERT INTO users (username, hash, cash) VALUES (?, ?, 0)", request.form.get("username"), hpswd)
             return redirect("/")
