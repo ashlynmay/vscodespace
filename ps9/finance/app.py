@@ -51,7 +51,7 @@ def buy():
         elif int(request.form.get("shares")) < 1:
             return apology("you cannot purchase less than 1 share", 402)
         else:
-            cash_result= db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
+            cash_result = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
             cash=cash_result
             price = (lookup(request.form.get("symbol"))["price"])
             shares = (request.form.get("shares"))
