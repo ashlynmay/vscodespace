@@ -44,7 +44,7 @@ def buy():
     """Buy shares of stock"""
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
-        if not request.form.get("symbol") or not request.form:
+        if not request.form.get("symbol") or not request.form.get(""):
             return apology("must provide stock symbol and amount of stocks", 402)
         elif lookup(request.form.get("symbol")) == None:
             return apology("stock not found", 402)
