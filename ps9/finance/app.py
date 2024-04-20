@@ -74,7 +74,7 @@ def buy():
             stock = str(request.form.get("symbol"))
             stock = stock.upper()
             total = float(price) * int(shares)
-            newcash = 
+            newcash = cash - int(total)
             if cash - total > 0:
                 current_datetime = datetime.now()
                 if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
