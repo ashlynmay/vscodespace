@@ -35,7 +35,8 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-    for purchase in purchases
+    for purchase in purchases:
+        
     purchases = db.execute("SELECT * FROM purchases")
     return render_template("index.html", purchases = purchases)
 
