@@ -64,6 +64,8 @@ def buy():
                     db.execute("CREATE TABLE purchases (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total NUMERIC NOT NULL)")
                     if db.execute("SELECT shares FROM purchases WHERE stock IS ?", stock):
                         db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, shares, price, total)
+                    else:
+                        d
                 return redirect("/")
             else:
                 return apology("not enough funds to complete purchase", 402)
