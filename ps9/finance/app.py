@@ -37,7 +37,7 @@ def index():
     """Show portfolio of stocks"""
     purchases = db.execute("SELECT * FROM purchases")
     for purchase in purchases:
-        stock=
+        stock
     return render_template("index.html", purchases = purchases)
 
 
