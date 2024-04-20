@@ -38,7 +38,7 @@ def index():
     if request.method == "POST":
         code bleh :P
     else:
-        return render_template("index.html", )
+        return render_template("index.html", symbol =)
 
 
 @app.route("/buy", methods=["GET", "POST"])
