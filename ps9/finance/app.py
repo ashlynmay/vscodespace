@@ -108,7 +108,7 @@ def quote():
     """Get stock quote."""
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
-        return apology("TODO", 403)
+        lookup("")
     
     # User reached route via GET (as by clicking a link or via redirect)
     else:
