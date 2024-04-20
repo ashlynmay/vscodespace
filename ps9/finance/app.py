@@ -37,7 +37,7 @@ def index():
     """Show portfolio of stocks"""
     purchases = db.execute("SELECT * FROM purchases")
     stock = db.execute("SELECT stock FROM purchases WHERE id = ?", session["user_id"])
-    shares = db.execute("SELECT stock FROM purchases WHERE id = ?", session["user_id"])
+    shares = db.execute("SELECT shares FROM purchases WHERE id = ?", session["user_id"])
     price =
     total =
     return render_template("index.html", purchases = purchases)
