@@ -122,7 +122,8 @@ def register():
         elif not request.form.get("password") or  request.form.get("confirmation"):
             return apology("must provide and confirm password", 403)
         
-        elif not request.form.get("password") == 
+        elif not request.form.get("password") == request.form.get("confirmation"):
+            
 
         # Ensure username does not exists, and if not, create a new account.
         if db.execute("SELECT username FROM users WHERE username IS ?" request.form.get("username")) == NULL:
