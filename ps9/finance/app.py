@@ -46,7 +46,7 @@ def buy():
     if request.method == "POST":
         if lookup(request.form.get("symbol")) == None:
 #            result = lookup(request.form.get("symbol"))
-            return render_template("quoted.html", symbol=result["symbol"], price=result["price"])
+#            return render_template("quoted.html", symbol=result["symbol"], price=result["price"])
         else:
             return apology("stock not found", 403)
     
