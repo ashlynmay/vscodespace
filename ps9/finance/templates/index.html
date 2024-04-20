@@ -17,7 +17,7 @@
         </thead>
         <tr>
             {{% for purchase in purchases %}}
-            <td>{{ tmpstock = db.execute("SELECT stock FROM purchases WHERE id = session["user_id"]") }}</td>
+            <td>{{ tmpstock = (db.execute("SELECT stock FROM purchases WHERE id = session["user_id"]") }}</td>
             <td>{{ db.execute("SELECT shares FROM purchases") }}</td>
             <td>{{ price }}</td>
             <td>{{ total }}</td>
