@@ -64,7 +64,7 @@ def buy():
                 if existing_shares:
                     updated_shares = existing_shares[0]["shares"] + shares
                     db.execute("UPDATE purchases SET shares = ? WHERE stock = ? AND id = ?", updated_shares, stock, session["user_id"])
-    else:
+                else:
         db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, shares, price, total)
     
     return redirect("/")
