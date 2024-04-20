@@ -228,7 +228,6 @@ def sell():
         if share_result:
             shares = share_result[0]["shares"]
         else:
-        # Handle the case where share_result is empty
             shares = 0
         updated_shares = shares - request.form.get("shares")
         total_result = db.execute("SELECT total FROM purchases WHERE id = ? AND stock IS ?", session["user_id"], request.form.get("symbol"))
