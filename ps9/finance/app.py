@@ -45,7 +45,7 @@ def index():
     total = cash
     for entry in stock:
         stock_price = lookup(entry["stock"])["price"]
-        prices.append(stock_price)  # Add stock price to the prices list
+        prices.append(stock_price)
         shares_for_stock = next((shares["shares"] for shares in shares if shares["stock"] == entry["stock"]), 0)
         total += shares_for_stock * stock_price
     
