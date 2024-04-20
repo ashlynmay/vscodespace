@@ -88,7 +88,11 @@ def buy():
                 if existing_shares:
                     existing_shares_int = existing_shares[0]["shares"]
                     updated_shares = existing_shares_int + int(shares)  # Convert shares to an integer
-                    
+                
+                if existing_cash:
+                    existing_cash_int = existing_cash[0]["cash"]
+                    updated_cash = existing_cash_int - int(total)
+                
                 if existing_total:
                     existing_total_int = existing_total[0]["total"]
                     updated_total = existing_total_int + int(total)  # Convert shares to an integer
