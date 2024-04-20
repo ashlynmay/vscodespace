@@ -37,7 +37,7 @@ def index():
     """Show portfolio of stocks"""
     if request.method == "POST":
         
-    if request.method == "POST":
+    elif request.method == "POST":
         return render_template("buy.html")
 
 
