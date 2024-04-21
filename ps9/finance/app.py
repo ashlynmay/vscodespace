@@ -285,7 +285,7 @@ def sell():
         newcash = cash_float + ntotal
         current_datetime = datetime.now()
         if int(request.form.get("shares")) > shares:
-            return apology("you dont have that many shares to sell", 402)
+            return apology("you dont have that many shares to sell", 400)
         else:
             db.execute("UPDATE purchases SET shares = ?, total = ? WHERE stock = ? AND id = ?",
                        updated_shares, updated_total, stock, session["user_id"])
