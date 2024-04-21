@@ -266,6 +266,7 @@ def sell():
             return apology("you dont have that many shares to sell", 402)
         else:
             db.execute("UPDATE purchases SET shares = ?, total = ? WHERE stock = ? AND id = ?", updated_shares, updated_total, stock, session["user_id"])
+            db.execute()
             db.execute("INSERT INTO history (stock, shares, price, total, type, dt, id) VALUES (?, ?, ?, ?, 'SELL', ?, ?)", stock, request.form.get("shares"), price, ntotal, current_datetime, session["user_id"])
             return redirect("/")
     else: return render_template("sell.html")
