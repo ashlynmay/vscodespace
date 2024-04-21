@@ -74,7 +74,7 @@ def buy():
             shares = (request.form.get("shares"))
             stock = str(request.form.get("symbol"))
             stock = stock.upper()
-            total = float(price) * int(shares)
+            total) = float(price) * int(shares)
             newcash = cash - int(total)
             if cash - total > 0:
                 current_datetime = datetime.now()
@@ -96,14 +96,14 @@ def buy():
                 
                 if existing_total:
                     existing_total_int = existing_total[0]["total"]
-                    updated_total = existing_total_int) + float(total)  # Convert shares to an integer
+                    updated_total = existing_total_int + float(total)  # Convert shares to an integer
                     
                     
                     db.execute("UPDATE purchases SET shares = ?, total = ? WHERE stock = ? AND id = ?", updated_shares, updated_total, stock, session["user_id"])
                     db.execute("INSERT INTO history (id, stock, shares, price, total, type, dt) VALUES (?, ?, ?, ?, ?, 'BUY', ?)", session["user_id"], stock, int(shares), price, total, current_datetime)
                     db.execute("UPDATE users SET cash = ?", updated_cash)
                 else:
-                    db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, shares, price, total)
+                    db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, int(shares), price, total)
                     db.execute("INSERT INTO history (id, stock, shares, price, total, type, dt) VALUES (?, ?, ?, ?, ?, 'BUY', ?)", session["user_id"], stock, int(shares), price, total, current_datetime)
                     db.execute("UPDATE users SET cash = ?", newcash)
                 return redirect("/")
