@@ -8,19 +8,19 @@
     <h4>Sell a given stock.</h4>
     <hr>
         <form action="/sell" method="post">
-        <div>
-            <select class="form-control mx-auto w-auto" name="symbol" type="text">
-                <option disabled selected value="">Stock Symbol</option>
-                {% for row in stocks %}
-                    <option value="{{ row['stock'] }}">{{ row['stock'] }}</option>
-                {% endfor %}
-            </select>
-        </div>
-        <div>
-            <input autocomplete="off" class="form-control mx-auto w-auto" name="shares" placeholder="Amount of Shares" type="number">
-        </div>
-        <div>
-            <button class="btn btn-primary" type="submit">Sell</button>
-        </div>    
+            <div>
+                <select class="form-control mx-auto w-auto" name="symbol" type="text">
+                    <option disabled selected value="">Stock Symbol</option>
+                    {% for row in stocks %}
+                        <option value="{{ row['stock'] }}">{{ row['stock'] }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div>
+                <input autocomplete="off" class="form-control mx-auto w-auto" name="shares" placeholder="Amount of Shares" type="number">
+            </div>
+            <div>
+                <button class="btn btn-primary" type="submit">Sell</button>
+            </div>    
         </form>
 {% endblock %}
