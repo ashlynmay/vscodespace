@@ -30,7 +30,7 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
 
-@app.route("/cash")
+@app.route("/cash", methods=["GET", "POST"])
 @login_required
 def index():
 
