@@ -34,7 +34,7 @@ def after_request(response):
 @login_required
 def index():
     if request.method == "POST":
-        
+        return 
     else:
         return render_template("cash.html")
 
