@@ -74,7 +74,7 @@ def buy():
             shares = (request.form.get("shares"))
             stock = str(request.form.get("symbol"))
             stock = stock.upper()
-            total = float(price) * int(shares)
+            float(total) = float(price) * int(shares)
             newcash = cash - int(total)
             if cash - total > 0:
                 current_datetime = datetime.now()
