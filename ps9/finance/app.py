@@ -34,6 +34,7 @@ def after_request(response):
 @login_required
 def index():
     balance = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
+    
     if request.method == "POST":
         
     else:
