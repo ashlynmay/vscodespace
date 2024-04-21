@@ -42,7 +42,7 @@ def index():
     cash = cash_result[0]["cash"] if cash_result else 0
 
     prices=[]
-    total = cash
+    total = float(cash)
     for purchase in purchased:
         total += purchase["total"]
     for entry in stock:
