@@ -101,7 +101,7 @@ def buy():
                     
                     db.execute("UPDATE purchases SET shares = ?, total = ? WHERE stock = ? AND id = ?", updated_shares, float(updated_total), stock, session["user_id"])
                     db.execute("INSERT INTO history (id, stock, shares, price, total, type, dt) VALUES (?, ?, ?, ?, ?, 'BUY', ?)", session["user_id"], stock, int(shares), float(price), float(total), current_datetime)
-                    db.execute("UPDATE users SET cash = ?", float(updated_cash)
+                    db.execute("UPDATE users SET cash = ?", float(updated_cash))
                 else:
                     db.execute("INSERT INTO purchases (id, stock, shares, price, total) VALUES (?, ?, ?, ?, ?)", session["user_id"], stock, int(shares), float(price), total)
                     db.execute("INSERT INTO history (id, stock, shares, price, total, type, dt) VALUES (?, ?, ?, ?, ?, 'BUY', ?)", session["user_id"], stock, int(shares), float(price), float(total), current_datetime)
