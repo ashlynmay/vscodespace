@@ -36,7 +36,7 @@ def index():
     if request.method == "POST"
     
     else:
-        return 
+        return "cash.html"
 
 
 @app.route("/")
