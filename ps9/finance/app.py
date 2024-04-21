@@ -230,7 +230,7 @@ def register():
             return apology("must provide and confirm password", 400)
         
         elif not request.form.get("password") == request.form.get("confirmation"):
-            return apology("passwords provided do not match", 403)
+            return apology("passwords provided do not match", 400)
 
         # Ensure username does not exist and create a new account.
         elif len(db.execute("SELECT username FROM users WHERE username = ?", (request.form.get("username"), ))) == 0:
