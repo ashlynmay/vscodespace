@@ -40,7 +40,7 @@ def cash():
         db.execute("UPDATE users SET cash = ? WHERE id = ?", addcash, session["user_id"])
     else:
         return render_template("cash.html", balance=balance)
-    return redirect("")
+    return redirect("/")
 
 
 @app.route("/")
