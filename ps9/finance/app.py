@@ -261,6 +261,7 @@ def sell():
         price = lookup(stock)["price"]
         ntotal = float(request.form.get("shares")) * price
         updated_total = total - ntotal
+        cash = 
         newcash = cash + ntotal
         current_datetime = datetime.now()
         if int(request.form.get("shares")) > shares:
