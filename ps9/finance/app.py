@@ -35,7 +35,7 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-     if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
+    if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
         db.execute("CREATE TABLE purchases (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price FLOAT NOT NULL, total FLOAT NOT NULL)")
     stock = db.execute("SELECT stock FROM purchases WHERE id = ?", session["user_id"])
     shares = db.execute("SELECT stock, shares FROM purchases WHERE id = ?", session["user_id"])
