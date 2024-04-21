@@ -296,4 +296,4 @@ def sell():
                        stock, request.form.get("shares"), price, ntotal, current_datetime, session["user_id"])
             return redirect("/")
     else: 
-        return render_template("sell.html")
+        return render_template("sell.html",)
