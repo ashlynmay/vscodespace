@@ -101,8 +101,10 @@ def buy():
                     db.execute(
                         "CREATE TABLE history (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price FLOAT NOT NULL, total FLOAT NOT NULL, type TEXT NOT NULL, dt DATETIME)")
 
-                existing_shares = db.execute("SELECT shares FROM purchases WHERE stock = ? AND id = ?", stock, session["user_id"])
-                existing_total = db.execute("SELECT total FROM purchases WHERE stock = ? AND id = ?", stock, session["user_id"])
+                existing_shares = db.execute(
+                    "SELECT shares FROM purchases WHERE stock = ? AND id = ?", stock, session["user_id"])
+                existing_total = db.execute(
+                    "SELECT total FROM purchases WHERE stock = ? AND id = ?", stock, session["user_id"])
                 existing_cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
                 if existing_shares:
                     existing_shares_float = existing_shares[0]["shares"]
