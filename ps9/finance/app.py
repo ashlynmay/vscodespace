@@ -33,7 +33,7 @@ def after_request(response):
 @app.route("/cash", methods=["GET", "POST"])
 @login_required
 def index():
-    balance = 
+    balance = db.execute("")
     if request.method == "POST":
         
     else:
