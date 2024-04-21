@@ -68,7 +68,7 @@ def index():
     combined_data = [{"stock": entry["stock"], "shares": shares_for_stock["shares"], "price": stock_price,
                       "total_value": stock_price * shares_for_stock["shares"]} for entry, shares_for_stock, stock_price in zip(stock, shares, prices)]
 
-    return render_template("index.html", combined_data=combined_data, total=total)
+    return render_template("index.html", combined_data=combined_data, total=total, cash=cash)
 
 
 @app.route("/buy", methods=["GET", "POST"])
