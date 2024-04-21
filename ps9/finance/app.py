@@ -91,7 +91,7 @@ def buy():
                     updated_shares = existing_shares_int + int(shares)  # Convert shares to an integer
                 
                 if existing_cash:
-                    existing_cash_float = existing_cash[0]["cash"]
+                    existing_cash_float = float(existing_cash[0]["cash"]
                     updated_cash = existing_cash_int - int(total)
                 
                 if existing_total:
