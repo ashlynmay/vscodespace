@@ -96,7 +96,7 @@ def buy():
                 
                 if existing_total:
                     existing_total_int = existing_total[0]["total"]
-                    updated_total =float(existing_total_int + float(total)  # Convert shares to an integer
+                    updated_total =float(existing_total_int) + float(total)  # Convert shares to an integer
                     
                     
                     db.execute("UPDATE purchases SET shares = ?, total = ? WHERE stock = ? AND id = ?", updated_shares, updated_total, stock, session["user_id"])
