@@ -8,6 +8,7 @@
     <h4>Sell a given stock.</h4>
     <hr>
         <form action="/sell" method="post">
+            <input autocomplete="off" maxlength="5" class="form-control mx-auto w-auto" name="symbol" placeholder="Stock Symbol" type="text">
             <input autocomplete="off" class="form-control mx-auto w-auto" name="shares" placeholder="Amount of Shares" type="number">
 
             <button class="btn btn-primary" type="submit">Sell</button>
