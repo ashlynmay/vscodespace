@@ -262,7 +262,7 @@ def sell():
         ntotal = float(request.form.get("shares")) * price
         updated_total = total - ntotal
         cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
-        cash_float = cash[0][]
+        cash_float = cash[0]["cash"]
         newcash = cash + ntotal
         current_datetime = datetime.now()
         if int(request.form.get("shares")) > shares:
