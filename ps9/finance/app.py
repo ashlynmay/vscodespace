@@ -80,9 +80,9 @@ def buy():
         if not request.form.get("symbol") or not request.form.get("shares"):
             return apology("must provide stock symbol and the amount of shares", 402)
         elif lookup(request.form.get("symbol")) == None:
-            return apology("stock not found", 402)
+            return apology("stock not found", 400)
         elif int(request.form.get("shares")) < 1:
-            return apology("you cannot purchase less than 1 share", 402)
+            return apology("you cannot purchase less than 1 share", 400)
         else:
             cash_result = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
             cash = cash_result[0]["cash"] if cash_result else 0
