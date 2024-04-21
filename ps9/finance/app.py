@@ -245,7 +245,7 @@ def register():
                 session["user_id"] = uid
             return redirect("/")
         elif len(db.execute("SELECT username FROM users WHERE username IS ?", (request.form.get("username"), ))) > 0:
-            return apology("username already taken", 403)
+            return apology("username already taken", 400)
 
     # User reached route via GET (as by clicking a link or via redirect)
     else:
