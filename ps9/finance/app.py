@@ -90,7 +90,7 @@ def buy():
                 existing_cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
                 if existing_shares:
                     existing_shares_int = existing_shares[0]["shares"]
-                    updated_shares = existing_shares_int + int(shares)  # Convert shares to an integer
+                    updated_shares = existing_shares_int + float(shares)  # Convert shares to an integer
                 
                 if existing_cash:
                     existing_cash_float = float(existing_cash[0]["cash"])
