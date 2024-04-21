@@ -11,7 +11,7 @@
             <select class="form-control mx-auto w-auto" name="symbol" type="text">
                 <option disabled selected value="">Stock Symbol</option>
                 {% for row in stocks %}
-                    <option value="{% row['stock'] %}">{% stock['stock'] %}</option>
+                    <option value="{% row['stock'] %}">{% row['stock'] %}</option>
                 {% endfor %}
             </select>
             <input autocomplete="off" class="form-control mx-auto w-auto" name="shares" placeholder="Amount of Shares" type="number">
