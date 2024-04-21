@@ -287,7 +287,7 @@ def sell():
             db.execute("UPDATE purchases SET shares = ?, total = ? WHERE stock = ? AND id = ?",
                        updated_shares, updated_total, stock, session["user_id"])
             db.execute("UPDATE users SET cash = ? WHERE id = ?",
-                       newcash, session["user_id"])
+                        newcash, session["user_id"])
             
             db.execute("INSERT INTO history (stock, shares, price, total, type, dt, id) VALUES (?, ?, ?, ?, 'SELL', ?, ?)",
                        stock, request.form.get("shares"), price, ntotal, current_datetime, session["user_id"])
