@@ -37,7 +37,7 @@ def cash():
     balance = get_balance[0]["cash"]
     if request.method == "POST":
         addcash = float(balance) + float(request.form.get("cash"))
-        db.execute("UPDATE users SET cash = ?", addcash)
+        db.execute("UPDATE users SET cash = ? WHERE id = ?", addcash)
     else:
         return render_template("cash.html", balance=balance)
 
