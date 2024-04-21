@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block main %}
-    <h3>Account Balance: {{ balance }}</h3>
+    <h3>Account Balance: {{ balance | usd}}</h3>
     <hr>
     <h3>Add Cash:</h3>
     <form action="/cash" method="post">
