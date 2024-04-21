@@ -259,7 +259,7 @@ def sell():
         total_result = db.execute("SELECT total FROM purchases WHERE id = ? AND stock = ?", session["user_id"], stock)
         total = total_result[0]["total"]
         price = lookup(stock)["price"]
-        ntotal = int(request.form.get("shares")) * price
+        ntotal = float(request.form.get("shares")) * price
         updated_total = total - ntotal
         newcash = cash + ntotal
         current_datetime = datetime.now()
