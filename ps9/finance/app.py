@@ -33,6 +33,7 @@ def after_request(response):
 @app.route("/cash", methods=["GET", "POST"])
 @login_required
 def index():
+    
 
 
 @app.route("/")
