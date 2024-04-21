@@ -92,7 +92,7 @@ def buy():
                 
                 if existing_cash:
                     float(existing_cash_int) = float(existing_cash[0]["cash"])
-                    updated_cash = existing_cash_int - float(total)
+                    updated_cash) = existing_cash_int - float(total)
                 
                 if existing_total:
                     existing_total_int = existing_total[0]["total"]
