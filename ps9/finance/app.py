@@ -74,7 +74,7 @@ def buy():
             shares = (request.form.get("shares"))
             stock = str(request.form.get("symbol"))
             stock = stock.upper()
-            total) = float(price) * int(shares)
+            total = float(price) * int(shares)
             newcash = cash - int(total)
             if cash - total > 0:
                 current_datetime = datetime.now()
@@ -91,8 +91,8 @@ def buy():
                     updated_shares = existing_shares_int + int(shares)  # Convert shares to an integer
                 
                 if existing_cash:
-                    existing_cash_int = float(existing_cash[0]["cash"])
-                    updated_cash = float(existing_cash_int) - float(total)
+                    existing_cash_int = existing_cash[0]["cash"]
+                    updated_cash = existing_cash_int - float(total)
                 
                 if existing_total:
                     existing_total_int = existing_total[0]["total"]
