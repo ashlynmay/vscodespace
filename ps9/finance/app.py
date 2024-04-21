@@ -33,7 +33,7 @@ def after_request(response):
 @app.route("/cash", methods=["GET", "POST"])
 @login_required
 def index():
-    if request.method 
+    if request.method == "POST"
 
 
 @app.route("/")
