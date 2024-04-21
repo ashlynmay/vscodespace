@@ -263,7 +263,7 @@ def sell():
         updated_total = total - ntotal
         cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
         cash_float = cash[0]["cash"]
-        newcash = cash + ntotal
+        newcash = cash_float + ntotal
         current_datetime = datetime.now()
         if int(request.form.get("shares")) > shares:
             return apology("you dont have that many shares to sell", 402)
