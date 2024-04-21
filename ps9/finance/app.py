@@ -258,7 +258,7 @@ def register():
 @login_required
 def sell():
     """Sell shares of stock"""
-    stocks = db.execute("SELECT stock FROM payments WHERE id = ?", session["user_id"])
+    stocks = db.execute("SELECT stock FROM purchases WHERE id = ?", session["user_id"])
 
     if request.method == "POST":
         stock = request.form.get("symbol")
