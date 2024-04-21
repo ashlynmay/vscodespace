@@ -36,7 +36,7 @@ def index():
     get_balance = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
     balance = get_balance[0]["cash"]
     if request.method == "POST":
-        addcash = float(balance) + float(request.form.get("cash")
+        addcash = float(balance) + float(request.form.get("cash"))
         
     else:
         return render_template("cash.html", balance=balance)
