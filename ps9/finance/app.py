@@ -81,7 +81,7 @@ def buy():
             return apology("must provide stock symbol and the amount of shares", 400)
         elif lookup(request.form.get("symbol")) == None:
             return apology("stock not found", 400)
-                elif (request.form.get("shares").isdecimal) == True:
+        elif (request.form.get("shares").isdecimal) == True:
             return apology("you cannot purchase a fraction of a share", 400)
         elif int(request.form.get("shares")) < 1:
             return apology("you cannot purchase less than 1 share", 400)
