@@ -214,7 +214,7 @@ def quote():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-     # User reached route via POST (as by submitting a form via POST)
+    # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
         # Ensure username was submitted
         if not request.form.get("username"):
