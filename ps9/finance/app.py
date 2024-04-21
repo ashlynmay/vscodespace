@@ -37,6 +37,7 @@ def index():
     balance = get_balance[0]["cash"]
     if request.method == "POST":
         addcash = request.form.get("cash")
+        
     else:
         return render_template("cash.html", balance=balance)
 
