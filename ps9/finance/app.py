@@ -223,11 +223,11 @@ def register():
     if request.method == "POST":
         # Ensure username was submitted
         if not request.form.get("username"):
-            return apology("must provide username", 403)
+            return apology("must provide username", 400)
 
         # Ensure password was submitted and confirmed
         elif not request.form.get("password") or not request.form.get("confirmation"):
-            return apology("must provide and confirm password", 403)
+            return apology("must provide and confirm password", 400)
         
         elif not request.form.get("password") == request.form.get("confirmation"):
             return apology("passwords provided do not match", 403)
