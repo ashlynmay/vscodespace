@@ -84,7 +84,7 @@ def buy():
         elif int(request.form.get("shares")) < 1:
             return apology("you cannot purchase less than 1 share", 400)
         elif request.form.get("shares").toString.Contains(“.”):
-            return apology("")
+            return apology("you")
         else:
             cash_result = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
             cash = cash_result[0]["cash"] if cash_result else 0
