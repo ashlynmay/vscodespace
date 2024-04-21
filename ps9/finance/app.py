@@ -261,7 +261,7 @@ def sell():
         price = lookup(stock)["price"]
         ntotal = int(request.form.get("shares")) * price
         updated_total = total - ntotal
-        newcash = total +
+        newcash = cash
         current_datetime = datetime.now()
         if int(request.form.get("shares")) > shares:
             return apology("you dont have that many shares to sell", 402)
