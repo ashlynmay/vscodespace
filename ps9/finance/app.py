@@ -280,4 +280,5 @@ def sell():
             db.execute("UPDATE users SET cash = ? WHERE id = ?",newcash, session["user_id"])
             db.execute("INSERT INTO history (stock, shares, price, total, type, dt, id) VALUES (?, ?, ?, ?, 'SELL', ?, ?)", stock, request.form.get("shares"), price, ntotal, current_datetime, session["user_id"])
             return redirect("/")
-    else: return render_template("sell.html")
+    else: 
+        return render_template("sell.html")
