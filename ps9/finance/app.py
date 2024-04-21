@@ -119,7 +119,6 @@ def buy():
                     existing_total_int = float(existing_total[0]["total"])
                     updated_total = float(existing_total_int) + float(total)  # Convert shares to an integer
                     
-                    
                     db.execute("UPDATE purchases SET shares = ?, total = ? WHERE stock = ? AND id = ?",
                                updated_shares, updated_total, stock, session["user_id"])
                     db.execute("INSERT INTO history (id, stock, shares, price, total, type, dt) VALUES (?, ?, ?, ?, ?, 'BUY', ?)",
