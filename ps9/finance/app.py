@@ -79,7 +79,7 @@ def buy():
             if cash - total > 0:
                 current_datetime = datetime.now()
                 if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
-                    db.execute("CREATE TABLE purchases (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total NUMERIC NOT NULL)")
+                    db.execute("CREATE TABLE purchases (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total FLOAT NOT NULL)")
                 if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='history'"):
                     db.execute("CREATE TABLE history (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total FLOAT NOT NULL, type TEXT NOT NULL, dt DATETIME)")
 
