@@ -81,7 +81,7 @@ def buy():
                 if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='purchases'"):
                     db.execute("CREATE TABLE purchases (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price FLOAT NOT NULL, total FLOAT NOT NULL)")
                 if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='history'"):
-                    db.execute("CREATE TABLE history (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price NUMERIC NOT NULL, total FLOAT NOT NULL, type TEXT NOT NULL, dt DATETIME)")
+                    db.execute("CREATE TABLE history (id INTEGER NOT NULL, stock TEXT NOT NULL, shares INTEGER NOT NULL, price FLOAT NOT NULL, total FLOAT NOT NULL, type TEXT NOT NULL, dt DATETIME)")
 
                 existing_shares = db.execute("SELECT shares FROM purchases WHERE stock = ? AND id = ?", stock, session["user_id"])
                 existing_total = db.execute("SELECT total FROM purchases WHERE stock = ? AND id = ?", stock, session["user_id"])
