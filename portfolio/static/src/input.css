@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 #home_hero {
-    max-height: 90vh;
     border-bottom-left-radius: 3vw;
     border-bottom-right-radius: 3vw;
 }
@@ -12,6 +11,6 @@
     justify-content: center;
 }
 
-.navbar, .p-2 {
+.navbar, {
     z-index: 2000;
 }
