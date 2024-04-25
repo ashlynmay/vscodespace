@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 #home_hero {
-    border-bottom-left-radius: ;
+    border-bottom-left-radius: 10%;
+    
 }
