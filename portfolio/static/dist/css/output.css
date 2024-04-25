@@ -1763,7 +1763,7 @@ html {
 }
 
 .navbar {
-  justify-content: center;
+  z-index: 200;
 }
 
 @media (min-width: 1024px) {
