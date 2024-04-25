@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #home_hero {
-    max-height: 90
+    max-height: 90vh;
     border-bottom-left-radius: 3vw;
     border-bottom-right-radius: 3vw;
 }
