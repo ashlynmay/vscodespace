@@ -8,7 +8,8 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("")
+@app.route("/portfolio")
+
 
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
