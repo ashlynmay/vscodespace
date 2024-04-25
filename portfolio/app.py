@@ -10,6 +10,7 @@ def index():
 
 @app.route("/portfolio")
 def portfolio():
+    return render_template("portfolio.html")
 
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
