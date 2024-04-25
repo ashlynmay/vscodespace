@@ -1938,6 +1938,10 @@ html {
   border-bottom-right-radius: 3vw;
 }
 
+.timeline {
+  justify-content: center;
+}
+
 @media (min-width: 1024px) {
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
