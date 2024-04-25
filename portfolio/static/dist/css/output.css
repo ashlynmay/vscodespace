@@ -1934,7 +1934,8 @@ html {
 }
 
 #home_hero {
-  border-bottom-left-radius: 10;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 
 @media (min-width: 1024px) {
