@@ -750,6 +750,11 @@ html {
   --tw-contain-style:  ;
 }
 
+.link {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
 @keyframes button-pop {
   0% {
     transform: scale(var(--btn-focus-scale, 0.98));
@@ -776,6 +781,16 @@ html {
   100% {
     background-position-y: 0;
   }
+}
+
+.link:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 @keyframes modal-pop {
@@ -841,4 +856,13 @@ html {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+.static {
+  position: static;
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
