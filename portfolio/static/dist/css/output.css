@@ -1762,6 +1762,10 @@ html {
   justify-content: center;
 }
 
+.navbar {
+  justify-content: center;
+}
+
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
@@ -1869,4 +1873,3 @@ html {
     display: none;
   }
 }
-
