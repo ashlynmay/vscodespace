@@ -49,6 +49,8 @@ def projects():
     other_projects = db.execute("SELECT * FROM projects WHERE type = 'other'")
     return render_template("projects.html", c_projects=c_projects, py_projects=py_projects, web_projects=web_projects, other_projects=other_projects)
 
+@app.route
+
 
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
