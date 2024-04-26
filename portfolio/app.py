@@ -3,6 +3,7 @@ from flask import Flask, flash, redirect, render_template, request
 from livereload import Server
 
 app = Flask(__name__)
+db = SQL("sqlite:///finance.db")
 
 @app.route("/")
 def index():
