@@ -2644,7 +2644,10 @@ h2 {
   left: 5%;
 }
 
-.project
+.projecttitle {
+  left: 10%;
+  position: relative;
+}
 
 .card figure {
   margin: 0;
