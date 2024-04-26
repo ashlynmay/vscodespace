@@ -1,7 +1,7 @@
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request
 from livereload import Server
-import os
+import os re
 
 app = Flask(__name__)
 db = SQL("sqlite:///portfolio.db")
