@@ -23,11 +23,18 @@ def past_projects():
     directory = '/home/ipsum/vscodespace/'
 
     # Iterate over files in the directory
+<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
     for filename in os.listdir(directory):
         if filename.lower() == 'project.md':
-            # Read the content of the project file
-            with open(os.path.join(directory, filename), 'r') as file:
-                lines = file.splitlines()
++            try:
++                with open(os.path.join(directory, filename), 'r') as file:
++                    lines = file.read().splitlines()
++            except FileNotFoundError:
++                print(f"Could not read project file {filename} in {directory}")
+-            # Read the content of the project file
+-            with open(os.path.join(directory, filename), 'r') as file:
+-                lines = file.splitlines()
+<<<<<<<  b8d73485-522b-40f3-b69c-2545175fa077  >>>>>>>
                 if len(lines) >= 1:
                     name = lines[0].strip()
                 else: name = ""
