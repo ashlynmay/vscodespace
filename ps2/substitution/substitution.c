@@ -78,7 +78,9 @@ int main(int argc, string argv[])
 }
 
 ❯ ./substitution
-Usage: ./substition key
+    Usage: ./substition key
+❯ ./substitution NQXPOMAFTRHLZGECYJIUWSKD
+Key must contain 26 characters.
 ❯ ./substitution NQXPOMAFTRHLZGECYJIUWSKDVB
 plaintext: hello, world
 ciphertext: folle, kejlp
