@@ -11,10 +11,6 @@ db = SQL("sqlite:///portfolio.db")
 def index():
     return render_template("index.html")
 
-@app.route("/current-projects")
-def current_projects():
-    return render_template("current-projects.html")
-
 @app.route("/projects")
 def projects():
     db.execute("DROP TABLE projects")
