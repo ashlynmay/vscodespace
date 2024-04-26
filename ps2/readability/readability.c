@@ -99,8 +99,8 @@ Text: Congratulations! Today is your day. You're off to Great Places! You're off
  and away!                                                                      
 Grade 3                                                                         
 $ ./readability                                                                 
-Text: Harry Potter was a highly unusual boy in many ways. For one thing, he hate
-d the summer holidays more than any other time of year. For another, he really w
-anted to do his homework, but was forced to do it in secret, in the dead of the 
-night. And he also happened to be a wizard.
-Grade 
+    Text: Harry Potter was a highly unusual boy in many ways. For one thing, he hate
+    d the summer holidays more than any other time of year. For another, he really w
+    anted to do his homework, but was forced to do it in secret, in the dead of the 
+    night. And he also happened to be a wizard.
+    Grade 5
