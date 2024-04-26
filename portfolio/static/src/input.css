@@ -33,7 +33,7 @@
 
 #projects {
   flex-direction: column;
-  
+
 }
 
 h2 {
@@ -51,6 +51,7 @@ h2 {
 .projecttitle {
   left: 10%;
   position: relative;
+  
 }
 
 .card figure {
