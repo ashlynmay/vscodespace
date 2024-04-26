@@ -44,6 +44,7 @@ h2 {
 
 .projecttitle {{
     left: 10%;
+    position: relative;
 }
 
 .card figure {
