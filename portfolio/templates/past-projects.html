@@ -34,7 +34,6 @@
             <h2>Projects Written in Python</h2>
             <div id="projectcards">
                 {% for project in py_projects %}
-                    {% if project['image'] %}
                         <div class="card w-52 m-5 bg-neutral shadow-xl">
                             <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
                             <div class="card-body">
