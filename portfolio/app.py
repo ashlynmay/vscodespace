@@ -15,10 +15,19 @@ def index():
 def current_projects():
     return render_template("current-projects.html")
 
+<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
 @app.route("/past-projects")
 def past_projects():
-    db.execute("DROP TABLE projects")
-    db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT)")
++    try:
++        db.execute("DROP TABLE projects")
++    except:
++        pass
++    try:
++        db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT)")
++    except:
++        pass
+-    db.execute("DROP TABLE projects")
+-    db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT)")
     # Directory path to search for README files
     directory = '/home/ipsum/vscodespace/'
 
@@ -53,6 +62,7 @@ def past_projects():
         continue
     projects = db.execute("SELECT * FROM projects")
     return render_template("past-projects.html", projects=projects)
+<<<<<<<  2a968b78-86e4-4d96-a594-5f041024d49f  >>>>>>>
 
 
 if __name__ == '__main__':
