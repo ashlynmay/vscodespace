@@ -9,21 +9,21 @@
         <h1>Projects</h1>
         <br>
         {% if c_projects is not none %}
-        <h2>Projects Written in C</h2>
-        <div id="projectcards">
-            {% for project in c_projects %}
-                <div class="card w-52 m-5 bg-neutral shadow-xl">
-                    <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
-                    <div class="card-body">
-                    <h2 class="card-title">{{ project['name'] }}</h2>
-                    <p>{{ project['description'] }}</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
+            <h2>Projects Written in C</h2>
+            <div id="projectcards">
+                {% for project in c_projects %}
+                    <div class="card w-52 m-5 bg-neutral shadow-xl">
+                        <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
+                        <div class="card-body">
+                        <h2 class="card-title">{{ project['name'] }}</h2>
+                        <p>{{ project['description'] }}</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
+                        </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
+                {% endfor %}
+            </div>
         {% endif %}
         <br>
         {% if py_projects is not none %}
