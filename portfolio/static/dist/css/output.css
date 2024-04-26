@@ -2637,6 +2637,9 @@ html {
 
 h2 {
   margin-top: 0 !important;
+}
+
+h1, h2 {
   position: relative;
   left: 5%;
 }
