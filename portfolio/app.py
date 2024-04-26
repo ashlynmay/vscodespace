@@ -50,6 +50,8 @@ def projects():
     return render_template("projects.html", c_projects=c_projects, py_projects=py_projects, web_projects=web_projects, other_projects=other_projects)
 
 @app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
 
 if __name__ == '__main__':
