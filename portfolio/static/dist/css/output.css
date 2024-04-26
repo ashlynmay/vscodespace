@@ -2628,7 +2628,6 @@ html {
 #projectcards {
   display: flex;
   flex-wrap: wrap;
-  padding: 3vw;
   justify-content: center;
 }
 
