@@ -25,7 +25,10 @@ def past_projects():
     # Iterate over files in the directory and child dirs
     for dirpath, dirnames, filenames in os.walk(directory):
         if 'node_modules' in dirpath or any(x.startswith('node_modules') for x in dirnames):
-            continue
+    if not dirpath.endswith('node_modules'):
+        # Include files in the same directory as 'node_modules'
+        # Process the files here
+    continue
         for filename in filenames:
             if filename.lower() == 'readme.md':
                 # Read the content of the README file
