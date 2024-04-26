@@ -2722,7 +2722,7 @@ html {
 
 .embla__slide {
   flex: 0 0 var(--slide-size);
-  min-width: ;
+  min-width: 10;
   margin-left: var(--slide-spacing);
 }
 
