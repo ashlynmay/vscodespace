@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <string>
 
 // Max voters and candidates
 #define MAX_VOTERS 100
