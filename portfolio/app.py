@@ -53,6 +53,7 @@ def projects():
 def contact():
     return render_template("contact.html")
 
+@app.route("/cali")
 
 
 
