@@ -39,7 +39,7 @@ def past_projects():
                 description = ""
             if len(lines) >= 4:
                 link = lines[3].strip()
-         else:
+            else:
                     link = ""
                 db.execute("INSERT INTO projects (name, image, description, link) VALUES (?, ?, ?, ?)", name, image, description, link)
     projects = db.execute("SELECT * FROM projects")
