@@ -49,7 +49,7 @@ def projects():
     other_projects = db.execute("SELECT * FROM projects WHERE type = 'other'")
     return render_template("projects.html", c_projects=c_projects, py_projects=py_projects, web_projects=web_projects, other_projects=other_projects)
 
-@app.route()
+@app.route("/contact")
 
 
 if __name__ == '__main__':
