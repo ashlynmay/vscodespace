@@ -23,27 +23,50 @@ def past_projects():
     directory = '/home/ipsum/vscodespace/'
 
     # Iterate over files in the directory
-    for filename in os.listdir(directory):
-        if filename.lower() == 'project.md':
-            with open(os.path.join(directory, filename), 'r') as file:
-                lines = file.read().splitlines()
-            if len(lines) >= 1:
-                name = lines[0].strip()
-            else: name = ""
-            if len(lines) >- 2:    
-                image = lines[1].strip()
-            else: image = ""
-            if len(lines) >= 3:
-                description = lines[2].strip()
-            else:
-                description = ""
-            if len(lines) >= 4:
-                link = lines[3].strip()
-            else:
-                link = ""
-            db.execute("INSERT INTO projects (name, image, description, link) VALUES (?, ?, ?, ?)", name, image, description, link)
+<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
++    for root, dirs, files in os.walk(directory):
++        for filename in files:
++            if filename.lower() == 'project.md':
++                with open(os.path.join(root, filename), 'r') as file:
++                    lines = file.read().splitlines()
++                if len(lines) >= 1:
++                    name = lines[0].strip()
++                else: name = ""
++                if len(lines) > 1:    
++                    image = lines[1].strip()
++                else: image = ""
++                if len(lines) >= 3:
++                    description = lines[2].strip()
++                else:
++                    description = ""
++                if len(lines) >= 4:
++                    link = lines[3].strip()
++                else:
++                    link = ""
++                db.execute("INSERT INTO projects (name, image, description, link) VALUES (?, ?, ?, ?)", name, image, description, link)
+-    for filename in os.listdir(directory):
+-        if filename.lower() == 'project.md':
+-            with open(os.path.join(directory, filename), 'r') as file:
+-                lines = file.read().splitlines()
+-            if len(lines) >= 1:
+-                name = lines[0].strip()
+-            else: name = ""
+-            if len(lines) >- 2:    
+-                image = lines[1].strip()
+-            else: image = ""
+-            if len(lines) >= 3:
+-                description = lines[2].strip()
+-            else:
+-                description = ""
+-            if len(lines) >= 4:
+-                link = lines[3].strip()
+-            else:
+-                link = ""
+-            db.execute("INSERT INTO projects (name, image, description, link) VALUES (?, ?, ?, ?)", name, image, description, link)
     projects = db.execute("SELECT * FROM projects")
     return render_template("past-projects.html", projects=projects)
++
+<<<<<<<  5901af63-f025-409b-91de-4b329b51c9d8  >>>>>>>
 
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
