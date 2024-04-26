@@ -110,5 +110,5 @@ void checksum(long card)
     Card Number: 4111111111111111
     VISA
 ❯ ./credit
-Card Number: 4111111111111112
-INVALID
+    Card Number: 4111111111111112
+    INVALID
