@@ -28,8 +28,6 @@ def past_projects():
             try:
                 with open(os.path.join(directory, filename), 'r') as file:
                     lines = file.read().splitlines()
-            except FileNotFoundError:
-                print(f"Could not read project file {filename} in {directory}")
                 if len(lines) >= 1:
                     name = lines[0].strip()
                 else: name = ""
