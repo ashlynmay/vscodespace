@@ -2473,6 +2473,10 @@ html {
   z-index: 1;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
