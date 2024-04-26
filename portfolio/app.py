@@ -65,7 +65,7 @@ def past_projects():
                             db.execute("INSERT INTO projects (name, image, description, link) VALUES (?, ?, ?, ?)", name, image, description, link)
                         except:
                             pass
-        continue
+            continue
     try:
         projects = db.execute("SELECT * FROM projects")
     except:
