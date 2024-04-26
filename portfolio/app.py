@@ -18,7 +18,7 @@ def current_projects():
 def past_projects():
     db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT)")
     # Directory path to search for README files
-    directory = '/'
+    directory = '/home/ipsum/vscodespace/
 
     # Iterate over files in the directory
     for filename in os.listdir(directory):
