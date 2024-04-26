@@ -1,5 +1,5 @@
-hello, world
+readability
 https://placehold.co/600x400?text=Hello+World
-the classic
+a
 https://github.com/ashlynmay/vscodespace/tree/main/ps1/world
 c
