@@ -5,6 +5,7 @@
     "tailwindcss": "^3.4.3"
   },
   "dependencies": {
-    "embla-carousel": "^8.0.2"
+    "embla-carousel": "^8.0.2",
+    "embla-carousel-class-names": "^8.0.2"
   }
 }
