@@ -2644,6 +2644,9 @@ h1, h2 {
   left: 5%;
 }
 
+.card figure {
+}
+
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
