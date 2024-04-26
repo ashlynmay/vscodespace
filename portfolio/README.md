@@ -1,1 +1,1 @@
-A portfolio webapp based on flask using
+A portfolio webapp based on flask with tailwindc
