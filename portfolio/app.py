@@ -31,7 +31,7 @@ def past_projects():
                 name = lines[0].strip()
             else: name = ""
             if len(lines) >- 2:    
-                    image = lines[1].strip()
+                image = lines[1].strip()
                 else: image = ""
                 if len(lines) >= 3:
                     description = lines[2].strip()
