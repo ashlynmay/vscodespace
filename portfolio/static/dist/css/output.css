@@ -2095,12 +2095,6 @@ html {
   margin-top: 0;
 }
 
-.mockup-phone .display {
-  overflow: hidden;
-  border-radius: 40px;
-  margin-top: -25px;
-}
-
 @keyframes modal-pop {
   0% {
     opacity: 0;
@@ -2519,10 +2513,6 @@ html {
   flex-direction: column;
 }
 
-.content-center {
-  align-content: center;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
@@ -2561,10 +2551,6 @@ html {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .px-1 {
@@ -2644,6 +2630,10 @@ html {
   flex-wrap: wrap;
   padding: 3vw;
   justify-content: center;
+}
+
+#projects {
+  flex-direction: column;
 }
 
 @media (min-width: 1024px) {
