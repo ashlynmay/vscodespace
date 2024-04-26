@@ -217,10 +217,10 @@ void eliminate(int min)
     Rank 1: candidate1
     Rank 2: candidate2
 
-Rank 1: candidate2
-Rank 2: candidate2
+    Rank 1: candidate2
+    Rank 2: candidate2
 
-Rank 1: candidate2
+    Rank 1: candidate2
 Rank 2: candidate1
 
 candidate2
