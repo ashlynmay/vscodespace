@@ -95,7 +95,8 @@ $ ./readability
     Text: One fish. Two fish. Red fish. Blue fish.                                  
     Before Grade 1                                                                  
 $ ./readability                                                                 
-    Text: Congratulations! Today is your day. You're off to Great Places! You're off
+    Text: Congratulations! Today is your day. 
+    You're off to Great Places! You're off
     and away!                                                                      
     Grade 3                                                                         
 $ ./readability                                                                 
