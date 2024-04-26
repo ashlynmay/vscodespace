@@ -12,7 +12,7 @@
     <div id="projectcards">
         {% for project in projects %}
             <div class="card w-52 bg-neutral shadow-xl">
-                <figure><img src="{{}}" alt="placeholder" /></figure>
+                <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
                 <div class="card-body">
                 <h2 class="card-title">{{ project['name'] }}</h2>
                 <p>{{ project['description'] }}</p>
