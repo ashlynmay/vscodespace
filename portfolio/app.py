@@ -51,6 +51,7 @@ def past_projects():
                     db.execute("INSERT INTO projects (name, image, description, link) VALUES (?, ?, ?, ?)", name, image, description, link)
     projects = db.execute("SELECT * FROM projects")
     return render_template("past-projects.html", projects=projects)
++
 <<<<<<<  ade5b061-ee53-4501-9999-80f87ba695f2  >>>>>>>
 
 
