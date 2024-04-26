@@ -15,7 +15,6 @@ def index():
 def current_projects():
     return render_template("current-projects.html")
 
-<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
 @app.route("/past-projects")
 def past_projects():
     db.execute("DROP TABLE projects")
@@ -25,8 +24,8 @@ def past_projects():
 
     # Iterate over files in the directory and child dirs
     for dirpath, dirnames, filenames in os.walk(directory):
-+        if 'nord_modules' in dirpath:
-+            continue
+        if 'nord_modules' in dirpath:
+            continue
         for filename in filenames:
             if filename.lower() == 'readme.md':
                 # Read the content of the README file
@@ -51,8 +50,7 @@ def past_projects():
                     db.execute("INSERT INTO projects (name, image, description, link) VALUES (?, ?, ?, ?)", name, image, description, link)
     projects = db.execute("SELECT * FROM projects")
     return render_template("past-projects.html", projects=projects)
-+
-<<<<<<<  ade5b061-ee53-4501-9999-80f87ba695f2  >>>>>>>
+
 
 
 if __name__ == '__main__':
