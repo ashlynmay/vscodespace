@@ -104,8 +104,8 @@ void checksum(long card)
 }
 
 ❯ ./credit
-Card Number: 371449635398431
-AMEX
+    Card Number: 371449635398431
+    AMEX
 ❯ ./credit
 Card Number: 4111111111111111
 VISA
