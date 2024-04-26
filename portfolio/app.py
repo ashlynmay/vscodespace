@@ -21,12 +21,14 @@ def past_projects():
     directory = '/home/ipsum/vscodespace/'
 
     # Iterate over files in the directory
+<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
     for filename in os.listdir(directory):
         if filename.lower() == 'readme.md':
             # Read the content of the README file
             with open(os.path.join(directory, filename), 'r') as file:
                 content = file.read()
     return render_template("past-projects.html")
+<<<<<<<  fb7c95e9-885b-4bdd-9369-36a34f861154  >>>>>>>
 
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
