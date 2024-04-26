@@ -16,6 +16,7 @@ def current_projects():
 
 @app.route("/past-projects")
 def past_projects():
+    DROP TABLE projects;
     db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT)")
     # Directory path to search for README files
     directory = '/home/ipsum/vscodespace/'
