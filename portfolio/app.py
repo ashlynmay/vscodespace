@@ -28,7 +28,7 @@ def past_projects():
             with open(os.path.join(directory, filename), 'r') as file:
                 lines = file.readlines()
                 name = lines[0].strip()
-                image = lines[1].strip()
+                    image = lines[1].strip()
                 if len(lines) >= 3:
                     description = lines[2].strip()
                 else:
