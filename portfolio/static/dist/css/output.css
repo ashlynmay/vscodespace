@@ -2636,7 +2636,7 @@ html {
 }
 
 h2 {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 @media (min-width: 1024px) {
