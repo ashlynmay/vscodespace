@@ -29,7 +29,7 @@ def past_projects():
                 # Include files in the same directory as 'node_modules'
                 # Process the files here
                 for filename in filenames:
-            if filename.lower() == 'readme.md':
+                    if filename.lower() == 'readme.md':
                 # Read the content of the README file
                 with open(os.path.join(dirpath, filename), 'r') as file:
                     content = file.read()
