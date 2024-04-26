@@ -26,5 +26,6 @@
 #projectcards {
     display: flex;
     flex-wrap: wrap;
+    padding: 
     justify-content: center;
 }
