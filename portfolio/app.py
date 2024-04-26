@@ -48,6 +48,9 @@ def past_projects():
                     type = ""
                 db.execute("INSERT INTO projects (name, image, description, link, type) VALUES (?, ?, ?, ?)", name, image, description, link, type)
     projects = db.execute("SELECT * FROM projects")
+    projects = db.execute("SELECT * FROM projects")
+    projects = db.execute("SELECT * FROM projects")
+    projects = db.execute("SELECT * FROM projects")
     return render_template("past-projects.html", projects=projects)
 
 
