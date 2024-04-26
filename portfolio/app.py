@@ -11,8 +11,8 @@ def index():
 @app.route("/current-projects")
 def current_projects():
     return render_template("current-projects.html")
-    
-    return render_template("portfolio.html")
+
+@app.route("/past-projects")
 
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
