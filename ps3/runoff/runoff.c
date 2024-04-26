@@ -213,7 +213,7 @@ void eliminate(int min)
 }
 
 ❯ ./runoff candidate1 candidate2
-Number of voters: 3
+    Number of voters: 3
 Rank 1: candidate1
 Rank 2: candidate2
 
