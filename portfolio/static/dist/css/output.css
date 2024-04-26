@@ -2723,7 +2723,7 @@ html {
 .embla__slide {
   flex: 0 0 var(--slide-size);
   min-width: 0;
-  padding-left: var(--slide-spacing);
+  margin-left: var(--slide-spacing);
 }
 
 .embla__slide__number {
