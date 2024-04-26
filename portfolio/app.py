@@ -54,7 +54,8 @@ def contact():
     return render_template("contact.html")
 
 @app.route("/cali")
-
+def cali():
+    return render_template("cali.html")
 
 
 if __name__ == '__main__':
