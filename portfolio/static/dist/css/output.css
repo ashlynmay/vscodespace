@@ -2795,7 +2795,8 @@ html {
   justify-content: center;
 }
 
-.navbar, .p-2 {
+.navbar,
+.p-2 {
   z-index: 2000;
 }
 
