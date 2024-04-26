@@ -5,148 +5,106 @@
 {% endblock %}
 
 {% block body %}
-<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
     <div class="prose flex justify-center pt-6">
         <h1>Projects</h1>
         <br>
-+        {% if c_projects %}
--        {% if c_projects is not none %}
+        {% if c_projects %}
             <h2>Projects Written in C</h2>
             <div id="projectcards">
                 {% for project in c_projects %}
-+                    {% if project['image'] %}
-+                        <div class="card w-52 m-5 bg-neutral shadow-xl">
-+                            <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
-+                            <div class="card-body">
-+                            <h2 class="card-title">{{ project['name'] }}</h2>
-+                            <p>{{ project['description'] }}</p>
-+                            <div class="card-actions justify-end">
-+                                <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
-+                            </div>
-+                            </div>
--                    <div class="card w-52 m-5 bg-neutral shadow-xl">
--                        <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
--                        <div class="card-body">
--                        <h2 class="card-title">{{ project['name'] }}</h2>
--                        <p>{{ project['description'] }}</p>
--                        <div class="card-actions justify-end">
--                            <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
+                    {% if project['image'] %}
+                        <div class="card w-52 m-5 bg-neutral shadow-xl">
+                            <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
+                            <div class="card-body">
+                            <h2 class="card-title">{{ project['name'] }}</h2>
+                            <p>{{ project['description'] }}</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
+                            </div>
+                            </div>
                         </div>
-+                    {% else %}
-+                        <p>Error: Image for project {{ project['name'] }} is null.</p>
-+                    {% endif %}
--                        </div>
--                    </div>
+                    {% else %}
+                        <p>Error: Image for project {{ project['name'] }} is null.</p>
+                    {% endif %}
                 {% endfor %}
             </div>
-+        {% else %}
-+            <p>Projects Written in C is null.</p>
+        {% else %}
+            <p>Projects Written in C is null.</p>
         {% endif %}
         <br>
-+        {% if py_projects %}
--        {% if py_projects is not none %}
+        {% if py_projects %}
             <h2>Projects Written in Python</h2>
             <div id="projectcards">
                 {% for project in py_projects %}
-+                    {% if project['image'] %}
-+                        <div class="card w-52 m-5 bg-neutral shadow-xl">
-+                            <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
-+                            <div class="card-body">
-+                            <h2 class="card-title">{{ project['name'] }}</h2>
-+                            <p>{{ project['description'] }}</p>
-+                            <div class="card-actions justify-end">
-+                                <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
-+                            </div>
-+                            </div>
--                    <div class="card w-52 m-5 bg-neutral shadow-xl">
--                        <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
--                        <div class="card-body">
--                        <h2 class="card-title">{{ project['name'] }}</h2>
--                        <p>{{ project['description'] }}</p>
--                        <div class="card-actions justify-end">
--                            <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
+                    {% if project['image'] %}
+                        <div class="card w-52 m-5 bg-neutral shadow-xl">
+                            <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
+                            <div class="card-body">
+                            <h2 class="card-title">{{ project['name'] }}</h2>
+                            <p>{{ project['description'] }}</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
+                            </div>
+                            </div>
                         </div>
-+                    {% else %}
-+                        <p>Error: Image for project {{ project['name'] }} is null.</p>
-+                    {% endif %}
--                        </div>
--                    </div>
+                    {% else %}
+                        <p>Error: Image for project {{ project['name'] }} is null.</p>
+                    {% endif %}
                 {% endfor %}
             </div>
-+        {% else %}
-+            <p>Projects Written in Python is null.</p>
+        {% else %}
+            <p>Projects Written in Python is null.</p>
         {% endif %}
         <br>
-+        {% if web_projects %}
--        {% if web_projects is not none %}
+        {% if web_projects %}
             <h2>Web Development Projects</h2>
             <div id="projectcards">
                 {% for project in web_projects %}
-+                    {% if project['image'] %}
-+                        <div class="card w-52 m-5 bg-neutral shadow-xl">
-+                            <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
-+                            <div class="card-body">
-+                            <h2 class="card-title">{{ project['name'] }}</h2>
-+                            <p>{{ project['description'] }}</p>
-+                            <div class="card-actions justify-end">
-+                                <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
-+                            </div>
-+                            </div>
--                    <div class="card w-52 m-5 bg-neutral shadow-xl">
--                        <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
--                        <div class="card-body">
--                        <h2 class="card-title">{{ project['name'] }}</h2>
--                        <p>{{ project['description'] }}</p>
--                        <div class="card-actions justify-end">
--                            <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
+                    {% if project['image'] %}
+                        <div class="card w-52 m-5 bg-neutral shadow-xl">
+                            <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
+                            <div class="card-body">
+                            <h2 class="card-title">{{ project['name'] }}</h2>
+                            <p>{{ project['description'] }}</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
+                            </div>
+                            </div>
                         </div>
-+                    {% else %}
-+                        <p>Error: Image for project {{ project['name'] }} is null.</p>
-+                    {% endif %}
--                        </div>
--                    </div>
+                    {% else %}
+                        <p>Error: Image for project {{ project['name'] }} is null.</p>
+                    {% endif %}
                 {% endfor %}
             </div>
-+        {% else %}
-+            <p>Web Development Projects is null.</p>
+        {% else %}
+            <p>Web Development Projects is null.</p>
         {% endif %}
         <br>
-+        {% if other_projects %}
--        {% if other_projects is not none %}
+        {% if other_projects %}
             <h2>Other Projects</h2>
             <div id="projectcards">
                 {% for project in other_projects %}
-+                    {% if project['image'] %}
-+                        <div class="card w-52 m-5 bg-neutral shadow-xl">
-+                            <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
-+                            <div class="card-body">
-+                            <h2 class="card-title">{{ project['name'] }}</h2>
-+                            <p>{{ project['description'] }}</p>
-+                            <div class="card-actions justify-end">
-+                                <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
-+                            </div>
-+                            </div>
--                    <div class="card w-52 m-5 bg-neutral shadow-xl">
--                        <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
--                        <div class="card-body">
--                        <h2 class="card-title">{{ project['name'] }}</h2>
--                        <p>{{ project['description'] }}</p>
--                        <div class="card-actions justify-end">
--                            <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
+                    {% if project['image'] %}
+                        <div class="card w-52 m-5 bg-neutral shadow-xl">
+                            <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
+                            <div class="card-body">
+                            <h2 class="card-title">{{ project['name'] }}</h2>
+                            <p>{{ project['description'] }}</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="window.location.href='{{ project['link'] }}'">Source</button>
+                            </div>
+                            </div>
                         </div>
-+                    {% else %}
-+                        <p>Error: Image for project {{ project['name'] }} is null.</p>
-+                    {% endif %}
--                        </div>
--                    </div>
+                    {% else %}
+                        <p>Error: Image for project {{ project['name'] }} is null.</p>
+                    {% endif %}
                 {% endfor %}
             </div>
-+        {% else %}
-+            <p>Other Projects is null.</p>
+        {% else %}
+            <p>Other Projects is null.</p>
         {% endif %}
     </div>
-+
-<<<<<<<  6a62656e-a31e-49f4-b3f0-702abcacf4e4  >>>>>>>
+
         
 
 {% endblock %}
