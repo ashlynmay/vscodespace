@@ -76,11 +76,3 @@ int main(int argc, string argv[])
     }
     printf("ciphertext: %s\n", ctext);
 }
-
-❯ ./substitution
-    Usage: ./substition key
-❯ ./substitution NQXPOMAFTRHLZGECYJIUWSKD
-    Key must contain 26 characters.
-❯ ./substitution NQXPOMAFTRHLZGECYJIUWSKDVB
-    plaintext: hello, world
-    ciphertext: folle, kejlp
