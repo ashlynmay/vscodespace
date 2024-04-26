@@ -2505,6 +2505,10 @@ html {
   flex-direction: column;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
