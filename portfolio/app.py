@@ -55,7 +55,6 @@ def past_projects():
     return render_template("past-projects.html", projects=projects)
 
 
-
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
     server.serve()
