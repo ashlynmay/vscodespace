@@ -34,7 +34,7 @@ def past_projects():
                 else:
                     description = ""
                 db.execute("INSERT INTO projects (name, image, description) VALUES (?, ?, ?)", name, image, description)
-    return render_template("past-projects.html")
+    return render_template("past-projects.html", projects=projects)
 
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
