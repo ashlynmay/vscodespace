@@ -34,7 +34,7 @@ def past_projects():
                 else:
                     description = ""
                 db.execute("INSERT INTO projects (name, image, description) VALUES (?, ?, ?)", name, image, description)
-    projects = db.execute()
+    projects = db.execute("SELECT * FROM projects")
     return render_template("past-projects.html", projects=projects)
 
 if __name__ == '__main__':
