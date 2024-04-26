@@ -92,11 +92,11 @@ int formulate(float l, float w, float s)
 }
 
 $ ./readability                                                                 
-Text: One fish. Two fish. Red fish. Blue fish.                                  
-Before Grade 1                                                                  
+    Text: One fish. Two fish. Red fish. Blue fish.                                  
+    Before Grade 1                                                                  
 $ ./readability                                                                 
-Text: Congratulations! Today is your day. You're off to Great Places! You're off
- and away!                                                                      
+    Text: Congratulations! Today is your day. You're off to Great Places! You're off
+    and away!                                                                      
 Grade 3                                                                         
 $ ./readability                                                                 
     Text: Harry Potter was a highly unusual boy in many ways. For one thing, he hate
