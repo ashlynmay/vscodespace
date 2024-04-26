@@ -90,3 +90,16 @@ int formulate(float l, float w, float s)
 
     return 0;
 }
+
+$ ./readability                                                                 
+Text: One fish. Two fish. Red fish. Blue fish.                                  
+Before Grade 1                                                                  
+$ ./readability                                                                 
+Text: Congratulations! Today is your day. You're off to Great Places! You're off
+ and away!                                                                      
+Grade 3                                                                         
+$ ./readability                                                                 
+Text: Harry Potter was a highly unusual boy in many ways. For one thing, he hate
+d the summer holidays more than any other time of year. For another, he really w
+anted to do his homework, but was forced to do it in secret, in the dead of the 
+night. And he also happened to be a wizard.
