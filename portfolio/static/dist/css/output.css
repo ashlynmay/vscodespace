@@ -2639,6 +2639,10 @@ h2 {
   margin-top: 0 !important;
 }
 
+#projecttitle {
+  text-align: center;
+}
+
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
@@ -2750,4 +2754,3 @@ h2 {
     flex-direction: row-reverse;
   }
 }
-
