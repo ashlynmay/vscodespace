@@ -2642,7 +2642,7 @@ h2 {
 #projecttitle {
   position: relative;
   left: 5%;
-  margin-bottom:
+  margin-bottom: 1vh;
 }
 
 .projecttitle {
