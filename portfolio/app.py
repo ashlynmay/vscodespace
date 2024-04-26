@@ -15,8 +15,8 @@ def index():
 def current_projects():
     return render_template("current-projects.html")
 
-@app.route("/past-projects")
-def past_projects():
+@app.route("/projects")
+def projects():
     db.execute("DROP TABLE projects")
     db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT, type TEXT)")
     # Directory path to search for README files
