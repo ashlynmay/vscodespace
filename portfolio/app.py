@@ -26,7 +26,12 @@ def past_projects():
         if filename.lower() == 'readme.md':
             # Read the content of the README file
             with open(os.path.join(directory, filename), 'r') as file:
-                content = file.read()
++                lines = file.readlines()
++                name = lines[0].strip()
++                image = lines[1].strip()
++                description = lines[2].strip()
++                db.execute("INSERT INTO projects (name, image, description) VALUES (?, ?, ?)", name, image, description)
+-                content = file.read()
     return render_template("past-projects.html")
 <<<<<<<  fb7c95e9-885b-4bdd-9369-36a34f861154  >>>>>>>
 
