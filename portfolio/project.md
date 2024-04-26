@@ -1,3 +1,3 @@
 portfolio
-https://cdn.discordapp.com/attachments/972080189339213875/1230009299292524585/e697cde7174439f7d5f4aa41d3c0c856.webp_1.png?ex=662c7c6d&is=662b2aed&hm=4c88acb2e72febbaaf01039cccf84f49e2eaf39c0a359afe733e62d3fa17e086&
+https://cdn.discordapp.com/attachments/972080189339213875/1233458607018737795/image.png?ex=662d2b58&is=662bd9d8&hm=c205ff851bec42e8c10014defc8a7238d67db903f60aea1d44321414ee2042d8&
 a portfolio webapp based on flask using tailwindcss and daisyui
