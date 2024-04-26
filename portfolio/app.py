@@ -27,8 +27,6 @@ def past_projects():
         if filename.lower() == 'project.md':
             # Read the content of the README file
             with open(os.path.join(directory, filename), 'r') as file:
-                content = file.read()
-                content = re.sub(r"<!--(.*?)-->", r"\1", content, flags=re.DOTALL)
                 lines = content.splitlines()
                 if len(lines) >= 1:
                     name = lines[0].strip()
