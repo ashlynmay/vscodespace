@@ -14,7 +14,7 @@ def current_projects():
 
 @app.route("/past-projects")
 def past_projects():
-    
+    for()
     return render_template("past-projects.html")
 
 if __name__ == '__main__':
