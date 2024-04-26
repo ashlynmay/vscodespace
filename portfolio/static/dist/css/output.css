@@ -2703,10 +2703,11 @@ html {
 }
 
 .embla {
-  max-width: 100vw;
+  max-width: 48rem;
   margin: auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
+  --slide-size: 20%;
 }
 
 .embla__viewport {
@@ -2722,8 +2723,8 @@ html {
 
 .embla__slide {
   flex: 0 0 var(--slide-size);
-  min-width: 20vw;
-  margin-left: var(--slide-spacing);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
 }
 
 .embla__slide__number {
