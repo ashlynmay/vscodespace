@@ -33,6 +33,10 @@
     flex-direction: column;
 }
 
+h2 {
+    margin-top: 0 !important;
+}
+
 #projecttitle {
     position: relative;
     left: 5%;
