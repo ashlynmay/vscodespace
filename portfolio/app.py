@@ -9,7 +9,8 @@ def index():
     return render_template("index.html")
 
 @app.route("/current-projects")
-def portfolio():
+def current_projects():
+    return render_template("current-projects.html")
     
     return render_template("portfolio.html")
 
