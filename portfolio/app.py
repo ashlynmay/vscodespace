@@ -25,7 +25,6 @@ def past_projects():
     # Iterate over files in the directory
     for filename in os.listdir(directory):
         if filename.lower() == 'project.md':
-            try:
                 with open(os.path.join(directory, filename), 'r') as file:
                     lines = file.read().splitlines()
                 if len(lines) >= 1:
