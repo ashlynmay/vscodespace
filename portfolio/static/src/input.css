@@ -68,10 +68,10 @@
     align-items: center;
     justify-content: center;
   }
-  .embla__button:disabled {
+.embla__button:disabled {
     color: var(--detail-high-contrast);
   }
-  .embla__button__svg {
+.embla__button__svg {
     width: 35%;
     height: 35%;
   }
