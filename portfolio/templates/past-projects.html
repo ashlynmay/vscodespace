@@ -5,7 +5,7 @@ block body %}
   <br />
   {% if c_projects %}
   <h2>Projects Written in C</h2>
-  <div>
+  <div id="projectcards">
     {% for project in c_projects %}
     <div class="card w-52 m-5 bg-neutral shadow-xl">
       <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
@@ -28,7 +28,7 @@ block body %}
   <br />
   {% if py_projects %}
   <h2>Projects Written in Python</h2>
-  <div>
+  <div id="projectcards">
     {% for project in py_projects %}
     <div class="card w-52 m-5 bg-neutral shadow-xl">
       <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
@@ -51,7 +51,7 @@ block body %}
   <br />
   {% if web_projects %}
   <h2>Web Development Projects</h2>
-  <div>
+  <div id="projectcards">
     {% for project in web_projects %}
     <div class="card w-52 m-5 bg-neutral shadow-xl">
       <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
@@ -74,7 +74,7 @@ block body %}
   <br />
   {% if other_projects %}
   <h2>Other Projects</h2>
-  <div>
+  <div id="projectcards">
     {% for project in other_projects %}
     <div class="card w-52 m-5 bg-neutral shadow-xl">
       <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
