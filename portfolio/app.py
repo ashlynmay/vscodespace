@@ -15,7 +15,6 @@ def current_projects():
 @app.route("/past-projects")
 def past_projects():
     CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT)
-    
     return render_template("past-projects.html")
 
 if __name__ == '__main__':
