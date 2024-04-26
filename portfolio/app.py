@@ -24,7 +24,7 @@ def past_projects():
 
     # Iterate over files in the directory
     for filename in os.listdir(directory):
-        if filename.lower() == 'readme.md':
+        if filename.lower() == 'project.md':
             # Read the content of the README file
             with open(os.path.join(directory, filename), 'r') as file:
                 content = file.read()
