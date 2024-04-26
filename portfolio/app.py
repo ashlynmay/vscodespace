@@ -28,7 +28,7 @@ def past_projects():
             # Read the content of the README file
             with open(os.path.join(directory, filename), 'r') as file:
                 content = file.read()
-                content = re.sub(r"^\[|\]: #\s*$", r"\1", content, flags=re.MULTILINE)
+                content = re.sub(r"<!--(.*?)-->", r"\1", content, flags=re.MULTILINE)
                 lines = content.splitlines()
                 if len(lines) >= 1:
                     name = lines[0].strip()
