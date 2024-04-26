@@ -18,14 +18,14 @@ def current_projects():
 def past_projects():
     db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT)")
     # Directory path to search for README files
-directory = '/path/to/directory'
+    directory = '/path/to/directory'
 
-# Iterate over files in the directory
-for filename in os.listdir(directory):
-    if filename.lower() == 'readme.md':
-        # Read the content of the README file
-        with open(os.path.join(directory, filename), 'r') as file:
-            content = file.read()
+    # Iterate over files in the directory
+    for filename in os.listdir(directory):
+        if filename.lower() == 'readme.md':
+            # Read the content of the README file
+            with open(os.path.join(directory, filename), 'r') as file:
+                content = file.read()
     return render_template("past-projects.html")
 
 if __name__ == '__main__':
