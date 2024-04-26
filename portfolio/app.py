@@ -27,7 +27,7 @@ def past_projects():
             # Read the content of the README file
             with open(os.path.join(directory, filename), 'r') as file:
                 lines = file.readlines()
-                
+                if len(lines >= )
                     name = lines[0].strip()
                     
                     image = lines[1].strip()
