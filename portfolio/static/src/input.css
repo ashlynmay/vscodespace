@@ -19,7 +19,7 @@
 }
 .embla__slide {
   flex: 0 0 var(--slide-size);
-  min-width: 10vw;
+  min-width: 20vw;
   margin-left: var(--slide-spacing);
 }
 .embla__slide__number {
