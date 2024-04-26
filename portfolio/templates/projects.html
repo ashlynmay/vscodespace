@@ -100,3 +100,20 @@ block body %}
 <section class="embla">
   <div class="embla__viewport">
     <div class="embla__container">
+      {% for project in other_projects %}
+    <div class="card w-52 m-5 bg-neutral shadow-xl">
+      <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">{{ project['name'] }}</h2>
+        <p>{{ project['description'] }}</p>
+        <div class="card-actions justify-end">
+          <button
+            class="btn btn-primary"
+            onclick="window.location.href='{{ project['link'] }}'"
+          >
+            Source
+          </button>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
