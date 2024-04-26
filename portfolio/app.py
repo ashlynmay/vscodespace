@@ -29,7 +29,7 @@ def past_projects():
             with open(os.path.join(directory, filename), 'r') as file:
                 content = file.read()
                 content = re.sub("[]: #]", "", content)
-    lines = content.splitlines()
+                lines = content.splitlines()
                 if len(lines) >= 1:
                     name = lines[0].strip()
                 else: name = ""
