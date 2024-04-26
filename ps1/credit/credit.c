@@ -107,8 +107,8 @@ void checksum(long card)
     Card Number: 371449635398431
     AMEX
 ❯ ./credit
-Card Number: 4111111111111111
-VISA
+    Card Number: 4111111111111111
+    VISA
 ❯ ./credit
 Card Number: 4111111111111112
 INVALID
