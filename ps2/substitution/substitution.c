@@ -76,3 +76,9 @@ int main(int argc, string argv[])
     }
     printf("ciphertext: %s\n", ctext);
 }
+
+❯ ./substitution
+Usage: ./substition key
+❯ ./substitution NQXPOMAFTRHLZGECYJIUWSKDVB
+plaintext: hello, world
+ciphertext: folle, kejlp
