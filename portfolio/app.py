@@ -45,7 +45,7 @@ def past_projects():
                 if len(lines) >= 5:
                     link = lines[4].strip()
                 else:
-                    link = ""
+                    type = ""
                 db.execute("INSERT INTO projects (name, image, description, link, type) VALUES (?, ?, ?, ?)", name, image, description, link, type)
     projects = db.execute("SELECT * FROM projects")
     return render_template("past-projects.html", projects=projects)
