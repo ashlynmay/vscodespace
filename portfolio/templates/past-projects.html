@@ -56,7 +56,7 @@
             {% endfor %}
         </div>
         <br>
-        {% if no project in other_projects %}
+        {% if other_projects is none %}
         <h2>Other Projects</h2>
         <div id="projectcards">
             {% for project in other_projects %}
