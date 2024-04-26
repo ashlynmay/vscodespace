@@ -2703,7 +2703,7 @@ html {
 }
 
 .embla {
-  max-width: 90vw;
+  max-width: 100vw;
   margin: auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
