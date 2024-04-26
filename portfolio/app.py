@@ -13,6 +13,8 @@ def current_projects():
     return render_template("current-projects.html")
 
 @app.route("/past-projects")
+def past_projects():
+    return render_template("past-projects.html")
 
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
