@@ -51,7 +51,7 @@ h2 {
 .projecttitle {
   left: 10%;
   position: relative;
-  
+  margin: unset;
 }
 
 .card figure {
