@@ -16,7 +16,7 @@ def current_projects():
 @app.route("/past-projects")
 def past_projects():
     db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT)")
-    
+    for()
     return render_template("past-projects.html")
 
 if __name__ == '__main__':
