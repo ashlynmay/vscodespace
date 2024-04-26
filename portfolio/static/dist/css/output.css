@@ -2505,6 +2505,10 @@ html {
   width: 13rem;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
