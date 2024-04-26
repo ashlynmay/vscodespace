@@ -25,7 +25,8 @@ def past_projects():
 
     # Iterate over files in the directory and child dirs
     for dirpath, dirnames, filenames in os.walk(directory):
-        if 'nord_modules' in dirpath:
++        if 'nord_modules' in dirpath or any(x.startswith('nord_modules') for x in dirnames):
+-        if 'nord_modules' in dirpath:
             continue
         for filename in filenames:
             if filename.lower() == 'readme.md':
