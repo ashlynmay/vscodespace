@@ -31,10 +31,7 @@ def past_projects():
                 description = lines[2].strip()
                 db.execute("INSERT INTO projects (name, image, description) VALUES (?, ?, ?)", name, image, description)
     return render_template("past-projects.html")
-if len(lines) >= 3:
-    description = lines[2].strip()
-else:
-    description = ""
+
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
     server.serve()
