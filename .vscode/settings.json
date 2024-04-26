@@ -8,5 +8,6 @@
     "files.associations": {
         "cs50.h": "c"
     },
-    "gitdoc.commitMessageFormat": "fff"
+    "gitdoc.commitMessageFormat": "fff",
+    "gitdoc.timeZone": "America/Chicago"
 }
