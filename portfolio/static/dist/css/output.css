@@ -2513,6 +2513,10 @@ html {
   justify-content: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .rounded-box {
   border-radius: var(--rounded-box, 1rem);
 }
