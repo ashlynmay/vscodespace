@@ -2640,7 +2640,7 @@ h2 {
 }
 
 #projecttitle {
-  text-align: center;
+  left: 5vw;
 }
 
 @media (min-width: 1024px) {
