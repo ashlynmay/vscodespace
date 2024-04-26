@@ -47,7 +47,7 @@ def past_projects():
                 else:
                     type = ""
                 db.execute("INSERT INTO projects (name, image, description, link, type) VALUES (?, ?, ?, ?)", name, image, description, link, type)
-    projects = db.execute("SELECT * FROM projects")
+    cprojects = db.execute("SELECT * FROM projects")
     projects = db.execute("SELECT * FROM projects")
     projects = db.execute("SELECT * FROM projects")
     projects = db.execute("SELECT * FROM projects")
