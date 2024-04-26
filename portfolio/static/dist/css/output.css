@@ -1903,6 +1903,10 @@ html {
   z-index: 2000;
 }
 
+.max-h-60vh {
+  max-height: 60vh;
+}
+
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
@@ -2014,4 +2018,3 @@ html {
     flex-direction: row-reverse;
   }
 }
-
