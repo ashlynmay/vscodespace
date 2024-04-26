@@ -2645,6 +2645,7 @@ h2 {
   position: relative;
   left: 5%;
   width: 100vw;
+  padding-bottom: unset;
 }
 
 .projecttitle {
