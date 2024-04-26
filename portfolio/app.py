@@ -37,6 +37,10 @@ def past_projects():
                     description = lines[2].strip()
                 else:
                     description = ""
+                if len(lines) >= 3:
+                    description = lines[2].strip()
+                else:
+                    description = ""
                 db.execute("INSERT INTO projects (name, image, description) VALUES (?, ?, ?)", name, image, description)
     projects = db.execute("SELECT * FROM projects")
     return render_template("past-projects.html", projects=projects)
