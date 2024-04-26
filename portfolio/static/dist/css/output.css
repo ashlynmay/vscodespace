@@ -1903,7 +1903,9 @@ html {
   z-index: 2000;
 }
 
-.p-2 
+.p-2 {
+  max-width: ;
+}
 
 .max-h-60vh {
   max-height: 60vh;
