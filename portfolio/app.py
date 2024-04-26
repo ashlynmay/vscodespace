@@ -37,7 +37,7 @@ def past_projects():
                     description = lines[2].strip()
                 else:
                     description = ""
-                if len(lines) >= 3:
+                if len(lines) >= 4:
                     description = lines[2].strip()
                 else:
                     description = ""
