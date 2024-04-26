@@ -29,7 +29,7 @@ def past_projects():
                 lines = file.readlines()
                 if len(lines >= 1):
                     name = lines[0].strip()
-                else: name=
+                else: name = ""
                     
                     image = lines[1].strip()
                 if len(lines) >= 3:
