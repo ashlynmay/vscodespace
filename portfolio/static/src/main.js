@@ -105,3 +105,4 @@ export const addDotBtnsAndClickHandlers = (emblaApi, dotsNode) => {
     dotsNode.innerHTML = ''
   }
 }
+
