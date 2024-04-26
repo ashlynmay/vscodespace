@@ -15,6 +15,7 @@ def index():
 def current_projects():
     return render_template("current-projects.html")
 
+<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
 @app.route("/past-projects")
 def past_projects():
     db.execute("DROP TABLE projects")
@@ -47,6 +48,7 @@ def past_projects():
                 db.execute("INSERT INTO projects (name, image, description, link) VALUES (?, ?, ?, ?)", name, image, description, link)
     projects = db.execute("SELECT * FROM projects")
     return render_template("past-projects.html", projects=projects)
+<<<<<<<  0ec327a0-b508-465e-8ed7-6b30e462002f  >>>>>>>
 
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
