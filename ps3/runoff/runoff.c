@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <std
+#include <stdlib.h>
 #include <stdbool.h>
 // Max voters and candidates
 #define MAX_VOTERS 100
