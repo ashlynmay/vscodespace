@@ -102,13 +102,3 @@ void checksum(long card)
         printf("INVALID\n");
     }
 }
-
-❯ ./credit
-    Card Number: 371449635398431
-    AMEX
-❯ ./credit
-    Card Number: 4111111111111111
-    VISA
-❯ ./credit
-    Card Number: 4111111111111112
-    INVALID
