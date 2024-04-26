@@ -4,5 +4,8 @@
     "liveServer.settings.port": 5501,
     "synthwave84.disableGlow": false,
     "github.gitAuthentication": true,
-    "terminal.integrated.fontFamily": "Hack Nerd Font"
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "files.associations": {
+        "cs50.h": "c"
+    }
 }
