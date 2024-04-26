@@ -2630,7 +2630,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: unset;
+  width: 100vw;
 }
 
 #projects {
