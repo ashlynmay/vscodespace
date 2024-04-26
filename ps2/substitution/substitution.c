@@ -83,4 +83,4 @@ int main(int argc, string argv[])
     Key must contain 26 characters.
 ❯ ./substitution NQXPOMAFTRHLZGECYJIUWSKDVB
     plaintext: hello, world
-ciphertext: folle, kejlp
+    ciphertext: folle, kejlp
