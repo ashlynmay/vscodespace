@@ -2742,7 +2742,7 @@ h2 {
 }
 
 .navigation-wrapper {
-  width: 90vw !important;
+  width: 100vw !important;
   position: relative;
   margin: auto;
 }
