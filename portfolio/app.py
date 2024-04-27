@@ -4,7 +4,7 @@ from flask import Flask, flash, redirect, render_template, request
 from livereload import Server
 import os
 import re
-import Splide from '@splidejs/splide'
+import Splide
 
 app = Flask(__name__)
 db = SQL("sqlite:///portfolio.db")
