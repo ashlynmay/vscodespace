@@ -6,6 +6,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "embla-carousel": "^8.0.2",
     "embla-carousel-class-names": "^8.0.2"
   }
