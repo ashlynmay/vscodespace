@@ -2560,6 +2560,10 @@ html {
   border-end-end-radius: 0px;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .static {
   position: static;
 }
