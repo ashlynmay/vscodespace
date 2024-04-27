@@ -60,5 +60,5 @@ h2 {
 
 .btm-nav {
   z-index: 2000;
-  padding-top: env(safe-area-inset-bottom);
+  padding-top: 2vh;
 }
