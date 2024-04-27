@@ -3,4 +3,4 @@ https://cdn.discordapp.com/attachments/972080189339213875/1233511410701439067/im
 ranks a given text by grade level according to the Coleman-Liau index
 https://github.com/ashlynmay/vscodespace/tree/main/ps2/readability
 c
-True
+1
