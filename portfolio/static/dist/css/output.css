@@ -2739,7 +2739,7 @@ h2 {
 #my-keen-slider {
   max-width: 90vw !important;
   justify-content: center;
-  position:
+  position:absolute;
 }
 
 @media (min-width: 1024px) {
