@@ -8,6 +8,8 @@ import Splide from '@splidejs/splide';
 app = Flask(__name__)
 db = SQL("sqlite:///portfolio.db")
 
+new
+
 @app.route("/")
 def index():
     return render_template("index.html")
