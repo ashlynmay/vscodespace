@@ -8,7 +8,7 @@ import Splide from '@splidejs/splide';
 app = Flask(__name__)
 db = SQL("sqlite:///portfolio.db")
 
-new Splide('.splide').mount();)
+new Splide('.splide').mount();
 
 @app.route("/")
 def index():
