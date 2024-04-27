@@ -2743,7 +2743,7 @@ h2 {
 
 .navigation-wrapper {
   width: 90vw !important;
-  position: relative;
+  position: absolute;
   margin: auto;
 }
 
