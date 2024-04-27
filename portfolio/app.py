@@ -50,7 +50,7 @@ def projects():
                 db.execute("INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)", name, image, description, link, type, featured)
     featured_c_projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
     featured_py_projects = db.execute("SELECT * FROM projects WHERE type = 'python'")
-    web_projects = db.execute("SELECT * FROM projects WHERE type = 'web'")
+    featured_web_projects = db.execute("SELECT * FROM projects WHERE type = 'web'")
     other_projects = db.execute("SELECT * FROM projects WHERE type = 'other'")
     return render_template("projects.html", c_projects=c_projects, py_projects=py_projects, web_projects=web_projects, other_projects=other_projects)
 
