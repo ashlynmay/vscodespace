@@ -148,6 +148,6 @@ h2 {
   max-width: unset !important;
   }
 
-.keen-slider__slide:first-child {
-  margin-left: 10vw;
+.keen-slider__slide:last-child {
+  margin-right: 10vw;
   }
