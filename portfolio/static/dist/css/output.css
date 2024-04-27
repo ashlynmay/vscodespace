@@ -2775,6 +2775,7 @@ h2 {
 }
 
 .btm-nav {
+  z-index: 2000;
 }
 
 @media (min-width: 1024px) {
