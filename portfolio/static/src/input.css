@@ -57,3 +57,8 @@ h2 {
 .card figure {
   margin: 0;
 }
+
+.btm-nav {
+  z-index: 2000;
+  margin-top: 2vh;
+}

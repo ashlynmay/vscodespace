@@ -2774,6 +2774,11 @@ h2 {
   margin: 0;
 }
 
+.btm-nav {
+  z-index: 2000;
+  margin-top: 2vh;
+}
+
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
