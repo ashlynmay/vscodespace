@@ -2753,7 +2753,7 @@ h2 {
 }
 
 .arrow--left {
-  left: 5px;
+  left: -4;
 }
 
 @media (min-width: 1024px) {
