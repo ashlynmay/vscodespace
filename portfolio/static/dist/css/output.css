@@ -2755,6 +2755,9 @@ h2 {
   margin-bottom: 50%;
 }
 
+.dots {
+}
+
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
