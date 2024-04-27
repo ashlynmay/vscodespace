@@ -2988,6 +2988,10 @@ h2 {
   .sm\:text-left {
     text-align: left;
   }
+
+  .sm\:text-right {
+    text-align: right;
+  }
 }
 
 @media (min-width: 1024px) {
