@@ -2757,7 +2757,7 @@ h2 {
 
 .dots {
   position: absolute;
-  bottom: 1%;
+  bottom: %;
 }
 
 @media (min-width: 1024px) {
