@@ -2756,6 +2756,7 @@ h2 {
 }
 
 .dots {
+  bottom: 0;
 }
 
 @media (min-width: 1024px) {
