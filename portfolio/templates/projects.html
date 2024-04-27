@@ -110,13 +110,6 @@
       <div class="keen-slider__slide number-slide6">6</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
-    <script>
-      var slider = new KeenSlider("#my-keen-slider", {
-        slides: {
-          perView: 4,
-          spacing: 15,
-        },
-      })
-    </script>
+    <script src="{{url_for('static',filename='dist/script.js')}}"></script>
     
 {% endblock %}
