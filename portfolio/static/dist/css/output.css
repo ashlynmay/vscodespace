@@ -2737,13 +2737,13 @@ h2 {
 }
 
 #my-keen-slider {
-  position: absolute;
+  position:relative;
   width: 90vw;
 }
 
 .navigation-wrapper {
   width: 90vw !important;
-  position: absolute;
+  position: relative;
   margin: auto;
 }
 
