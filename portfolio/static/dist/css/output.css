@@ -2749,7 +2749,6 @@ h2 {
 .navigation-wrapper {
   max-width: 90vw !important;
   position: relative;
-  left: 50%;
 }
 
 @media (min-width: 1024px) {
