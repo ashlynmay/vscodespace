@@ -2758,6 +2758,7 @@ h2 {
 }
 
 .arrow--right {
+  right: -4vw;
 }
 
 @media (min-width: 1024px) {
