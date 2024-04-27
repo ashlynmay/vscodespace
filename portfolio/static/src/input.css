@@ -147,7 +147,3 @@ h2 {
 #my-keen-slider > .card {
   max-width: unset !important;
   }
-
-.keen-slider__slide:first-child {
-  margin-left: 10vw;
-  }
