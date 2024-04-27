@@ -2746,7 +2746,6 @@ h2 {
   position: relative;
   left: 120%;
   transform: translateX(-50%);
-  justify-self: center;
 }
 
 #my-keen-slider > .card {
