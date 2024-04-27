@@ -132,5 +132,5 @@ h2 {
 }
 
 #my-keen-slider {
-  max-width: 90vw;
+  max-width: 90vw !important;
 }
