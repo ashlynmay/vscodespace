@@ -2754,6 +2754,7 @@ h2 {
 
 .dots {
   position: absolute;
+  left: 50%;
   bottom: 50%;
 }
 
