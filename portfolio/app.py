@@ -44,7 +44,7 @@ def projects():
                 else:
                     type = ""
                 if len(lines) >= 6:
-                    type = lines[5].strip()
+                    featured = lines[5].strip()
                 else:
                     type = ""
                 db.execute("INSERT INTO projects (name, image, description, link, type) VALUES (?, ?, ?, ?, ?)", name, image, description, link, type)
