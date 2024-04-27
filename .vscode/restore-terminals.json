@@ -17,10 +17,6 @@
             {
               "name": "Terminal",
               "commands": ["alias cd='HOME=~/vscodespace cd'", "alias flask='python -m flask'", "clear"]
-            },
-            {
-              "name": "Terminal",
-              "commands": ["alias cd='HOME=~/vscodespace cd'", "alias flask='python -m flask'", "clear"]
             }
         ]
       }
