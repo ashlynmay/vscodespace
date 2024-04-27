@@ -103,4 +103,5 @@ function navigation(slider) {
       perView: 4,
       spacing: 15,
     },
-  }, [navigation])
+    navigation: navigation  // Pass the navigation function as a property
+  });
