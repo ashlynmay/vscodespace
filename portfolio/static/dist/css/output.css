@@ -2774,6 +2774,9 @@ h2 {
   margin: 0;
 }
 
+.btm-nav {
+}
+
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
@@ -2885,4 +2888,3 @@ h2 {
     flex-direction: row-reverse;
   }
 }
-
