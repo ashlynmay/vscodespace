@@ -144,5 +144,5 @@ h2 {
 }
 
 #my-keen-slider > .card {
-  max-width: 20vw !important;
+  max-width: unset !important;
   }
