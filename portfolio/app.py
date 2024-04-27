@@ -4,12 +4,9 @@ from flask import Flask, flash, redirect, render_template, request
 from livereload import Server
 import os
 import re
-from splide import Splide
 
 app = Flask(__name__)
 db = SQL("sqlite:///portfolio.db")
-
-new Splide('.splide').mount();
 
 @app.route("/")
 def index():
