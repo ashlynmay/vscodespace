@@ -99,9 +99,4 @@ function navigation(slider) {
     },
   }, [navigation])
 
-  {
-    slides: {
-      perView: 4,
-      spacing: 15,
-    },
-  }
+  
