@@ -2737,7 +2737,7 @@ h2 {
 }
 
 #my-keen-slider {
-  max-width:
+  max-width: 90vw;
 }
 
 @media (min-width: 1024px) {
