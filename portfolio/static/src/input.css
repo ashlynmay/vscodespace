@@ -141,7 +141,7 @@ h2 {
   position: relative;
   left: 120%;
   transform: translateX(-50%);
-  
+  margin: auto;
 }
 
 #my-keen-slider > .card {
