@@ -2752,10 +2752,6 @@ h2 {
   max-width: unset !important;
 }
 
-.keen-slider__slide:last-child {
-  width: 30vw !important;
-}
-
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
