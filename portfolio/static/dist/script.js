@@ -1,6 +1,8 @@
 function navigation(slider) {
     let wrapper, dots, arrowLeft, arrowRight
   
+    monitorEvents(window,"submit");
+
     function markup(remove) {
       wrapperMarkup(remove)
       dotMarkup(remove)
