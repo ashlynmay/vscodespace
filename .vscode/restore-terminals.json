@@ -3,7 +3,7 @@
     "keepExistingTerminalsOpen": false,
     "runOnStartup": true,
     "terminals": [
-      
+      {
         "splitTerminals": [
           {
             "name": "Terminal",
@@ -13,11 +13,15 @@
             "name": "Terminal",
             "commands": ["alias cd='HOME=~/vscodespace cd'", "alias flask='python -m flask'", "clear"]
           },
-        "splitTerminals": [
+          "splitTerminals": [
             {
-            "name": "Terminal",
-             "commands": ["alias cd='HOME=~/vscodespace cd'", "alias flask='python -m flask'", "clear"]
-           }
+              "name": "Terminal",
+              "commands": ["alias cd='HOME=~/vscodespace cd'", "alias flask='python -m flask'", "clear"]
+            },
+            {
+              "name": "Terminal",
+              "commands": ["alias cd='HOME=~/vscodespace cd'", "alias flask='python -m flask'", "clear"]
+            }
         ]
       }
     ]
