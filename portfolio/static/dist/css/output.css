@@ -2752,6 +2752,9 @@ h2 {
   max-width: unset !important;
 }
 
+.arrow--left {
+}
+
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
@@ -2863,5 +2866,3 @@ h2 {
     flex-direction: row-reverse;
   }
 }
-
-
