@@ -2746,7 +2746,6 @@ h2 {
   position: relative;
   left: 120%;
   transform: translateX(-50%);
-  margin-bottom: 50%;
 }
 
 @media (min-width: 1024px) {
