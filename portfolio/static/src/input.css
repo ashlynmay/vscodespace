@@ -142,5 +142,5 @@ h2 {
 }
 
 .navigation-wrapper {
-  max-width: 90v
+  max-width: 90vw !important;
 }

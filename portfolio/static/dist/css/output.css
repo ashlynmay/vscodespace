@@ -2746,6 +2746,10 @@ h2 {
   -webkit-transform: translate(-50%, -50%);
 }
 
+.navigation-wrapper {
+  max-width: 90vw !important;
+}
+
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
