@@ -57,8 +57,3 @@ h2 {
 .card figure {
   margin: 0;
 }
-
-.btm-nav {
-  z-index: 2000;
-  padding-top: 2vh;
-}
