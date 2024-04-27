@@ -100,6 +100,6 @@ function navigation(slider) {
   
   var slider = new KeenSlider(
     "#my-keen-slider",
-    { loop: true, peek: { before: 0, after: 100 }, slides: { perView: 3, spacing: 15 }, },
+    { loop: false, peek: { before: 0, after: 100 }, slides: { perView: 3, spacing: 15 }, },
     [navigation]
   );
