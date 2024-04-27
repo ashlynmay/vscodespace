@@ -144,7 +144,7 @@ h2 {
 .navigation-wrapper {
   max-width: 90vw !important;
   position: relative;
-  left: 100%;
+  left: 60%;
   transform: translateX(-50%);
   margin-top: 40%;
 }
