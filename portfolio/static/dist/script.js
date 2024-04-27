@@ -98,8 +98,7 @@ function navigation(slider) {
     })
   }
   
-  var slider = new KeenSlider("#my-keen-slider", {slides: {
-      perView: 4,
+  var slider = new KeenSlider("#my-keen-slider", {slides: {perView: 4,
       spacing: 15,
     },
   }, [navigation])
