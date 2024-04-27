@@ -103,4 +103,4 @@ function navigation(slider) {
       perView: 4,
       spacing: 15,
     },
-  } [navigation])
+  }, [navigation])
