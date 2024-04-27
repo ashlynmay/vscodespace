@@ -46,7 +46,7 @@ def projects():
                 if len(lines) >= 6:
                     featured = lines[5].strip()
                 else:
-                    featured = "False"
+                    featured = "0"
                 db.execute("INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)", name, image, description, link, type, featured)
     featured_c_projects = db.execute("SELECT * FROM projects WHERE type = 'c' AND featured = '1'")
     featured_py_projects = db.execute("SELECT * FROM projects WHERE type = 'python' AND featured = '1'")
