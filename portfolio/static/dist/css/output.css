@@ -2754,7 +2754,7 @@ h2 {
 }
 
 .keen-slider__slide:last-child {
-  margin-right: 0;
+  margin-right: 100;
 }
 
 @media (min-width: 1024px) {
