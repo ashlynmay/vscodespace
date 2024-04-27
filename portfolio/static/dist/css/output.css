@@ -2756,6 +2756,9 @@ h2 {
   left: -4vw;
 }
 
+.arrow--right {
+}
+
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
