@@ -2748,6 +2748,9 @@ h2 {
   transform: translateX(-50%);
 }
 
+#my-keen-slider > .card {
+}
+
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
@@ -2859,5 +2862,3 @@ h2 {
     flex-direction: row-reverse;
   }
 }
-
-
