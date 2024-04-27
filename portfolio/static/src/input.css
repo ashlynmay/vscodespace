@@ -143,4 +143,4 @@ h2 {
   transform: translateX(-50%);
 }
 
-#my-keen-slider .keen-slider__slid {
+#my-keen-slider > card {
