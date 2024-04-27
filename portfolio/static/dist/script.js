@@ -19,17 +19,23 @@ function navigation(slider) {
   
     function arrowMarkup(remove) {
       if (remove) {
-        removeElement(arrowLeft)
-        removeElement(arrowRight)
-        return
+        removeElement(arrowLeft);
+        removeElement(arrowRight);
+        return;
       }
-      arrowLeft = createDiv("arrow arrow--left")
-      arrowLeft.addEventListener("click", () => slider.prev())
-      arrowRight = createDiv("arrow arrow--right")
-      arrowRight.addEventListener("click", () => slider.next())
-  
-      wrapper.appendChild(arrowLeft)
-      wrapper.appendChild(arrowRight)
+      arrowLeft = createDiv("arrow arrow--left");
+      arrowLeft.addEventListener("click", () => {
+        console.log("Left arrow button clicked");
+        slider.prev();
+      });
+      arrowRight = createDiv("arrow arrow--right");
+      arrowRight.addEventListener("click", () => {
+        console.log("Right arrow button clicked");
+        slider.next();
+      });
+    
+      wrapper.appendChild(arrowLeft);
+      wrapper.appendChild(arrowRight);
     }
   
     function wrapperMarkup(remove) {
