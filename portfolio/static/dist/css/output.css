@@ -2775,7 +2775,7 @@ h2 {
 }
 
 body {
-  bottom-margin: 4rem;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 1024px) {
