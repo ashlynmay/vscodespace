@@ -151,6 +151,6 @@ h2 {
 }
 
 .dots {
-  position: relative;
+  position: absolute;
   bottom: 1%;
 }
