@@ -2741,7 +2741,7 @@ h2 {
 }
 
 .navigation-wrapper {
-  width: 95vw !important;
+  width: 100vw !important;
   position: relative;
   left: 120%;
   transform: translateX(-50%);
