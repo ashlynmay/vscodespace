@@ -1,7 +1,6 @@
 {% extends "layout.html" %} 
 {% block title %} Past Projects {% endblock %} 
 {%block body %}
-<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
 <div id="projects" class="prose flex justify-center pt-6">
   <h1 id="projecttitle">Projects</h1>
   <hr style="width: 100vw; margin: 1.5rem;">
@@ -9,63 +8,47 @@
   <h2 class="projecttitle">Projects Written in C</h2>
   <div id="my-keen-slider" class="keen-slider">
     {% for project in c_projects %}
-+      {% if project is not none %}
-+        {% if project['image'] is not none %}
-+          {% if project['link'] is not none %}
-+            <div class="card w-64 m-5 bg-neutral shadow-xl keen-slider__slide">
-+              <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
-+              <div class="card-body">
-+                <h2 class="card-title">{{ project['name'] }}</h2>
-+                <p>{{ project['description'] }}</p>
-+                <div class="card-actions justify-end">
-+                  <button
-+                    class="btn btn-primary"
-+                    onclick="window.location.href='{{ project['link'] }}'"
-+                  >
-+                    Source
-+                  </button>
-+                </div>
-+              </div>
-+            </div>
-+          {% else %}
-+            <p>
-+              Failed to find link for project {{ project['name'] }}.
-+              Please check the data passed into the template.
-+            </p>
-+          {% endif %}
-+        {% else %}
-+          <p>
-+            Failed to find image for project {{ project['name'] }}.
-+            Please check the data passed into the template.
-+          </p>
-+        {% endif %}
-+      {% else %}
-+        <p>
-+          Failed to find project data.
-+          Please check the data passed into the template.
-+        </p>
-+      {% endif %}
--      <div class="card w-64 m-5 bg-neutral shadow-xl keen-slider__slide">
--        <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
--        <div class="card-body">
--          <h2 class="card-title">{{ project['name'] }}</h2>
--          <p>{{ project['description'] }}</p>
--          <div class="card-actions justify-end">
--            <button
--              class="btn btn-primary"
--              onclick="window.location.href='{{ project['link'] }}'"
--            >
--              Source
--            </button>
--          </div>
--        </div>
--      </div>
+      {% if project is not none %}
+        {% if project['image'] is not none %}
+          {% if project['link'] is not none %}
+            <div class="card w-64 m-5 bg-neutral shadow-xl keen-slider__slide">
+              <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">{{ project['name'] }}</h2>
+                <p>{{ project['description'] }}</p>
+                <div class="card-actions justify-end">
+                  <button
+                    class="btn btn-primary"
+                    onclick="window.location.href='{{ project['link'] }}'"
+                  >
+                    Source
+                  </button>
+                </div>
+              </div>
+            </div>
+          {% else %}
+            <p>
+              Failed to find link for project {{ project['name'] }}.
+              Please check the data passed into the template.
+            </p>
+          {% endif %}
+        {% else %}
+          <p>
+            Failed to find image for project {{ project['name'] }}.
+            Please check the data passed into the template.
+          </p>
+        {% endif %}
+      {% else %}
+        <p>
+          Failed to find project data.
+          Please check the data passed into the template.
+        </p>
+      {% endif %}
     {% endfor %}
   </div>
   <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
   <script src="{{url_for('static',filename='dist/script.js')}}"></script>
   {% endif %}
-<<<<<<<  f7f27be2-4292-4264-b34d-dce9379d3694  >>>>>>>
   {% if py_projects %}
   <br />
   <h2 class="projecttitle">Projects Written in Python</h2>
