@@ -51,7 +51,7 @@ def projects():
     featured_c_projects = db.execute("SELECT * FROM projects WHERE type = 'c' AND featured = 'true'")
     featured_py_projects = db.execute("SELECT * FROM projects WHERE type = 'python' AND featured = 'true'")
     featured_web_projects = db.execute("SELECT * FROM projects WHERE type = 'web' AND featured = 'true'")
-    featured_other_projects = db.execute("SELECT * FROM projects WHERE type = 'other' AND featured = 'true'")
+    featured_other_projects = db.execute("SELECT * FROM projects WHERE type = 'other' AND featured = ''")
     return render_template("projects.html", c_projects=featured_c_projects, py_projects=featured_py_projects, web_projects=featured_web_projects, other_projects=featured_other_projects)
 
 @app.route("/contact")
