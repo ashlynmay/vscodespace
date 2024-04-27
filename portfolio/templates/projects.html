@@ -7,7 +7,7 @@
   {% if c_projects %}
   <h2 class="projecttitle">Projects Written in C</h2>
   <div id="my-keen-slider" class="keen-slider">
-    {% for project in other_projects %}
+    {% for project in c_projects %}
       <div class="card w-64 m-5 bg-neutral shadow-xl keen-slider__slide">
         <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
         <div class="card-body">
