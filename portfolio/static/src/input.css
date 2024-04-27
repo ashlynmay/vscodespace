@@ -136,7 +136,7 @@ h2 {
   width: 100vw;
 }
 
-.navigation-wrapper {
+/* .navigation-wrapper {
   width: 100vw !important;
   position: relative;
   margin: auto;
@@ -152,4 +152,4 @@ h2 {
 
 .arrow--right {
   right: -4vw;
-}
+} 
