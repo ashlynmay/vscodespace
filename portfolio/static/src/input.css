@@ -132,7 +132,7 @@ h2 {
 }
 
 #my-keen-slider {
-  position:relative;
+  position: absolute;
   width: 90vw;
 }
 
