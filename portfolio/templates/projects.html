@@ -102,7 +102,23 @@
       href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css"
     />
     <div id="my-keen-slider" class="keen-slider">
-      <div class="keen-slider__slide number-slide1">1</div>
+      {% for project in other_projects %}
+    <div class="card w-64 m-5 bg-neutral shadow-xl">
+      <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">{{ project['name'] }}</h2>
+        <p>{{ project['description'] }}</p>
+        <div class="card-actions justify-end">
+          <button
+            class="btn btn-primary"
+            onclick="window.location.href='{{ project['link'] }}'"
+          >
+            Source
+          </button>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
       <div class="keen-slider__slide number-slide2">2</div>
       <div class="keen-slider__slide number-slide3">3</div>
       <div class="keen-slider__slide number-slide4">4</div>
