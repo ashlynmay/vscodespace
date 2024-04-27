@@ -48,7 +48,7 @@ def projects():
                 else:
                     featured = ""
                 db.execute("INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)", name, image, description, link, type, featured)
-    c_projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+    featured_c_projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
     py_projects = db.execute("SELECT * FROM projects WHERE type = 'python'")
     web_projects = db.execute("SELECT * FROM projects WHERE type = 'web'")
     other_projects = db.execute("SELECT * FROM projects WHERE type = 'other'")
