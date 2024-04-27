@@ -133,11 +133,11 @@ h2 {
 
 #my-keen-slider {
   position:relative;
-  width: 80vw;
+  width: 90vw;
 }
 
 .navigation-wrapper {
-  width: 80vw !important;
+  width: 90vw !important;
   margin: auto;
   left: 5vw;
 }
