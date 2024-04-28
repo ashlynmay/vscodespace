@@ -2892,8 +2892,8 @@ html {
   min-height: 100%;
 }
 
-.w-24 {
-  width: 6rem;
+.w-32 {
+  width: 8rem;
 }
 
 .w-5 {
@@ -2914,14 +2914,6 @@ html {
 
 .w-\[83vw\] {
   width: 83vw;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .max-w-\[100\%\] {
@@ -3042,24 +3034,20 @@ html {
   padding-bottom: 6rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
 .pb-8 {
   padding-bottom: 2rem;
 }
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-center {
@@ -3287,6 +3275,8 @@ footer {
 #inner  {
   margin-top: 1rem;
 }
+
+/* test */
 
 @media (min-width: 768px) {
   @media (hover: hover) {
