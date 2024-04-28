@@ -2912,6 +2912,14 @@ html {
   width: 2.25rem;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[85vw\] {
+  width: 85vw;
+}
+
 .max-w-\[100\%\] {
   max-width: 100%;
 }
