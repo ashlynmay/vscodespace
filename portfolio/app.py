@@ -113,7 +113,7 @@ def c_projects():
 @app.route("/py-projects")
 def py_projects():
     project_check()
-    projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+    projects = db.execute("SELECT * FROM projects WHERE type = 'python'")
     return render_template("c-projects.html", projects=projects)
 
 @app.route("/web-projects")
