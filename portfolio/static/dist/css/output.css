@@ -2968,7 +2968,7 @@ footer {
 .mockup-code {
   border-color: darkslategrey;
   border-style:solid;
-  border-width: 1px;
+  border-width: 2px;
 }
 
 @media (min-width: 1024px) {
