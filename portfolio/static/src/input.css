@@ -145,3 +145,8 @@ footer {
   z-index: 1;
   padding: var(--padding-vertical) var(--padding-horizontal);
 }
+
+#main > .inner > :last-child {
+  margin-bottom: 0 !important;
+}
+

@@ -3242,6 +3242,10 @@ footer {
   padding: var(--padding-vertical) var(--padding-horizontal);
 }
 
+#main > .inner > :last-child {
+  margin-bottom: 0 !important;
+}
+
 @media (min-width: 768px) {
   @media (hover: hover) {
     .md\:btn-outline:hover {
@@ -4110,3 +4114,4 @@ footer {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
+
