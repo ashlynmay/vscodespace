@@ -110,8 +110,6 @@ def c_projects():
     projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
     return render_template("c-projects.html", projects=projects)
         
-
-
 @app.route("/py-projects")
 def pyprojects():
     return render_template("py-projects.html")
