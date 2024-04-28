@@ -67,5 +67,5 @@ body {
 }
 
 :root .prose {
---tw-prose-headings: var(--fallback-bc, oklch(1));
+--tw-prose-headings: var(--fallback-bc, oklch(1 0 0));
 }
