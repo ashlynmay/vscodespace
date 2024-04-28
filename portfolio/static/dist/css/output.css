@@ -4043,6 +4043,14 @@ footer {
     margin-top: 0px;
   }
 
+  .md\:ml-\[0\.5vw\;\] {
+    margin-left: 0.5vw;;
+  }
+
+  .md\:ml-\[0\.5vw\] {
+    margin-left: 0.5vw;
+  }
+
   .md\:h-auto {
     height: auto;
   }
