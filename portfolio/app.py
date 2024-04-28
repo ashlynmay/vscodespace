@@ -72,7 +72,7 @@ def cali():
 
 @app.route("/web-projects")
 def cali():
-    return render_template("cali.html")
+    return render_template("web-projects.html")
 
 @app.route("/other-projects")
 def cali():
