@@ -3234,8 +3234,7 @@ footer {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 30 !important;
-  margin-top: 0 !important;
+  margin: auto;
   --alignment: left;
   --flex-alignment: flex-start;
   --indent-left: 1;
