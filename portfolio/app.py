@@ -67,7 +67,7 @@ def cprojects():
     db.execute(f"SELECT name FROM sqlite_master WHERE type='table' AND name='projects'")
     if db.fetchone() is not None:
         projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
-         return render_template("c-projects.html", projects=projects)
+        return render_template("c-projects.html", projects=projects)
     else: 
         for root, dirs, files in os.walk(directory):
             for filename in files:
