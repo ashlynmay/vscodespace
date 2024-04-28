@@ -63,7 +63,6 @@ def cali():
 
 @app.route("/c-projects")
 def c_projects():
-    
         for root, dirs, files in os.walk(directory):
             for filename in files:
                 if filename.lower() == "project.md":
