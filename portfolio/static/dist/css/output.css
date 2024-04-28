@@ -2984,6 +2984,8 @@ footer {
 }
 
 .uncomplete {
+  border-color: #1db88e;
+  color: black;
 }
 
 @media (min-width: 1024px) {

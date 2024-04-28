@@ -91,5 +91,6 @@ footer {
 }
 
 .uncomplete {
-  
+  border-color: #1db88e;
+  color: black;
 }
