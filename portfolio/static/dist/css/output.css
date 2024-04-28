@@ -2835,6 +2835,10 @@ html {
   width: 83.333333%;
 }
 
+.w-5\/6 {
+  width: 83.333333%;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
