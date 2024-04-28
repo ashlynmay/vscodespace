@@ -66,7 +66,7 @@ def cali():
 def cprojects():
     db.execute(f"SELECT name FROM sqlite_master WHERE type='table' AND name='projects'")
     if db.fetchone() is not None:
-        print(f"Table '{table_name}' exists in the database.")
+        continue
     else:
         print(f"Table '{table_name}' does not exist in the database.") 
         for root, dirs, files in os.walk(directory):
