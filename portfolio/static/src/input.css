@@ -82,4 +82,6 @@ footer {
   border-width: 3px;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  margin-left: 0;
+  margin-right: 0;
 }
