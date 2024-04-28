@@ -2979,7 +2979,7 @@ footer {
 
 .timeline-box {
   border-color: #1db88e;
-  color: var(--fallback-s, oklch(var(--s) / var(--tw-text-opacity)));
+  color: #1db88e;
 }
 
 @media (min-width: 1024px) {
