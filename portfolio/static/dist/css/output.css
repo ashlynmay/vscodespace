@@ -2915,6 +2915,7 @@ body {
 }
 
 footer {
+  margin-top: ;
   display: flex;
   justify-content: center;
 }
