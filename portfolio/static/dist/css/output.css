@@ -3608,6 +3608,10 @@ footer {
     margin-left: 5rem;
   }
 
+  .md\:ml-40 {
+    margin-left: 10rem;
+  }
+
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
