@@ -2663,10 +2663,6 @@ body {
   margin-bottom: 5rem;
 }
 
-.max-h-50vh {
-  max-height: 50vh;
-}
-
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
     --timeline-row-start: 0;
@@ -2795,3 +2791,4 @@ body {
     line-height: 1.5rem;
   }
 }
+
