@@ -3600,6 +3600,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .md\:m-5 {
+    margin: 1.25rem;
+  }
+
   .md\:mr-6 {
     margin-right: 1.5rem;
   }
@@ -3610,6 +3614,10 @@ footer {
 
   .md\:ml-40 {
     margin-left: 10rem;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:w-64 {
