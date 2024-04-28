@@ -3164,7 +3164,7 @@ body {
 }
 
 .prose :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-  color: oklch(1 0 0));
+  color: oklch(1 0 0);
 }
 
 @media (min-width: 1024px) {
