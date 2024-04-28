@@ -2636,6 +2636,8 @@ html {
 
 #projects {
   flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 h2 {
