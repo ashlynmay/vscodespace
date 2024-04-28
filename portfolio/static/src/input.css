@@ -101,6 +101,8 @@ footer {
 
 
 #outer {
+  display:flex;
+  
   position: relative;
   margin-bottom: 0 !important;
   margin-top: 0 !important;
