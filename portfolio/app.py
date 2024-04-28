@@ -81,7 +81,7 @@ def c_projects():
                 if len(lines) >= 3:
                     description = lines[2].strip()
                 else:
-                    description = ""
+                    description = "placeholder description"
                 if len(lines) >= 4:
                     link = lines[3].strip()
                 else:
