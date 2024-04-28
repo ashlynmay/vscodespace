@@ -95,9 +95,6 @@ footer {
   margin-top: 2rem;
 }
 
-.lg/:
-max-width: 87.5%;
-
 @media (min-width: 1024px) {
   @media (hover: hover) {
     .lg\:max-w-87: {
