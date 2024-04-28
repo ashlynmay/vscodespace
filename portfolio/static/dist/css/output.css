@@ -3160,7 +3160,7 @@ body {
 }
 
 :root .prose {
-  --tw-prose-headings: var(--fallback-bc, oklch(var(--bc)/1));
+  --tw-prose-headings: var(--fallback-bc, oklch(1));
 }
 
 @media (min-width: 1024px) {
