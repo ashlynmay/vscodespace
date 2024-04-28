@@ -2692,6 +2692,10 @@ html {
   position: static;
 }
 
+.float-right {
+  float: right;
+}
+
 .m-3 {
   margin: 0.75rem;
 }
