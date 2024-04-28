@@ -83,5 +83,6 @@ footer {
   margin-top: 3rem;
   margin-bottom: 3rem;
   max-width: 100%;
-  margin
+  margin-left: auto;
+  margin-right: auto;
 }
