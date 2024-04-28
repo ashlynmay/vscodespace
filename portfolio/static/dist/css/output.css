@@ -2633,6 +2633,11 @@ html {
   height: 3.5rem;
 }
 
+.size-44 {
+  width: 11rem;
+  height: 11rem;
+}
+
 .h-12 {
   height: 3rem;
 }
