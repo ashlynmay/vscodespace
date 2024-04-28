@@ -6,11 +6,11 @@ python
 1
 
 ❯ python3 credit.py
-Number: 378282246310005
-AMEX
+    Number: 378282246310005
+    AMEX
 ❯ python3 credit.py
-Number: 5555555555554444
-MASTERCARD
+    Number: 5555555555554444
+    MASTERCARD
 ❯ python3 credit.py
     Number: 5555555555554443
     INVALID
