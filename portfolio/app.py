@@ -64,7 +64,7 @@ def cali():
 
 @app.route("/c-projects")
 def cprojects():
-    db.execute(f"SELECT name FROM sqlite_master WHERE type='table' AND name='{table_name}'")
+    db.execute(f"SELECT name FROM sqlite_master WHERE type='table' AND name='projects'")
     if db.fetchone() is not None:
         print(f"Table '{table_name}' exists in the database.")
     else:
