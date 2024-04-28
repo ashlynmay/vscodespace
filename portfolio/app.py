@@ -9,7 +9,7 @@ app = Flask(__name__)
 db = SQL("sqlite:///portfolio.db")
 directory = '/home/ipsum/vscodespace/'
 
-def 
+def project_check()
 
 
 @app.route("/")
