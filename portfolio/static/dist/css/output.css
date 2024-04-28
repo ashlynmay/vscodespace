@@ -2705,10 +2705,6 @@ html {
   margin-right: auto;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -2916,7 +2912,6 @@ body {
 
 .projbutton {
   display: block;
-  margin: auto;
 }
 
 @media (min-width: 1024px) {
@@ -3333,10 +3328,6 @@ body {
 
   .lg\:ml-40 {
     margin-left: 10rem;
-  }
-
-  .lg\:mt-4 {
-    margin-top: 1rem;
   }
 
   .lg\:mt-0 {
