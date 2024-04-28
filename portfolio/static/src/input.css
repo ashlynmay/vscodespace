@@ -125,7 +125,8 @@ footer {
 
 .sociallist {
   display: flex;
-  flex-wrap:
+  flex-wrap:wrap
+  
 }
 
 
