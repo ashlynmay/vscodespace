@@ -2773,6 +2773,10 @@ body {
     margin: 1.25rem;
   }
 
+  .lg\:ml-20 {
+    margin-left: 5rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
