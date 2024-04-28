@@ -69,3 +69,7 @@ body {
 :root .prose {
 --tw-prose-headings: var(--fallback-bc, oklch(1 0 0));
 }
+
+.prose :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+
+  }
