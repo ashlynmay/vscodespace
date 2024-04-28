@@ -66,6 +66,8 @@ def c_projects():
     if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='projects'"):
         db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT, type TEXT, featured BOOLEAN)")
     else:
+                projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+        return render_template("c-projects.html", projects=projects)
         for root, dirs, files in os.walk(directory):
             for filename in files:
                 if filename.lower() == "project.md":
