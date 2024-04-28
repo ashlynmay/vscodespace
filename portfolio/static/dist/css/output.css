@@ -2746,6 +2746,10 @@ html {
   height: 2rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .w-5 {
   width: 1.25rem;
 }
