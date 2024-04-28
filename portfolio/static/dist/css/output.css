@@ -2641,6 +2641,7 @@ html {
 }
 
 h2 {
+  text-align: left !important;
   margin-top: 0 !important;
 }
 
