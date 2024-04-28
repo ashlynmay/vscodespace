@@ -2914,6 +2914,11 @@ body {
   display: block;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 1024px) {
   @media (hover: hover) {
     .lg\:btn-outline:hover {
@@ -3363,4 +3368,3 @@ body {
     line-height: 1.5rem;
   }
 }
-
