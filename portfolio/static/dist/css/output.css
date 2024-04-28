@@ -3014,6 +3014,10 @@ body {
     height: auto;
   }
 
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:w-64 {
     width: 16rem;
   }
