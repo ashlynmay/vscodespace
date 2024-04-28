@@ -4131,6 +4131,10 @@ footer {
     width: 16rem;
   }
 
+  .lg\:w-\[25vw\] {
+    width: 25vw;
+  }
+
   .lg\:p-10 {
     padding: 2.5rem;
   }
