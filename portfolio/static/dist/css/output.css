@@ -2478,10 +2478,6 @@ html {
   margin: 0.75rem;
 }
 
-.m-5 {
-  margin: 1.25rem;
-}
-
 .block {
   display: block;
 }
@@ -2521,10 +2517,6 @@ html {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .max-w-sm {
@@ -2638,7 +2630,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100vw;
+  max-width: 100%;
 }
 
 #projects {
