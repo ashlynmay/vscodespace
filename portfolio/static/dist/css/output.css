@@ -2668,6 +2668,10 @@ html {
   width: 6rem;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
