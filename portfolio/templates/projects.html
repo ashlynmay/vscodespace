@@ -7,7 +7,7 @@
   {% if c_projects %}
   <h2 class="projecttitle m-auto lg:ml-40">Projects Written in C</h2>
   <div id="projectcards">
-    {% for project in projects %}
+    {% for project in cprojects %}
     <div class="card size-44 m-3 text-xs bg-neutral shadow-xl lg:w-64 lg:m-5 lg:h-auto lg:text-base">
       <figure><img src="{{ project['image'] }}" alt="placeholder" /></figure>
       <div class="card-body">
