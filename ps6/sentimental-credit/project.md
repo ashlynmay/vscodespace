@@ -2,5 +2,5 @@ credit
 https://res.cloudinary.com/dpm4kmh00/image/upload/v1714263510/portfolio%20assets/portfolio_hrxkzn.png
 verify & validate type of credit card
 https://github.com/ashlynmay/vscodespace/tree/main/ps6/sentimental-credit
-web
+python
 1
