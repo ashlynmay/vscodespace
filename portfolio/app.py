@@ -64,7 +64,11 @@ def cali():
 
 @app.route("/c-projects")
 def cprojects():
-    if 
+    cursor.execute(f"SELECT name FROM sqlite_master WHERE type='table' AND name='{table_name}'")
+    if cursor.fetchone() is not None:
+        print(f"Table '{table_name}' exists in the database.")
+    else:
+        print(f"Table '{table_name}' does not exist in the database.") 
         for root, dirs, files in os.walk(directory):
             for filename in files:
                 if filename.lower() == 'project.md':
