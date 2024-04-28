@@ -2864,6 +2864,10 @@ html {
   height: 11rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -2884,16 +2888,12 @@ html {
   height: 100%;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
 .min-h-full {
   min-height: 100%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-24 {
@@ -2914,14 +2914,6 @@ html {
 
 .w-9 {
   width: 2.25rem;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .max-w-\[100\%\] {
@@ -3278,6 +3270,9 @@ footer {
 
 .contactname {
   margin-bottom: 0;
+}
+
+#inner  {
 }
 
 /*
