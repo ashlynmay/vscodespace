@@ -64,7 +64,6 @@ def index():
 @app.route("/projects")
 def projects():
     db.execute("DROP TABLE projects")
-    db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT, type TEXT, featured BOOLEAN, alt TEXT)")
     project_check()
     featured_c_projects = db.execute("SELECT * FROM projects WHERE type = 'c' AND featured = '1'")
     featured_py_projects = db.execute("SELECT * FROM projects WHERE type = 'python' AND featured = '1'")
