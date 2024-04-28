@@ -2855,6 +2855,10 @@ html {
   width: 11rem;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
