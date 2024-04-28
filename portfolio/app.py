@@ -63,7 +63,7 @@ def cali():
 
 @app.route("/c-projects")
 def c_projects():
-        if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='projects'"):
+    if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='projects'"):
         db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT, type TEXT, featured BOOLEAN)")
         for root, dirs, files in os.walk(directory):
             for filename in files:
