@@ -3133,6 +3133,9 @@ footer {
   color: #1db88e;
 }
 
+#name {
+}
+
 @media (min-width: 1024px) {
   @media (hover: hover) {
     .lg\:btn-outline:hover {
