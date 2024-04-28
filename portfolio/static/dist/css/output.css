@@ -2903,8 +2903,7 @@ body {
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
 }
 
 @media (min-width: 1024px) {

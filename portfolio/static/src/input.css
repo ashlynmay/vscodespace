@@ -68,7 +68,5 @@ body {
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  f
+  flex-direction: column;
 }
