@@ -71,7 +71,7 @@ def pyprojects():
     return render_template("py-projects.html")
 
 @app.route("/web-projects")
-def cali():
+def webprojects():
     return render_template("web-projects.html")
 
 @app.route("/other-projects")
