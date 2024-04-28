@@ -95,7 +95,7 @@ def c_projects():
                 else:
                     featured = "0"
                 db.execute("INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)", name, image, description, link, type, featured)
-    featured_c_projects = db.execute("SELECT * FROM projects WHERE type = 'c' AND featured = '1'")
+    featured_c_projects = db.execute("SELECT * FROM projects WHERE type = 'c'
     return render_template("projects.html", c_projects=featured_c_projects, py_projects=featured_py_projects, web_projects=featured_web_projects, other_projects=featured_other_projects)
         
 
