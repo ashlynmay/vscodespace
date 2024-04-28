@@ -3588,6 +3588,10 @@ footer {
   outline-color: #4f46e5;
 }
 
+.focus-visible\:outline-secondary:focus-visible {
+  outline-color: var(--fallback-s,oklch(var(--s)/1));
+}
+
 @media (min-width: 640px) {
   .sm\:py-32 {
     padding-top: 8rem;
