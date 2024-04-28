@@ -2848,6 +2848,11 @@ html {
   width: 24rem;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-full {
   max-width: 100%;
 }
