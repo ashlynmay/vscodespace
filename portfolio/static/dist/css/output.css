@@ -3276,8 +3276,6 @@ footer {
   margin-top: 1rem;
 }
 
-/* test */
-
 @media (min-width: 768px) {
   @media (hover: hover) {
     .md\:btn-outline:hover {
