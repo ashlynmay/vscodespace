@@ -41,7 +41,7 @@ def project_check():
                         featured = lines[5].strip()
                     else:
                         featured = "0"
-                    if len(lines) >= 6:
+                    if len(lines) >=7:
                         featured = lines[5].strip()
                     else:
                         featured = "0"
