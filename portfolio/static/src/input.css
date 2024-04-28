@@ -139,7 +139,13 @@ footer {
   background-repeat: repeat;
   background-size: cover;
   padding-top: 2rem;
-  
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 2.25rem;
+  border-width: 1px;
+  border-color: #DE8B5D;
+  border-style: solid;
 }
 
 /*
