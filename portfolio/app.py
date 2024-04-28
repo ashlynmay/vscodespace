@@ -66,7 +66,7 @@ def cali():
 def cali():
     return render_template("cali.html")
 
-@app.route("/c-projects")
+@app.route("/py-projects")
 def cali():
     return render_template("cali.html")
 
