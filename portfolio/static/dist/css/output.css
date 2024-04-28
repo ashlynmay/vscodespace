@@ -4078,6 +4078,10 @@ footer {
     padding: 2rem;
   }
 
+  .md\:pt-12 {
+    padding-top: 3rem;
+  }
+
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
