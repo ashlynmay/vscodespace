@@ -2648,6 +2648,7 @@ h2 {
   position: relative;
   max-width: 100%;
   margin-left: 5rem;
+  margin-bottom: 0;
   padding: unset;
 }
 
