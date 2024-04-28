@@ -2827,6 +2827,10 @@ html {
   width: 91.666667%;
 }
 
+.w-9\/12 {
+  width: 75%;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
