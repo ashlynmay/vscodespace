@@ -2978,7 +2978,7 @@ footer {
 }
 
 .timeline-box {
-  border-color: var(secondary);
+  border-color: secondary;
   color: var(secondary);
 }
 
