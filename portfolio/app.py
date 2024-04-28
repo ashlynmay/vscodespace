@@ -111,11 +111,11 @@ def c_projects():
     return render_template("c-projects.html", projects=projects)
         
 @app.route("/py-projects")
-def pyprojects():
+def py_projects():
     return render_template("py-projects.html")
 
 @app.route("/web-projects")
-def webprojects():
+def web_projects():
     return render_template("web-projects.html")
 
 @app.route("/other-projects")
