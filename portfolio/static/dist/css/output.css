@@ -2608,6 +2608,10 @@ html {
   margin: 9rem;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
