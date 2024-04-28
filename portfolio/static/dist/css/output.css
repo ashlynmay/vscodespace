@@ -3276,15 +3276,6 @@ footer {
   margin-top: 1rem;
 }
 
-/*
-
-.contactname
-.contactdescription
-.btn-gradient
-.contactdivider
-
-*/
-
 @media (min-width: 768px) {
   @media (hover: hover) {
     .md\:btn-outline:hover {
