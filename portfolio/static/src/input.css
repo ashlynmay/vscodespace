@@ -119,7 +119,7 @@ footer {
 .sociallist {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   letter-spacing: 0;
   padding-top: 1rem;
 }
