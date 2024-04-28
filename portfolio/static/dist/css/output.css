@@ -2827,15 +2827,6 @@ html {
   border-radius: 0.5rem;
 }
 
-.border-solid {
-  border-style: solid;
-}
-
-.border-zinc-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(82 82 91 / var(--tw-border-opacity));
-}
-
 .bg-neutral {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
@@ -2849,11 +2840,6 @@ html {
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pt-6 {
@@ -2886,11 +2872,6 @@ html {
 .text-secondary {
   --tw-text-opacity: 1;
   color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity)));
-}
-
-.text-success {
-  --tw-text-opacity: 1;
-  color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity)));
 }
 
 .text-warning {
@@ -2982,6 +2963,9 @@ footer {
   margin-top: 20vh;
   display: flex;
   justify-content: center;
+}
+
+.mockup-code {
 }
 
 @media (min-width: 1024px) {
