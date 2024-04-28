@@ -3155,7 +3155,7 @@ footer {
 
 @media (min-width: 1024px) {
   @media (hover: hover) {
-    .lg\:max-w-87: {
+    max-w-87: {
       max-width: 87.5%;
     }
   }
@@ -3992,12 +3992,6 @@ footer {
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  @media (min-width: 1024px) {
-    .lg\:lg\:w-auto {
-      width: auto;
-    }
   }
 
   .lg\:p-10 {
