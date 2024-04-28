@@ -3236,10 +3236,6 @@ footer {
   align-items: flex-start;
   position: relative;
   margin: 4rem !important;
-  --alignment: left;
-  --flex-alignment: flex-start;
-  --indent-left: 1;
-  --indent-right: 0;
   max-width: 100%;
   max-height: 100%;
   background-color: #28272E;
