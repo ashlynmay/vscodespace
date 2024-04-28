@@ -7,6 +7,7 @@ import re
 
 app = Flask(__name__)
 db = SQL("sqlite:///portfolio.db")
+directory = '/home/ipsum/vscodespace/'
 
 @app.route("/")
 def index():
