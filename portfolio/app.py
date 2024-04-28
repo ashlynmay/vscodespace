@@ -9,6 +9,9 @@ app = Flask(__name__)
 db = SQL("sqlite:///portfolio.db")
 directory = '/home/ipsum/vscodespace/'
 
+
+
+
 @app.route("/")
 def index():
     return render_template("index.html")
