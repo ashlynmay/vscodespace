@@ -49,6 +49,7 @@ def project_check():
                         link,
                         project_type,
                         featured,
+                        alt,
                     )
 
 
