@@ -3253,6 +3253,7 @@ footer {
 }
 
 .sociallist {
+  display: flex;
 }
 
 /*
