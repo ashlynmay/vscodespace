@@ -100,7 +100,10 @@ footer {
 }
 
 
-#outer
+#outer {
+  margin-bottom: 0 !important;
+  
+}
 
 
 
