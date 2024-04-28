@@ -65,3 +65,5 @@ body {
 .max-h-50vh {
   max-height: 50vh;
 }
+
+--tw-prose-headings: var(--fallback-bc, oklch(var(--bc)/1));
