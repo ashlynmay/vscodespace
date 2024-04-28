@@ -2916,6 +2916,10 @@ html {
   width: 85vw;
 }
 
+.w-\[83vw\] {
+  width: 83vw;
+}
+
 .max-w-\[100\%\] {
   max-width: 100%;
 }
