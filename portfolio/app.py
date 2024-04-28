@@ -74,7 +74,7 @@ def c_projects():
                     lines = file.read().splitlines()
                 if len(lines) >= 1:
                     name = lines[0].strip()
-                else: name = ""
+                else: name = "placeholder"
                 if len(lines) > 1:    
                     image = lines[1].strip()
                 else: image = ""
