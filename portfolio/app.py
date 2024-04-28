@@ -103,6 +103,9 @@ def other_projects():
     projects = db.execute("SELECT * FROM projects WHERE type = 'other'")
     return render_template("other-projects.html", projects=projects)
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"), 404
 
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
