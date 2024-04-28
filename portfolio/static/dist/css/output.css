@@ -2903,7 +2903,7 @@ body {
 
 .projbutton {
   position: relative;
-  left: 100rem;
+  left: 80rem;
 }
 
 @media (min-width: 1024px) {
