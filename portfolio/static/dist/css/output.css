@@ -3229,7 +3229,7 @@ footer {
   max-width: 87.5%;
 }
 
-#outer {
+.outer {
   display:flex;
   justify-content: center;
   align-items: center;
