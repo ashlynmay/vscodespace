@@ -112,7 +112,7 @@ footer {
   --indent-left: 1;
   --indent-right: 0;
   display: flex;
-  width: 100%;
+  width: 50%;
   align-items: center;
   justify-content: center;
   background-color: #28272E;
