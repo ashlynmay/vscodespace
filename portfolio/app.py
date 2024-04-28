@@ -41,6 +41,10 @@ def project_check():
                         featured = lines[5].strip()
                     else:
                         featured = "0"
+                    if len(lines) >= 6:
+                    featured = lines[5].strip()
+                else:
+                    featured = "0"
                     db.execute(
                         "INSERT INTO projects (name, image, description, link, type, featured, alt) VALUES (?, ?, ?, ?, ?, ?, ?)",
                         name,
