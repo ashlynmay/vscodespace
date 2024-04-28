@@ -85,6 +85,6 @@ footer {
 }
 
 .timeline-box {
-  border-color: var(--pc);
-  color: var(--pc);
+  border-color: var(--fallback-s, oklch(var(--s) / var(--tw-text-opacity)));
+  color: var(--fallback-s, oklch(var(--s) / var(--tw-text-opacity)));
 }
