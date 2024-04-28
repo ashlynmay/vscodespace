@@ -11,7 +11,7 @@ directory = '/home/ipsum/vscodespace/'
 
 def project_check():
     if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='projects'"):
-        db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT, type TEXT, featured BOOLEAN)")
+        db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT, type TEXT, featured BOOLEAN, alt TEXT)")
         for root, dirs, files in os.walk(directory):
             for filename in files:
                 if filename.lower() == "project.md":
