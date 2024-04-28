@@ -112,11 +112,15 @@ def c_projects():
         
 @app.route("/py-projects")
 def py_projects():
-    return render_template("py-projects.html")
+    project_check()
+    projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+    return render_template("c-projects.html", projects=projects)
 
 @app.route("/web-projects")
 def web_projects():
-    return render_template("web-projects.html")
+    project_check()
+    projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+    return render_template("c-projects.html", projects=projects)
 
 @app.route("/other-projects")
 def other_projects():
