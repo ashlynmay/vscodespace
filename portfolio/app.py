@@ -101,16 +101,29 @@ def cali():
                     else:
                         link = ""
                     if len(lines) >= 5:
-                        type = lines[4].strip()
++                        project_type = lines[4].strip()
+-                        type = lines[4].strip()
                     else:
-                        type = ""
++                        project_type = ""
+-                        type = ""
                     if len(lines) >= 6:
                         featured = lines[5].strip()
                     else:
                         featured = "0"
-                    db.execute("INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)", name, image, description, link, type, featured)
-                    projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
-                    return render_template("c-projects.html", projects=projects)
++                    db.execute(
++                        "INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)",
++                        name,
++                        image,
++                        description,
++                        link,
++                        project_type,
++                        featured,
++                    )
++        projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
++        return render_template("c-projects.html", projects=projects)
+-                    db.execute("INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)", name, image, description, link, type, featured)
+-                    projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+-                    return render_template("c-projects.html", projects=projects)
 <<<<<<<  157a33a8-621b-4f93-97ba-7fcf52989220  >>>>>>>
 
 
