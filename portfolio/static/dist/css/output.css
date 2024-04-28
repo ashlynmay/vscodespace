@@ -2777,6 +2777,10 @@ html {
   height: 1.5rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -2787,6 +2791,10 @@ html {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .max-w-sm {
