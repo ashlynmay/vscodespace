@@ -62,36 +62,25 @@ def contact():
 def cali():
     return render_template("cali.html")
 
-<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
 @app.route("/c-projects")
-+def c_projects():
-+    if db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='projects'").fetchone():
--def cprojects():
--    db.execute(f"SELECT name FROM sqlite_master WHERE type='table' AND name='projects'")
--    if db.fetchone() is not None:
+def c_projects():
+    if db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='projects'").fetchone():
         projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
         return render_template("c-projects.html", projects=projects)
-+    else:
-+        for root, _, files in os.walk(directory):
--    else: 
--        for root, dirs, files in os.walk(directory):
+    else:
+        for root, _, files in os.walk(directory):
             for filename in files:
-+                if filename.lower() == "project.md":
-+                    with open(os.path.join(root, filename), "r") as file:
--                if filename.lower() == 'project.md':
--                    with open(os.path.join(root, filename), 'r') as file:
+                if filename.lower() == "project.md":
+                    with open(os.path.join(root, filename), "r") as file:
                         lines = file.read().splitlines()
                     if len(lines) >= 1:
                         name = lines[0].strip()
-+                    else:
-+                        name = ""
-+                    if len(lines) > 1:
--                    else: name = ""
--                    if len(lines) > 1:    
+                    else:
+                        name = ""
+                    if len(lines) > 1:
                         image = lines[1].strip()
-+                    else:
-+                        image = ""
--                    else: image = ""
+                    else:
+                        image = ""
                     if len(lines) >= 3:
                         description = lines[2].strip()
                     else:
@@ -101,30 +90,24 @@ def cali():
                     else:
                         link = ""
                     if len(lines) >= 5:
-+                        project_type = lines[4].strip()
--                        type = lines[4].strip()
+                        project_type = lines[4].strip()
                     else:
-+                        project_type = ""
--                        type = ""
+                        project_type = ""
                     if len(lines) >= 6:
                         featured = lines[5].strip()
                     else:
                         featured = "0"
-+                    db.execute(
-+                        "INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)",
-+                        name,
-+                        image,
-+                        description,
-+                        link,
-+                        project_type,
-+                        featured,
-+                    )
-+        projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
-+        return render_template("c-projects.html", projects=projects)
--                    db.execute("INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)", name, image, description, link, type, featured)
--                    projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
--                    return render_template("c-projects.html", projects=projects)
-<<<<<<<  157a33a8-621b-4f93-97ba-7fcf52989220  >>>>>>>
+                    db.execute(
+                        "INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)",
+                        name,
+                        image,
+                        description,
+                        link,
+                        project_type,
+                        featured,
+                    )
+        projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+        return render_template("c-projects.html", projects=projects)
 
 
 @app.route("/py-projects")
