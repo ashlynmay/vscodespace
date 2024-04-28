@@ -2301,6 +2301,12 @@ html {
   margin-top: 0;
 }
 
+.mockup-phone .display {
+  overflow: hidden;
+  border-radius: 40px;
+  margin-top: -25px;
+}
+
 @keyframes modal-pop {
   0% {
     opacity: 0;
@@ -3316,6 +3322,10 @@ body {
 
   .lg\:m-5 {
     margin: 1.25rem;
+  }
+
+  .lg\:m-0 {
+    margin: 0px;
   }
 
   .lg\:ml-20 {
