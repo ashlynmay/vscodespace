@@ -2920,6 +2920,10 @@ html {
   width: 7rem;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .max-w-\[100\%\] {
   max-width: 100%;
 }
