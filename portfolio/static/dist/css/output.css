@@ -3255,6 +3255,7 @@ footer {
 .sociallist {
   display: flex;
   flex-wrap: wrap;
+  justify-content: ;
 }
 
 /*
