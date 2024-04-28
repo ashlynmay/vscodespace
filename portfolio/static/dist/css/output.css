@@ -2659,6 +2659,10 @@ h2 {
   margin: 0;
 }
 
+body {
+  margin-bottom: 5rem;
+}
+
 .max-h-50vh {
   max-height: 50vh;
 }
