@@ -2978,7 +2978,7 @@ footer {
 }
 
 .timeline-box {
-  border-color: whitesmoke;
+  border-color: var(--sc);
   color: whitesmoke);
 }
 
