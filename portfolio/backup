@@ -42,3 +42,43 @@ def c_projects():
                     )
     projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
     return render_template("c-projects.html", c_projects=projects)
+
+
+
+
+
+
+db.execute("DROP TABLE projects")
+    db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT, type TEXT, featured BOOLEAN)")
+
+    # Iterate over files in the directory
+    for root, dirs, files in os.walk(directory):
+        for filename in files:
+            if filename.lower() == 'project.md':
+                with open(os.path.join(root, filename), 'r') as file:
+                    lines = file.read().splitlines()
+                if len(lines) >= 1:
+                    name = lines[0].strip()
+                else: name = "placeholder"
+                if len(lines) > 1:    
+                    image = lines[1].strip()
+                else: image = "https://placehold.co/600x400?text=Hello\nWorld"
+                if len(lines) >= 3:
+                    description = lines[2].strip()
+                else:
+                    description = "placeholder description"
+                if len(lines) >= 4:
+                    link = lines[3].strip()
+                else:
+                    link = "https://github.com/ashlynmay"
+                if len(lines) >= 5:
+                    type = lines[4].strip()
+                else:
+                    type = "other"
+                if len(lines) >= 6:
+                    featured = lines[5].strip()
+                else:
+                    featured = "0"
+                db.execute("INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)", name, image, description, link, type, featured)
+    c_projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+    return render_template("projects.html", projects=c_projects)
