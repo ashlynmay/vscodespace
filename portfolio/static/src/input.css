@@ -66,4 +66,5 @@ body {
   max-height: 50vh;
 }
 
+:root .prose {
 --tw-prose-headings: var(--fallback-bc, oklch(var(--bc)/1));
