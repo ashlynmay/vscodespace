@@ -17,8 +17,6 @@ def index():
 def projects():
     db.execute("DROP TABLE projects")
     db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT, type TEXT, featured BOOLEAN)")
-    # Directory path to search for README files
-    directory = '/home/ipsum/vscodespace/'
 
     # Iterate over files in the directory
     for root, dirs, files in os.walk(directory):
