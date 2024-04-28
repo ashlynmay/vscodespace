@@ -119,13 +119,13 @@ def py_projects():
 @app.route("/web-projects")
 def web_projects():
     project_check()
-    projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+    projects = db.execute("SELECT * FROM projects WHERE type = 'web'")
     return render_template("c-projects.html", projects=projects)
 
 @app.route("/other-projects")
 def other_projects():
     project_check()
-    projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+    projects = db.execute("SELECT * FROM projects WHERE type = 'other'")
     return render_template("c-projects.html", projects=projects)
 
 
