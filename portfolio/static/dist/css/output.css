@@ -2811,7 +2811,7 @@ body {
 }
 
 .max-h-56vh {
-  max-height: 56vh;
+  max-height: 50vh;
 }
 
 @media (min-width: 1024px) {
