@@ -2781,6 +2781,10 @@ html {
   height: 1rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-12 {
   width: 3rem;
 }
