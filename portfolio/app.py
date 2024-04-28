@@ -67,7 +67,7 @@ def c_projects():
         projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
         return render_template("c-projects.html", projects=projects)
     else:
-        for root, _, files in os.walk(directory):
+        for root, dirs, files in os.walk(directory):
             for filename in files:
                 if filename.lower() == "project.md":
                     with open(os.path.join(root, filename), "r") as file:
