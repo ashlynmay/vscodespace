@@ -3232,7 +3232,7 @@ footer {
 .outer {
   display:flex;
   justify-content: center;
-  flex-direction: ;
+  flex-direction: column;
   align-items: center;
   position: relative;
   margin: auto;
