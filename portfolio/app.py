@@ -66,9 +66,9 @@ def cali():
 def cprojects():
     db.execute(f"SELECT name FROM sqlite_master WHERE type='table' AND name='projects'")
     if db.fetchone() is not None:
-        
-    else:
-        print(f"Table '{table_name}' does not exist in the database.") 
+            projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+    return render_template("c-projects.html", projects=projects)
+    else: 
         for root, dirs, files in os.walk(directory):
             for filename in files:
                 if filename.lower() == 'project.md':
