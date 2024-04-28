@@ -3246,6 +3246,10 @@ footer {
   margin-bottom: 0 !important;
 }
 
+#main > .inner > :first-child {
+  margin-top: 0 !important;
+}
+
 @media (min-width: 768px) {
   @media (hover: hover) {
     .md\:btn-outline:hover {
@@ -4114,4 +4118,3 @@ footer {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
-

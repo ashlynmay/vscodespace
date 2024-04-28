@@ -150,3 +150,6 @@ footer {
   margin-bottom: 0 !important;
 }
 
+#main > .inner > :first-child {
+  margin-top: 0 !important;
+}
