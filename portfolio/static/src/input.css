@@ -127,8 +127,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: var(--flex-alignment);
-  letter-spacing: ;
-
+  letter-spacing: 0;
+  padding: 0;
 }
 
 
