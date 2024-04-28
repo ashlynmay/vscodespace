@@ -124,7 +124,9 @@ def web_projects():
 
 @app.route("/other-projects")
 def other_projects():
-    return render_template("other-projects.html")
+    project_check()
+    projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+    return render_template("c-projects.html", projects=projects)
 
 
 if __name__ == '__main__':
