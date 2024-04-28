@@ -65,8 +65,3 @@ body {
 .max-h-50vh {
   max-height: 50vh;
 }
-
-.cards {
-  display: flex;
-  flex-direction: column;
-}

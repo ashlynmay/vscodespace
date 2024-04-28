@@ -2901,11 +2901,6 @@ body {
   max-height: 50vh;
 }
 
-.cards {
-  display: flex;
-  flex-direction: column;
-}
-
 @media (min-width: 1024px) {
   @media (hover: hover) {
     .lg\:btn-outline:hover {
