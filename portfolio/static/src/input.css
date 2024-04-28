@@ -102,6 +102,7 @@ footer {
 
 #outer {
   display:flex;
+  justify-content: center;
   
   position: relative;
   margin-bottom: 0 !important;
