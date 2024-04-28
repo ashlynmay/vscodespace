@@ -2969,6 +2969,11 @@ body {
 
 @media (min-width: 640px) {
   @media not all and (min-width: 768px) {
+    .sm\:max-md\:size-44 {
+      width: 11rem;
+      height: 11rem;
+    }
+
     .sm\:max-md\:w-64 {
       width: 16rem;
     }
