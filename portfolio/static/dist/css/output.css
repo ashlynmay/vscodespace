@@ -2853,6 +2853,10 @@ html {
   width: fit-content;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .max-w-full {
   max-width: 100%;
 }
