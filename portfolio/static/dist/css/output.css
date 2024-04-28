@@ -2600,10 +2600,6 @@ html {
   margin: 1.25rem;
 }
 
-.m-56 {
-  margin: 14rem;
-}
-
 .m-52 {
   margin: 13rem;
 }
@@ -2636,14 +2632,6 @@ html {
   height: 1.5rem;
 }
 
-.max-h-80 {
-  max-height: 20rem;
-}
-
-.max-h-96 {
-  max-height: 24rem;
-}
-
 .w-12 {
   width: 3rem;
 }
@@ -2662,10 +2650,6 @@ html {
 
 .w-64 {
   width: 16rem;
-}
-
-.w-44 {
-  width: 11rem;
 }
 
 .max-w-sm {
@@ -2824,6 +2808,10 @@ h2 {
 
 body {
   margin-bottom: 4rem;
+}
+
+.max-h-56vh {
+  max-height: 56vh;
 }
 
 @media (min-width: 1024px) {
