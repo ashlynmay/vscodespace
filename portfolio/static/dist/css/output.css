@@ -2965,9 +2965,6 @@ footer {
   justify-content: center;
 }
 
-.mockup-code {
-}
-
 @media (min-width: 1024px) {
   @media (hover: hover) {
     .lg\:btn-outline:hover {
