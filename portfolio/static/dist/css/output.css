@@ -2969,7 +2969,6 @@ footer {
   border-color: darkslategrey;
   border-style:solid;
   border-width: 3px;
-  padding: 5px;
 }
 
 @media (min-width: 1024px) {
