@@ -2974,6 +2974,11 @@ body {
     display: none;
   }
 
+  .lg\:size-auto {
+    width: auto;
+    height: auto;
+  }
+
   .lg\:w-64 {
     width: 16rem;
   }
