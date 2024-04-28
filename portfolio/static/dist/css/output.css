@@ -3159,7 +3159,9 @@ body {
   max-height: 50vh;
 }
 
---tw-prose-headings: var(--fallback-bc, oklch(var(--bc)/1));
+:root .prose {
+  --tw-prose-headings: var(--fallback-bc, oklch(var(--bc)/1));
+}
 
 @media (min-width: 1024px) {
   .lg\:timeline-horizontal.timeline-compact {
