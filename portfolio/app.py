@@ -85,7 +85,7 @@ def c_projects():
                 if len(lines) >= 4:
                     link = lines[3].strip()
                 else:
-                    link = ""
+                    link = "https://github.com/ashlynmay"
                 if len(lines) >= 5:
                     type = lines[4].strip()
                 else:
