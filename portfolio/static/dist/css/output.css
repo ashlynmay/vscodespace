@@ -3354,6 +3354,10 @@ body {
     flex-direction: row-reverse;
   }
 
+  .lg\:text-left {
+    text-align: left;
+  }
+
   .lg\:text-center {
     text-align: center;
   }
