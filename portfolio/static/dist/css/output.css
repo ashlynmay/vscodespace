@@ -3153,6 +3153,8 @@ footer {
   margin-top: 2rem;
 }
 
+max-width: 87.5%;
+
 @media (min-width: 768px) {
   @media (hover: hover) {
     .md\:btn-outline:hover {
