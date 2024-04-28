@@ -3260,6 +3260,15 @@ footer {
   padding: 0;
 }
 
+.btn-gradient {
+  background-color: #DE8B5D;
+  color: #FFFFFF;
+  background-image: linear-gradient(243deg, #8C51D6 0%, rgba(222, 139, 93, 0.008) 74%);
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
 /*
 .contactitle
 .contactname
