@@ -2819,6 +2819,10 @@ html {
   width: 60%;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
