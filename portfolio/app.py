@@ -62,7 +62,7 @@ def contact():
 def cali():
     return render_template("cali.html")
 
-@app.route("/cali")
+@app.route("/c-projects")
 def cali():
     return render_template("cali.html")
 
