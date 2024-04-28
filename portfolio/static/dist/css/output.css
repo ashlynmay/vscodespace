@@ -2979,7 +2979,7 @@ footer {
 
 .timeline-box {
   border-color: var(secondary);
-  color:
+  color: var(secondary)
 }
 
 @media (min-width: 1024px) {
