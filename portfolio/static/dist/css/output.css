@@ -4059,6 +4059,10 @@ footer {
     width: 50vw;
   }
 
+  .md\:w-\[25vw\] {
+    width: 25vw;
+  }
+
   .md\:max-w-full {
     max-width: 100%;
   }
