@@ -107,7 +107,7 @@ footer {
   align-content: flex-start;
   align-items: center;
   position: relative;
-  margin: auto;
+  margin: 4rem !important;
   --alignment: left;
   --flex-alignment: flex-start;
   --indent-left: 1;
