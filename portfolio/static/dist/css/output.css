@@ -2638,6 +2638,11 @@ html {
   height: 11rem;
 }
 
+.size-40 {
+  width: 10rem;
+  height: 10rem;
+}
+
 .h-12 {
   height: 3rem;
 }
