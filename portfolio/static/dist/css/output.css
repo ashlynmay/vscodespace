@@ -2968,6 +2968,7 @@ footer {
 .mockup-code {
   border-color:black;
   border-style:groove;
+  border-radius: ;
 }
 
 @media (min-width: 1024px) {
