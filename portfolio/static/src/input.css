@@ -103,7 +103,19 @@ footer {
 #outer {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
-  
+  --alignment: left;
+  --flex-alignment: flex-start;
+  --indent-left: 1;
+  --indent-right: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #28272E;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2.25rem;
 }
 
 
