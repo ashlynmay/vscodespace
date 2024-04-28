@@ -2805,12 +2805,12 @@ html {
   margin: 0.75rem;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .m-4 {
   margin: 1rem;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-auto {
@@ -3255,6 +3255,7 @@ footer {
   justify-content: space-evenly;
   letter-spacing: 0;
   padding-top: 1rem;
+  max-width: 50%;
 }
 
 .contactname {
@@ -4015,12 +4016,12 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .md\:m-5 {
-    margin: 1.25rem;
-  }
-
   .md\:m-16 {
     margin: 4rem;
+  }
+
+  .md\:m-5 {
+    margin: 1.25rem;
   }
 
   .md\:ml-20 {
@@ -4059,12 +4060,12 @@ footer {
     flex-direction: row-reverse;
   }
 
-  .md\:p-8 {
-    padding: 2rem;
-  }
-
   .md\:p-16 {
     padding: 4rem;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:text-base {
