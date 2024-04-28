@@ -3923,6 +3923,10 @@ footer {
     margin-left: 10rem;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:h-auto {
     height: auto;
   }
