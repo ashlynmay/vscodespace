@@ -101,10 +101,5 @@ max-width: 87.5%;
 @media (min-width: 1024px) {
   @media (hover: hover) {
     .lg\:max-w-87: {
-      --tw-border-opacity: 1;
-      border-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-border-opacity)));
-      --tw-bg-opacity: 1;
-      background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
-      --tw-text-opacity: 1;
-      color: var(--fallback-b1,oklch(var(--b1)/var(--tw-text-opacity)));
+      max-width: 87.5%;
     }
