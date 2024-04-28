@@ -2912,10 +2912,6 @@ html {
   width: 2.25rem;
 }
 
-.w-\[85vw\] {
-  width: 85vw;
-}
-
 .w-\[83vw\] {
   width: 83vw;
 }
@@ -3262,7 +3258,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   letter-spacing: 0;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
 .contactname {
@@ -4039,20 +4035,16 @@ footer {
     margin-left: 10rem;
   }
 
+  .md\:ml-\[0\.5vw\] {
+    margin-left: 0.5vw;
+  }
+
   .md\:mr-6 {
     margin-right: 1.5rem;
   }
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:ml-\[0\.5vw\;\] {
-    margin-left: 0.5vw;;
-  }
-
-  .md\:ml-\[0\.5vw\] {
-    margin-left: 0.5vw;
   }
 
   .md\:h-auto {
