@@ -85,7 +85,7 @@ def c_projects():
                 if len(lines) >= 4:
                     link = lines[3].strip()
                 else:
-                    link = ""
+                    link = "https://placehold.co/600x400?text=Hello\nWorld"
                 if len(lines) >= 5:
                     type = lines[4].strip()
                 else:
