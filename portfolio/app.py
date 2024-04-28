@@ -65,15 +65,7 @@ def cali():
 @app.route("/cali")
 def cali():
     return render_template("cali.html")
-@app.route("/cali")
-def cali():
-    return render_template("cali.html")
-    @app.route("/cali")
-def cali():
-    return render_template("cali.html")
-@app.route("/cali")
-def cali():
-    return render_template("cali.html")
+
 
 if __name__ == '__main__':
     server = Server(app.wsgi_app)
