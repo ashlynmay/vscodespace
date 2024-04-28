@@ -67,7 +67,7 @@ def cprojects():
     return render_template("c-projects.html")
 
 @app.route("/py-projects")
-def cali():
+def pyprojects():
     return render_template("py-projects.html")
 
 @app.route("/web-projects")
