@@ -44,7 +44,7 @@ def project_check():
                     if len(lines) >=7:
                         alt = lines[6].strip()
                     else:
-                        alt = "0"
+                        alt = "unknown"
                     db.execute(
                         "INSERT INTO projects (name, image, description, link, type, featured, alt) VALUES (?, ?, ?, ?, ?, ?, ?)",
                         name,
