@@ -2636,6 +2636,10 @@ html {
   height: 1.5rem;
 }
 
+.max-h-80 {
+  max-height: 20rem;
+}
+
 .w-12 {
   width: 3rem;
 }
