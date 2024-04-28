@@ -89,7 +89,7 @@ def c_projects():
                 if len(lines) >= 5:
                     type = lines[4].strip()
                 else:
-                    type = ""
+                    type = "other"
                 if len(lines) >= 6:
                     featured = lines[5].strip()
                 else:
