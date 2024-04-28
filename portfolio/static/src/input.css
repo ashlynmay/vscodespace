@@ -128,7 +128,7 @@ footer {
   flex-wrap: wrap;
   justify-content: var(--flex-alignment);
   letter-spacing: 0;
-  padding: 0;
+  padding-top: ;
 }
 
 .btn-gradient {
