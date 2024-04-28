@@ -42,7 +42,7 @@ def project_check():
                     else:
                         featured = "0"
                     if len(lines) >=7:
-                        featured = lines[6].strip()
+                        alt = lines[6].strip()
                     else:
                         featured = "0"
                     db.execute(
