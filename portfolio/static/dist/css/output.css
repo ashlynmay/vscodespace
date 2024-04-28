@@ -3413,6 +3413,10 @@ footer {
     width: 16rem;
   }
 
+  .lg\:w-auto {
+    width: auto;
+  }
+
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
   }
