@@ -2700,6 +2700,11 @@ html {
   margin: auto;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
