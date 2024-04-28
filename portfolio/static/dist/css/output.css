@@ -2864,10 +2864,6 @@ html {
   height: 11rem;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
 .h-5 {
   height: 1.25rem;
 }
@@ -2890,10 +2886,6 @@ html {
 
 .min-h-full {
   min-height: 100%;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .w-24 {
@@ -3263,7 +3255,7 @@ footer {
 .sociallist {
   display: flex;
   flex-wrap: wrap;
-  justify-content: var(--flex-alignment);
+  justify-content: space-evenly;
   letter-spacing: 0;
   padding-top: 1rem;
 }
