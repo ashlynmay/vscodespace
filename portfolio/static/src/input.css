@@ -111,8 +111,8 @@ footer {
   --flex-alignment: flex-start;
   --indent-left: 1;
   --indent-right: 0;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   background-color: #28272E;
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
