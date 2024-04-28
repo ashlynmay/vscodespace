@@ -2612,6 +2612,10 @@ html {
   margin: 0.5rem;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
