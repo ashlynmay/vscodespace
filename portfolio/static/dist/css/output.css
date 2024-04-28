@@ -2827,6 +2827,10 @@ html {
   border-radius: 0.5rem;
 }
 
+.border-solid {
+  border-style: solid;
+}
+
 .bg-neutral {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
