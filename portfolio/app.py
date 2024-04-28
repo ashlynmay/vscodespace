@@ -104,7 +104,7 @@ def c_projects():
                         featured,
                     )
     projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
-    return render_template("c-projects.html", c_projects=projects)
+    return render_template("c-projects.html", projects=projects)
         
 
 
