@@ -2301,12 +2301,6 @@ html {
   margin-top: 0;
 }
 
-.mockup-phone .display {
-  overflow: hidden;
-  border-radius: 40px;
-  margin-top: -25px;
-}
-
 @keyframes modal-pop {
   0% {
     opacity: 0;
@@ -2698,21 +2692,12 @@ html {
   position: static;
 }
 
-.float-right {
-  float: right;
-}
-
 .m-3 {
   margin: 0.75rem;
 }
 
 .m-auto {
   margin: auto;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .block {
@@ -2914,6 +2899,10 @@ body {
 
 .max-h-50vh {
   max-height: 50vh;
+}
+
+.projbutton {
+  display: block;
 }
 
 @media (min-width: 1024px) {
@@ -3322,10 +3311,6 @@ body {
 
   .lg\:m-5 {
     margin: 1.25rem;
-  }
-
-  .lg\:m-0 {
-    margin: 0px;
   }
 
   .lg\:ml-20 {

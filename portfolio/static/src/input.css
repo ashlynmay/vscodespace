@@ -65,3 +65,7 @@ body {
 .max-h-50vh {
   max-height: 50vh;
 }
+
+.projbutton {
+  display: block;
+}
