@@ -59,7 +59,7 @@ def index():
 @app.route("/projects")
 def projects():
     db.execute("DROP TABLE projects")
-    db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT, type TEXT, featured BOOLEAN)")
+    db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT, type TEXT, featured BOOLEAN, )")
 
     # Iterate over files in the directory
     for root, dirs, files in os.walk(directory):
