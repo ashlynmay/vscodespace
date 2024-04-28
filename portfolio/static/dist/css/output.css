@@ -3939,6 +3939,10 @@ footer {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
   .md\:p-8 {
     padding: 2rem;
   }
