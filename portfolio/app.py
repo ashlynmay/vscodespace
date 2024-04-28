@@ -63,7 +63,8 @@ def cali():
 
 @app.route("/c-projects")
 def c_projects():
-    if db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='projects'"):
+    if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='projects'"):
+        db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT, type TEXT, featured BOOLEAN)")
         projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
         return render_template("c-projects.html", projects=projects)
     else:
