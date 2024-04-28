@@ -75,7 +75,7 @@ def webprojects():
     return render_template("web-projects.html")
 
 @app.route("/other-projects")
-def cali():
+def otherprojects():
     return render_template("other-projects.html")
 
 
