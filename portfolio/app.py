@@ -76,7 +76,7 @@ def cali():
 
 @app.route("/other-projects")
 def cali():
-    return render_template("cali.html")
+    return render_template("other-projects.html")
 
 
 if __name__ == '__main__':
