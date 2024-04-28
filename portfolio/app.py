@@ -63,7 +63,7 @@ def cali():
 
 @app.route("/c-projects")
 def c_projects():
-    db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='projects'")
+    if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='projects'")
     result = db.fetchone()
     if result is not None:
         projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
