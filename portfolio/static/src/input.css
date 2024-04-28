@@ -126,7 +126,7 @@ footer {
 .sociallist {
   display: flex;
   flex-wrap: wrap;
-  justify-content: ;
+  justify-content: var(--flex-alignment);
 
 }
 
