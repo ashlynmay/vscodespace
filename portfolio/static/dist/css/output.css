@@ -2857,6 +2857,10 @@ html {
   width: 75%;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
 .max-w-full {
   max-width: 100%;
 }
