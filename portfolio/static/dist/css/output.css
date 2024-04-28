@@ -2647,7 +2647,6 @@ h2 {
 #projecttitle {
   position: relative;
   max-width: 100%;
-  margin-left: 5rem;
   margin-bottom: 0;
   padding: unset;
 }
@@ -2655,7 +2654,6 @@ h2 {
 .projecttitle {
   position: relative;
   max-width: 100%;
-  margin-left: 10rem;
 }
 
 .card figure {
@@ -2775,10 +2773,6 @@ body {
 
   .lg\:ml-20 {
     margin-left: 5rem;
-  }
-
-  .lg\:ml-0 {
-    margin-left: 0px;
   }
 
   .lg\:ml-40 {
