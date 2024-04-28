@@ -119,7 +119,7 @@ def web_projects():
     return render_template("web-projects.html")
 
 @app.route("/other-projects")
-def otherprojects():
+def other_projects():
     return render_template("other-projects.html")
 
 
