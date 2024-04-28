@@ -106,7 +106,7 @@ def cali():
 
 @app.route("/c-projects")
 def c_projects():
-    
+    project_check()
     projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
     return render_template("c-projects.html", projects=projects)
         
