@@ -97,8 +97,8 @@ def cprojects():
                     else:
                         featured = "0"
                     db.execute("INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)", name, image, description, link, type, featured)
-    projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
-    return render_template("c-projects.html", projects=projects)
+                    projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+                    return render_template("c-projects.html", projects=projects)
 
 
 @app.route("/py-projects")
