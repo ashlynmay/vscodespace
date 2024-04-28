@@ -71,5 +71,5 @@ body {
 }
 
 .prose :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-  --tw-prose-headings: var(--fallback-bc, oklch(1 0 0));
+  font-: var(--fallback-bc, oklch(1 0 0));
   }
