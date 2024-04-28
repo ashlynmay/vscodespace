@@ -129,3 +129,19 @@ footer {
     transition: opacity 1s ease 0s, transform 1s ease 0s;
 }
 
+#main > .inner {
+  --border-radius-tl: calc(3rem - 1px);
+  --border-radius-tr: calc(3rem - 1px);
+  --border-radius-br: calc(3rem - 1px);
+  --border-radius-bl: calc(3rem - 1px);
+  --padding-horizontal: 2rem;
+  --padding-vertical: 2rem;
+  --spacing: 2rem;
+  --width: 45rem;
+  border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+  max-width: 100%;
+  position: relative;
+  width: var(--width);
+  z-index: 1;
+  padding: var(--padding-vertical) var(--padding-horizontal);
+}
