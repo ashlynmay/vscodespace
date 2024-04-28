@@ -2979,7 +2979,8 @@ footer {
 
 .complete {
   border-color: #1db88e;
-  color: #1db88e;
+  color: black;
+  background-color: #1db88e;
 }
 
 @media (min-width: 1024px) {
