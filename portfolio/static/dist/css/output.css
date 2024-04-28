@@ -2965,6 +2965,16 @@ footer {
   justify-content: center;
 }
 
+border-color: darkslategrey;
+
+border-style:solid;
+
+border-width: 3px;
+
+margin-top: 3rem;
+
+margin-bottom: 3rem;
+
 @media (min-width: 1024px) {
   @media (hover: hover) {
     .lg\:btn-outline:hover {
