@@ -77,7 +77,7 @@ def c_projects():
                 else: name = "placeholder"
                 if len(lines) > 1:    
                     image = lines[1].strip()
-                else: image = ""
+                else: image = "https://placehold.co/600x400?text=Hello\nWorld"
                 if len(lines) >= 3:
                     description = lines[2].strip()
                 else:
