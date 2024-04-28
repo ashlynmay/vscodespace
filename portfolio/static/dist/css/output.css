@@ -2653,6 +2653,8 @@ h2 {
 .projecttitle {
   left: 10%;
   position: relative;
+  max-width: 100%;
+  margin: 0 auto;
   margin: unset;
 }
 
