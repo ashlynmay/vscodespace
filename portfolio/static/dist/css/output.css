@@ -2973,6 +2973,7 @@ footer {
   margin-bottom: 3rem;
   margin-left: 0;
   margin-right: 0;
+  width: auto;
 }
 
 @media (min-width: 1024px) {
