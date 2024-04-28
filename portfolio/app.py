@@ -65,12 +65,8 @@ def cali():
 @app.route("/c-projects")
 def cprojects():
     db.execute(f"SELECT name FROM sqlite_master WHERE type='table' AND name='projects'")
-<<<<<<<<<<<<<<  ✨ Codeium Command 🌟 >>>>>>>>>>>>>>>>
-+    if db.fetchone() is None:
-+        raise ValueError(" projects table does not exist in the database")
--    if db.fetchone() is not None:
--        continue
-<<<<<<<  a6f2278b-e468-48f7-a3dc-577e189d7218  >>>>>>>
+    if db.fetchone() is not None:
+        continue
     else:
         print(f"Table '{table_name}' does not exist in the database.") 
         for root, dirs, files in os.walk(directory):
