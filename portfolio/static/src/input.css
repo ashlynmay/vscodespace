@@ -85,6 +85,6 @@ footer {
 }
 
 .timeline-box {
-  border-color: secondary;
-  border-
+  border-color: var(secondary);
+  
 }
