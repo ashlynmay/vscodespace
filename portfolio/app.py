@@ -64,8 +64,8 @@ def cali():
 @app.route("/c-projects")
 def c_projects():
     if db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='projects'"):
-        projects = db.execute("SELECT * FROM projects WHERE type = 'c'")
-        return render_template("c-projects.html", projects=projects)
+        cprojects = db.execute("SELECT * FROM projects WHERE type = 'c'")
+        return render_template("c-projects.html", projects=cprojects)
     else:
         for root, dirs, files in os.walk(directory):
             for filename in files:
