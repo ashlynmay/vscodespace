@@ -9,7 +9,47 @@ app = Flask(__name__)
 db = SQL("sqlite:///portfolio.db")
 directory = '/home/ipsum/vscodespace/'
 
-def project_check()
+def project_check():
+    if not db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='projects'"):
+        db.execute("CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT, description TEXT, image TEXT, link TEXT, type TEXT, featured BOOLEAN)")
+        for root, dirs, files in os.walk(directory):
+            for filename in files:
+                if filename.lower() == "project.md":
+                    with open(os.path.join(root, filename), "r") as file:
+                        lines = file.read().splitlines()
+                    if len(lines) >= 1:
+                        name = lines[0].strip()
+                    else:
+                        name = ""
+                    if len(lines) > 1:
+                        image = lines[1].strip()
+                    else:
+                        image = ""
+                    if len(lines) >= 3:
+                        description = lines[2].strip()
+                    else:
+                        description = ""
+                    if len(lines) >= 4:
+                        link = lines[3].strip()
+                    else:
+                        link = ""
+                    if len(lines) >= 5:
+                        project_type = lines[4].strip()
+                    else:
+                        project_type = ""
+                    if len(lines) >= 6:
+                        featured = lines[5].strip()
+                    else:
+                        featured = "0"
+                    db.execute(
+                        "INSERT INTO projects (name, image, description, link, type, featured) VALUES (?, ?, ?, ?, ?, ?)",
+                        name,
+                        image,
+                        description,
+                        link,
+                        project_type,
+                        featured,
+                    )
 
 
 @app.route("/")
