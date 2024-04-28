@@ -3230,6 +3230,9 @@ footer {
 }
 
 #outer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin-bottom: 0 !important;
   margin-top: 0 !important;
@@ -3237,11 +3240,8 @@ footer {
   --flex-alignment: flex-start;
   --indent-left: 1;
   --indent-right: 0;
-  display: flex;
   width: 50%;
   height: 50%;
-  align-items: center;
-  justify-content: center;
   background-color: #28272E;
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
