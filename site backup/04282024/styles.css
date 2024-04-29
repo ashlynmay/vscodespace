@@ -1,0 +1,51 @@
+.navbar-brand {
+    padding-left: 1vw;
+}
+
+#navbar {
+    background-color: rgb(65, 82, 36);
+    border-radius: 10px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.lead {
+    text-align: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+#homewelcome {
+    text-align: center;
+}
+
+#homecali {
+    border-radius: 20px;
+    width: 20vw;
+    height: 20vw;
+}
+
+#homecalidiv {
+    text-align: center;
+}
+
+.social {
+    text-align: center;
+}
+
+#horflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#socal {
+    width: 35vw;
+    border-radius: 20px;
+}
+
+.cards {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}

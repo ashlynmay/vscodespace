@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+        <script>
+          function areYouSure() {
+            if (confirm("Are you sure? It's a really lackluster resume.")) {
+              window.location.replace("https://profile.indeed.com/p/ashlynskylerm-rasajvc");
+            } else {
+              window.alert("You made the right choice.");
+            }
+          }
+          </script>
+
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" id="navbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-terminal-fill" viewBox="0 0 16 16">
+                    <path d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1m-6.354-.354a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708L4.793 6.5z"/>
+                  </svg>
+              <a class="navbar-brand" href="index.html">Ashlyn May</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="cproj.html">C</a></li>
+                      <li><a class="dropdown-item" href="pproj.html">Python</a></li>
+                      <li><a class="dropdown-item" href="#">Web Development (Coming soon!)</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="socials.html">Contact Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="areYouSure()">Extremely Lackluster Resume</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div id="homecalidiv">
+            <img id="homecali" alt="a photo of a calico cat sitting in a sink with a shocked expression" src="https://cdn.discordapp.com/attachments/837025541096996864/1228907927268626472/IMG_20240402_022012_523.jpg?ex=662dc0b1&is=661b4bb1&hm=d6ec77b79a926fad2216c19d6aa04ff823662d863524dcde4db7c1c0d3acbb33&">
+            <h1 id="homewelcome">Work in Progress Portfolio Site</h1>
+            <p class="lead">This website will <i>eventually</i> be a portfolio for all of the computer science related projects I have worked on. You can also find my socials, lackluster resume, and much more importantly; pictures of my cat.</p>
+          </div>
+    </body>
+</html>

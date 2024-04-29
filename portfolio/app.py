@@ -1,9 +1,6 @@
-from hashlib import new
 from cs50 import SQL
-from flask import Flask, flash, redirect, render_template, request
-from livereload import Server
+from flask import Flask, render_template
 import os
-import re
 
 app = Flask(__name__)
 db = SQL("sqlite:///portfolio.db")
@@ -106,7 +103,3 @@ def other_projects():
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("404.html")
-
-if __name__ == '__main__':
-    server = Server(app.wsgi_app)
-    server.serve()

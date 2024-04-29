@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Ashlyn May</title>
+        <script>
+          function areYouSure() {
+            if (confirm("Are you sure? It's a really lackluster resume.")) {
+              window.location.replace("https://profile.indeed.com/p/ashlynskylerm-rasajvc");
+            } else {
+              window.alert("You made the right choice.");
+            }
+          }
+          </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" id="navbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-terminal-fill" viewBox="0 0 16 16">
+                    <path d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1m-6.354-.354a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708L4.793 6.5z"/>
+                  </svg>
+              <a class="navbar-brand" href="index.html">Ashlyn May</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="cproj.html">C</a></li>
+                      <li><a class="dropdown-item" href="pproj.html">Python</a></li>
+                      <li><a class="dropdown-item" href="#">Web Development (Coming soon!)</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="socials.html" aria-current="page">Contact Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="areYouSure()">Extremely Lackluster Resume</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div id="horflex">
+            <div id="socials">
+              <h2>Places where you can reach me:</h2>
+              <hr>
+              <h3 class="social">Github: <a href='https://github.com/ashlynmay'>@ashlynmay</a></h3>
+              <h3 class="social">Instagram: <a href='https://www.instagram.com/strayashlyn/'>@strayashlyn</a></h3>
+              <h3 class="social">Facebook: <a href='https://www.facebook.com/ashlyn.may.10297'>Ashlyn May</a></h3>
+              <h3 class="social">Discord: <a href='https://discord.com/users/262106759332626434'>strayash</a></h3>
+              <h3 class="social">Email: <a href="mailto:may.ashlyn0723@gmail.com">may.ashlyn0723@gmail.com</a></h3>
+            </div>
+            <img id="socal" alt="calico cat sitting majestically on the arm of a sofa whilst staring off into the distance" src="https://cdn.discordapp.com/attachments/1046150911057203280/1228911535670300733/Screenshot_20240413_223527_Photos.jpg?ex=662dc40e&is=661b4f0e&hm=f966082d1fd5e0560eb62c98afca32dbb717d2503b12550edb0fd3e667c46e2a&">
+          </div>
+    </body>
+</html>
