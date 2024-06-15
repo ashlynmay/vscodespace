@@ -154,4 +154,5 @@ a:hover {
     gap: 2vw;
     justify-content: space-between;
     height: 3vh;
+    background-color: var(bgColor);
 }
