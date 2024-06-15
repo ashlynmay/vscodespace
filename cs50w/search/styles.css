@@ -26,6 +26,10 @@ a:hover {
 
 }
 
+#imgsearchbox {
+    
+}
+
 .searchform {
     display: flex;
     flex-direction: column;
