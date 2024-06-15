@@ -25,3 +25,7 @@
     justify-content: flex-end;
     gap: 3vw;
 }
+
+body {
+    background-color: #202124;
+}
