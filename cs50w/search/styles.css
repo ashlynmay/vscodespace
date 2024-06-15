@@ -43,6 +43,7 @@ a:hover {
     border: unset;
     padding: 1vw;
     border-radius: 0.5vw;
+    border-width: 1em;
 }
 
 .button:hover {
