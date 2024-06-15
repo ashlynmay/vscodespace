@@ -114,6 +114,7 @@ a:hover {
     height: 3vh;
     width: 30vw;
     background-color: var(--bgColor);
+    border: solid;
     border-color: grey;
     border-width: 1px;
 }
