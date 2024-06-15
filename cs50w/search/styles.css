@@ -71,3 +71,10 @@ body {
     --bgColor: #202124;
     --buttonColor: #303134;
 }
+
+.imgsearch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+}
