@@ -10,6 +10,7 @@
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
+    max-width: 70vw;
 }
 
 a:link {
