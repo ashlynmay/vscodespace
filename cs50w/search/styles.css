@@ -151,4 +151,5 @@ a:hover {
 .lastsearch {
     display: flex;
     width: 30vw;
+    gap: 2vw;
 }
