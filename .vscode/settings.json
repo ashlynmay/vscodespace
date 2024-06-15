@@ -1,7 +1,7 @@
 {
     "gitdoc.enabled": true,
     "cmake.configureOnOpen": false,
-    "liveServer.settings.port": 5501,
+    "liveServer.settings.port": 5502,
     "synthwave84.disableGlow": false,
     "github.gitAuthentication": true,
     "terminal.integrated.fontFamily": "Hack Nerd Font",
