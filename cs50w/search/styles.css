@@ -32,6 +32,10 @@ a:hover {
     border: unset;
 }
 
+#imgsearchbox:hover {
+    border: solid;
+}
+
 .searchform {
     display: flex;
     flex-direction: column;
