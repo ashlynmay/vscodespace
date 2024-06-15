@@ -6,5 +6,6 @@
 }
 
 #topbar {
-    
+    display: flex;
+    justify-content: last;
 }
