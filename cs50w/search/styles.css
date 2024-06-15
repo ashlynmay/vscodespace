@@ -8,7 +8,7 @@
 #search {
     border-radius: 50px;
     height: 4vh;
-    width: 20px;
+    max-width: 20px;
 }
 
 #enter {
