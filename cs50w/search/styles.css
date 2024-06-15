@@ -30,6 +30,7 @@ a:hover {
     height: 4.5vh;
     background-color: var(--buttonColor);
     border: unset;
+    width: auto;
 }
 
 #imgsearchbox:hover {
