@@ -152,4 +152,5 @@ a:hover {
     display: flex;
     width: 30vw;
     gap: 2vw;
+    justify-content: space-between;
 }
