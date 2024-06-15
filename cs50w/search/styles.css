@@ -123,6 +123,7 @@ a:hover {
 .lastline {
     display: flex;
     gap: 2vw;
+    align-items: center;
 }
 
 .advsearch {
