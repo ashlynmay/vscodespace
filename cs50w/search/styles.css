@@ -11,6 +11,7 @@
     border-radius: 50px;
     height: 4.5vh;
     background-color: var(--buttonColor);
+    border: unset;
 }
 
 #enter {
