@@ -94,5 +94,6 @@ a:hover {
 
 #advtopbar {
     display: flex;
-    fl
+    align-items: center;
+
 }
