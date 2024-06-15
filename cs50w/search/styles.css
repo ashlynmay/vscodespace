@@ -46,7 +46,7 @@ a:hover {
 }
 
 .button::hover {
-    
+    border: solid;
 }
 
 #searchimg, #searchadv {
