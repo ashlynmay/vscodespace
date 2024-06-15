@@ -10,8 +10,8 @@
     justify-content: center;
 }
 
-#imgsubmit:before {
-    content: "This text replaces the original.";
+#imgsearch {
+    
 }
 
 a:link {
