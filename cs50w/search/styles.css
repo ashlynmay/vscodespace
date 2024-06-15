@@ -119,3 +119,8 @@ a:hover {
     gap: 2vw;
     justify-content: space-between;
 }
+
+.lastline {
+    display: flex;
+    gap: 2vw;
+}
