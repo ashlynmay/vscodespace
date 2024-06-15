@@ -76,12 +76,6 @@ a:hover {
     color: white;
 }
 
-body {
-    background-color: var(--bgColor);
-    --bgColor: #202124;
-    --buttonColor: #303134;
-}
-
 .imgsearch {
     display: flex;
     flex-direction: row;
