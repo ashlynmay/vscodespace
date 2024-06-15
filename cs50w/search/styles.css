@@ -138,6 +138,9 @@ a:hover {
 
 .advsearch {
     margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .intro {
