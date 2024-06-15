@@ -6,8 +6,8 @@
 }
 
 #search {
-    padding-left: 40vw;
-    padding-right: 40vw;
+    margin-left: 40vw;
+    margin-right: 40vw;
     border-radius: 50px;
     height: 4vh;
 }
