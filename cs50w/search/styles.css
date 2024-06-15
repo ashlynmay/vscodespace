@@ -1,5 +1,3 @@
-
-
 .logo {
     margin-top: 30vh;
     display: flex;
@@ -33,6 +31,12 @@ a:hover {
 #searchbox:hover {
     border: solid;
 
+}
+
+.searchform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #enter {
