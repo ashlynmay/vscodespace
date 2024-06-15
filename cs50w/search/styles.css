@@ -159,4 +159,6 @@ a:hover {
 
 .lastsearch > input {
     background-color: var(--bgColor);
+    border: solid;
+    
 }
