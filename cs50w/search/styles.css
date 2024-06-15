@@ -37,6 +37,8 @@
     border-radius: 0.5vw;
 }
 
+
+
 body {
     background-color: var(--bgColor);
     --bgColor: #202124;
