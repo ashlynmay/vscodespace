@@ -115,7 +115,7 @@ a:hover {
     width: 30vw;
     background-color: var(--bgColor);
     border-color: grey;
-    
+    border-width: 1px;
 }
 
 .topline {
