@@ -9,7 +9,7 @@
     margin-top: 30vh;
     flex-direction: column;
     align-content: center;
-    flex-
+    flex-wrap: wrap;
 }
 
 a:link {
