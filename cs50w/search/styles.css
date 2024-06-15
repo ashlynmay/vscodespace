@@ -10,7 +10,7 @@
     justify-content: center;
 }
 
-.toBeReplaced {
+#imgsubmit {
     visibility: hidden;
     position: relative;
 }
