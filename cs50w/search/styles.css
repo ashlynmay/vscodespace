@@ -23,11 +23,13 @@ a:hover {
 
 #searchbox:hover {
     border: solid;
-
 }
 
 #imgsearchbox {
-    
+    border-radius: 50px;
+    height: 4.5vh;
+    background-color: var(--buttonColor);
+    border: unset;
 }
 
 .searchform {
