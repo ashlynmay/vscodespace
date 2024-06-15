@@ -7,5 +7,5 @@
 
 #topbar {
     display: flex;
-    justify-content: last;
+    justify-content: flex-end;
 }
