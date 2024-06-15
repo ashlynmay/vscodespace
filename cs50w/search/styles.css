@@ -5,6 +5,10 @@
     margin-top: 45vw;
 }
 
+a:link {
+    
+}
+
 #search {
     margin-left: 12vw;
     margin-right: 12vw;
@@ -39,7 +43,7 @@
 
 #searchimg, #searchadv {
     color: white;
-    
+
 }
 
 body {
