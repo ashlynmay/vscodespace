@@ -102,5 +102,5 @@ a:hover {
 
 .line {
     display: flex;
-    
+    gap: 2vw;
 }
