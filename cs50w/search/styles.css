@@ -124,6 +124,7 @@ a:hover {
     gap: 2vw;
     justify-content: space-between;
     align-items: center;
+    margin-right: 20vw;
 }
 
 .lastline {
