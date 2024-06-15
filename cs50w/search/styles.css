@@ -34,7 +34,7 @@
 }
 
 body {
-    background-color: #202124;
+    background-color: var();
     --bgColor: #202124;
     --buttonColor: #303134;
 }
