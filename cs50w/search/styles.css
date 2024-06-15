@@ -1,3 +1,9 @@
+body {
+    background-color: var(--bgColor);
+    --bgColor: #202124;
+    --buttonColor: #303134;
+}
+
 .logo {
     margin-top: 30vh;
     display: flex;
