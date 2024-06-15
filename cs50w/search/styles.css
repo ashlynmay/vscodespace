@@ -114,4 +114,8 @@ a:hover {
     width: 30vw;
 }
 
-.
+.topline {
+    display: flex;
+    gap: 2vw;
+    
+}
