@@ -155,5 +155,8 @@ a:hover {
     justify-content: space-between;
     height: 3vh;
     align-items: center;
+}
+
+.lastsearch > input {
     background-color: var(bgColor);
 }
