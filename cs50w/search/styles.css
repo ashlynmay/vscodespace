@@ -2,12 +2,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     margin-top: 45vw;
 }
 
 #search {
-    display: flex;
+    
     border-radius: 50px;
     height: 4vh;
     max-width: 70vw;
