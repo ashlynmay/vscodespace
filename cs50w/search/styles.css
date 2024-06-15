@@ -13,7 +13,7 @@ a:hover {
     text-decoration: underline
 }
 
-#search {
+#searchbox {
     margin-left: 12vw;
     margin-right: 12vw;
     border-radius: 50px;
@@ -22,9 +22,9 @@ a:hover {
     border: unset;
 }
 
-#search:hover {
+#searchbox:hover {
     border: solid;
-    
+
 }
 
 #enter {
