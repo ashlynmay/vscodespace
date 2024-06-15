@@ -11,7 +11,8 @@
 }
 
 #imgsearch {
-    
+    display: flex;
+    flex-direction: row;
 }
 
 a:link {
