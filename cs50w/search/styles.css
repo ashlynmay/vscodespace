@@ -153,13 +153,13 @@ a:hover {
     width: 30vw;
     gap: 2vw;
     justify-content: space-between;
-    height: 3vh;
     align-items: center;
 }
 
 .lastsearch > input {
     background-color: var(--bgColor);
     border: solid;
+    height: 3vh;
     border-color: grey;
     border-width: 1px;
 }
