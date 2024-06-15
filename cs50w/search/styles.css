@@ -6,7 +6,8 @@
 }
 
 #enter {
-    
+    display: flex;
+    flex-direction: row;
 }
 
 #topbar {
