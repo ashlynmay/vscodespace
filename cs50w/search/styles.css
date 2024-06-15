@@ -10,7 +10,7 @@
     justify-content: center;
 }
 
-#imgsearch {
+.imgsearch {
     display: flex;
     flex-direction: row;
 }
