@@ -31,18 +31,6 @@ a:hover {
     border: solid;
 }
 
-#imgsearchbox {
-    border-radius: 50px;
-    height: 4.5vh;
-    background-color: var(--buttonColor);
-    border: unset;
-    width: 30vw;
-}
-
-#imgsearchbox:hover {
-    border: solid;
-}
-
 .searchform {
     display: flex;
     flex-direction: column;
@@ -88,4 +76,16 @@ a:hover {
     justify-content: center;
     gap: 1vw;
     align-items: center;
+}
+
+#imgsearchbox {
+    border-radius: 50px;
+    height: 4.5vh;
+    background-color: var(--buttonColor);
+    border: unset;
+    width: 30vw;
+}
+
+#imgsearchbox:hover {
+    border: solid;
 }
