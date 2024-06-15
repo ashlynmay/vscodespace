@@ -1,8 +1,11 @@
-.search {
+.searchform {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 45vw;
+}
+
+.search {
+    
 }
 
 a:link {
