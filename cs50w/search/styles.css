@@ -4,12 +4,7 @@
     justify-content: center;
 }
 
-.search {
-    display: flex;
-    margin-top: 30vh;
-    flex-direction: column;
-    align-content: center;
-}
+
 
 a:link {
     text-decoration: none;
