@@ -4,13 +4,6 @@
     justify-content: center;
 }
 
-.imgsearch {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2vw;
-}
-
 a:link {
     text-decoration: none;
 }
