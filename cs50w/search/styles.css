@@ -149,5 +149,6 @@ a:hover {
 }
 
 .lastsearch {
-    
+    display: flex;
+    width: 30vw;
 }
