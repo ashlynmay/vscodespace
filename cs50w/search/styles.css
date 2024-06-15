@@ -10,12 +10,7 @@
     justify-content: center;
 }
 
-#imgsubmit {
-    visibility: hidden;
-    position: relative;
-}
-
-#imgsubmit:after {
+#imgsubmit:before {
     content: "This text replaces the original.";
 }
 
