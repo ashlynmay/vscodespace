@@ -86,6 +86,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2vw;
+    gap: 1vw;
     align-items: center;
 }
