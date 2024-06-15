@@ -103,6 +103,7 @@ a:hover {
 .line {
     display: flex;
     gap: 2vw;
+    align-items: center;
 }
 
 .advsearch {
@@ -118,6 +119,7 @@ a:hover {
     display: flex;
     gap: 2vw;
     justify-content: space-between;
+    align-items: center;
 }
 
 .lastline {
