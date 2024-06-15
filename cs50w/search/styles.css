@@ -23,7 +23,8 @@ a:hover {
 }
 
 #search:hover {
-    b
+    border: solid;
+    
 }
 
 #enter {
