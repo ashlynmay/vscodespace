@@ -10,8 +10,12 @@
     justify-content: center;
 }
 
-#imgsubmit:before {
-
+#imgsubmit:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "This text replaces the original.";
 }
 
 a:link {
