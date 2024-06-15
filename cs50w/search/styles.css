@@ -25,6 +25,7 @@ a:hover {
     height: 4.5vh;
     background-color: var(--buttonColor);
     border: unset;
+    text-indent: 15px;
 }
 
 #searchbox:hover {
