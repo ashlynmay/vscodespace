@@ -45,7 +45,9 @@ a:hover {
     border-radius: 0.5vw;
 }
 
-.button:
+.button::hover {
+    
+}
 
 #searchimg, #searchadv {
     color: white;
