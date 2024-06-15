@@ -37,7 +37,9 @@
     border-radius: 0.5vw;
 }
 
-#search
+#searchimg, #searchadv {
+    
+}
 
 body {
     background-color: var(--bgColor);
