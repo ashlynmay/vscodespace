@@ -10,6 +10,11 @@
     justify-content: center;
 }
 
+.toBeReplaced {
+    visibility: hidden;
+    position: relative;
+}
+
 #imgsubmit:after {
     visibility: visible;
     position: absolute;
