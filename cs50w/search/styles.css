@@ -28,7 +28,7 @@
 }
 
 .button {
-    background-color: #303134;
+    background-color: var(--buttonColor);
     color: white;
     border: unset;
     padding: 1vw;
