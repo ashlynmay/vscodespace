@@ -3,6 +3,7 @@
     "cmake.configureOnOpen": false,
     "liveServer.settings.port": 5503,
     "synthwave84.disableGlow": false,
+    "synthwave84.brightness": 1,
     "github.gitAuthentication": true,
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "files.associations": {
