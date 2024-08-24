@@ -1,2 +1,28 @@
-
+{
+    "artificialDelayMilliseconds": 700,
+    "keepExistingTerminalsOpen": false,
+    "runOnStartup": true,
+    "terminals": [
+      {
+        "splitTerminals": [
+          {
+            "name": "Terminal",
+            "commands": ["alias cd='HOME=~/vscodespace cd'", "alias flask='python -m flask'", "clear"]
+          },
+          {
+            "name": "Terminal",
+            "commands": ["alias cd='HOME=~/vscodespace cd'", "alias flask='python -m flask'", "clear"]
+          }
+        ]
+      },
+      {
+        "splitTerminals": [
+          {
+            "name": "Terminal",
+            "commands": ["alias cd='HOME=~/vscodespace cd'", "alias flask='python -m flask'", "clear"]
+          }
+        ]
+      }
+    ]
+  }
 
